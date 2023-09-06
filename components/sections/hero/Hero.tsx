@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { HeroMotionDiv } from "./MotionDiv";
+import { HeroMotionDiv } from "../../ui/MotionDiv";
 
 const Hero = () => {
   return (
