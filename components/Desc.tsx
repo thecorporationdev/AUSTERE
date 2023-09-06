@@ -1,12 +1,13 @@
 import React from "react";
 import Arrow from "./icons/Arrow";
+import { DescMotionDiv } from "./MotionDiv";
 
 type Props = {};
 
 const Desc = (props: Props) => {
   return (
-    <section className="mt-20 border-t-2 border-black w-[92%] mx-auto flex justify-end">
-      <div className="md:w-[80%] md:h-[35vh] mt-3 flex flex-col md:flex-row justify-between">
+    <section className="mt-6 md:mt-20 border-t-2 border-black w-[92%] mx-auto flex justify-end">
+      <DescMotionDiv className="md:w-[80%]  md:h-[35vh] mt-3 flex flex-col md:flex-row justify-between">
         <div className="flex flex-col gap-y-0 leading-none font-medium uppercase tracking-tighter">
           <span>A</span>
           <span className="mt-0">Full-service</span>
@@ -14,22 +15,22 @@ const Desc = (props: Props) => {
           <span>Commerce</span>
           <span>Agency</span>
         </div>
-        <div className=" md:w-[50%] h-full flex flex-col md:flex-row md:justify-start ">
+        <div className=" mt-4 md:mt-0 md:w-[50%] h-full flex flex-col md:flex-row md:justify-start ">
           <div className="w-[80%] flex  flex-col md:flex-row  justify-between">
             <div className="flex flex-col gap-y-[0.3rem] ">
-              <span className="uppercase tracking-tighter text-base">
+              <span className="uppercase tracking-tighter text-base ">
                 we&apos;re hiring
               </span>
 
-              <a className="flex items-center w-28 underline justify-between ">
-                <span className="text-[0.7rem] tracking-tighter ">
+              <a className="flex items-center w-28 underline">
+                <span className="text-[0.7rem] tracking-tighter cursor-pointer hover:scale-105 transition-all duration-75 ease-linear">
                   SeeJobOpenings
                 </span>
-                <Arrow className="ml-1 h-3 " />
+                <Arrow className=" h-3 underline underline-offset-1 " />
               </a>
             </div>
 
-            <div className="flex  flex-col justify-start">
+            <div className="flex mt-3 md:mt-0 flex-col justify-start">
               <ul className="leading-none text-xs fobt-medium">
                 <li>667 Madison Awe,f15</li>
                 <li>NEW YORK NY 10065</li>
@@ -50,7 +51,7 @@ const Desc = (props: Props) => {
             </div>
           </div>
         </div>
-      </div>
+      </DescMotionDiv>
     </section>
   );
 };

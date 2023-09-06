@@ -13,7 +13,7 @@ const Header = (props: Props) => {
     <header className="py-2">
       <div className="px-5 md:px-14 py-2 flex items-center justify-between w-full ">
         <div className="flex justify-between w-full items-center">
-          <LargeLogo classes="h-10 w-32 " />
+          <LargeLogo classes=" h-10 w-24 md:w-32 " />
 
           <div className="flex gap-x-20 items-center ">
             <Button className="py-[0.5rem]  items-center justify-center bg-transparent font-medium border-gray-500 px-2 text-gray-500 border-2 rounded-xl  h-5 text-xs leading-none hover:text-white hidden md:flex">

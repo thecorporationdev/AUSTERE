@@ -1,13 +1,15 @@
+"use client";
 import React from "react";
+import { HeroMotionDiv } from "./MotionDiv";
 
 const Hero = () => {
   return (
-    <div className="px-12 mt-3 w-full">
-      <h1 className="font-[300] flex items-center text-wine-400 uppercase w-full text-[2rem] md:text-[6rem] xl:text-[8rem] xxl:text-[9.5rem] tracking-tight leading-[0.9]">
+    <HeroMotionDiv className="px-12 md:mt-3 w-full">
+      <h1 className="font-[400] flex items-center text-wine-400 uppercase w-full text-[3rem] md:text-[4.5rem] xl:text-[8rem] xxl:text-[9.5rem] tracking-tighter leading-[0.9]">
         get your <br />
         customers talking.
       </h1>
-    </div>
+    </HeroMotionDiv>
   );
 };
 
