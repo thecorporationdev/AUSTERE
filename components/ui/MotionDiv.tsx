@@ -15,6 +15,7 @@ export const LogoMotionDiv = (props: Props) => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, delay: 0.3 }}
       className={cn(`${className}`)}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>
@@ -28,6 +29,7 @@ export const HeroMotionDiv = (props: Props) => {
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.4 }}
       className={cn(`${className}`)}
+      viewport={{ once: true }}
     >
       {children}
     </motion.div>

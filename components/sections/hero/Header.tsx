@@ -5,6 +5,7 @@ import { Button } from "../../ui/button";
 import Hamburger from "../../ui/Hamburger";
 import { useState } from "react";
 import { LogoMotionDiv } from "@/components/ui/MotionDiv";
+import SmallBtn from "@/components/ui/SmallBtn";
 
 type Props = {};
 
@@ -17,9 +18,7 @@ const Header = (props: Props) => {
           <LargeLogo classes=" h-10 w-24 md:w-32 " />
 
           <div className="flex gap-x-20 items-center ">
-            <Button className="py-[0.5rem]  items-center justify-center bg-transparent font-medium border-gray-500 px-2 text-gray-500 border-2 rounded-xl  h-5 text-xs leading-none hover:text-white hidden md:flex">
-              Getintouch
-            </Button>
+            <SmallBtn className="hidden md:flex"> Getintouch</SmallBtn>
 
             <Hamburger
               barstate={bar}

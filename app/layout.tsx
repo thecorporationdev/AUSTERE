@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { matter } from "@/lib/utils";
+import Footer from "@/components/ui/Footer";
 
 export const metadata: Metadata = {
   title: "AUSTERE",
