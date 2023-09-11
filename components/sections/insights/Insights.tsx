@@ -13,7 +13,7 @@ const Insights = (props: Props) => {
             insights
           </h3>
           <p className=" text-xs lg:text-base text-gray-600 mt-3 md:mt-0">
-            our lastest new,views and more
+            our lastest news , views and more
           </p>
         </div>
         <div className=" w-full mt-10 md:mt-28 flex justify-end">

@@ -1,7 +1,9 @@
 import HeroAgency from "@/components/TheAgencySections/HeroAgency";
 import Leadership from "@/components/TheAgencySections/Leadership";
+import Locations from "@/components/TheAgencySections/Locations";
 import Principles from "@/components/TheAgencySections/Principles";
 import Values from "@/components/TheAgencySections/Values";
+import Footer from "@/components/ui/Footer";
 import React from "react";
 
 type Props = {};
@@ -13,6 +15,8 @@ const page = (props: Props) => {
       <Principles />
       <Values />
       <Leadership />
+      <Locations />
+      <Footer />
     </section>
   );
 };
