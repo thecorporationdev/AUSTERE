@@ -5,6 +5,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import Slide from "@/components/ui/Slide";
+import Values from "../TheAgencySections/Values";
 
 type Props = {};
 
@@ -35,8 +36,7 @@ const array = [
   { id: 24, word: "Hardware" },
   { id: 25, word: "WearableTech" },
 ];
-
-const CarouselSection = (props: Props) => {
+const ValueCarousel = (props: Props) => {
   const breakpoints = {
     300: {
       slidesPerView: 2,
@@ -56,7 +56,7 @@ const CarouselSection = (props: Props) => {
     },
   };
   return (
-    <section className=" mt-10 mb-20">
+    <section className=" mt-10 mb-20 xl:hiddem">
       <Swiper
         breakpoints={breakpoints}
         className="mySwiper transition-all "
@@ -73,7 +73,7 @@ const CarouselSection = (props: Props) => {
       >
         {array.map((slide, I) => (
           <SwiperSlide key={I}>
-            <Slide word={slide.word} />
+            <Values />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -81,7 +81,4 @@ const CarouselSection = (props: Props) => {
   );
 };
 
-export default CarouselSection;
-
-// onSlideChange={() => console.log("slide change")}
-// onSwiper={(swiper) => console.log(swiper)}
+export default ValueCarousel;

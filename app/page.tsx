@@ -10,14 +10,11 @@ import Footer from "@/components/ui/Footer";
 export default function Home() {
   return (
     <>
-      <main className="bg-butter h-screen ">
-        <section className="max-w-[90%] mx-auto">
-          <Header />
+      <main className="bg-butter h-screen font-bold ">
+        <section className="max-w-[90%] mx-auto font-bold">
           <Hero />
           <Desc />
-
           <Projects />
-
           <Discover />
         </section>
         <CarouselSection />

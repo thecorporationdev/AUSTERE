@@ -9,7 +9,7 @@ const Insights = (props: Props) => {
     <section className="md:px-14 py-10">
       <div className="w-full">
         <div className="lg:w-[53%] flex justify-between capitalize items-center text-center ">
-          <h3 className="text-xl md:text-5xl uppercase tracking-tighter font-light">
+          <h3 className="text-3xl md:text-5xl uppercase tracking-tighter font-extrabold">
             insights
           </h3>
           <p className=" text-xs lg:text-base text-gray-600 mt-3 md:mt-0">

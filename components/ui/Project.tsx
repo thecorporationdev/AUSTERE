@@ -24,12 +24,14 @@ const Project = (props: Props) => {
           className="object-cover group-hover:scale-105 transition-all duration-150 bg-top h-full"
         />
       </div>
-      <div className="flex gap-x-3 mt-4 flex-wrap ">
+      <div className="flex gap-x-3 mt-4 flex-wrap font-semibold ">
         <SmallBtn className="text-sm md:text-base">strategy</SmallBtn>/
         <SmallBtn className="text-sm md:text-base">development</SmallBtn>/
-        <SmallBtn className="text-sm md:text-base"> development</SmallBtn>
+        <SmallBtn className="text-sm md:text-base">development</SmallBtn>
       </div>
-      <p className="mt-2 text-xl tracking-tighter text-gray-900">IBoats</p>
+      <p className="mt-2 text-xl tracking-tighter text-gray-900 font-bold">
+        IBoats
+      </p>
     </Link>
   );
 };

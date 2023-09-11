@@ -1,7 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { matter } from "@/lib/utils";
-import Footer from "@/components/ui/Footer";
+import { unbounded } from "@/lib/utils";
+
+import Header from "@/components/sections/hero/Header";
 
 export const metadata: Metadata = {
   title: "AUSTERE",
@@ -18,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${matter.className}`}>{children}</body>
+      <body
+        className={`${unbounded.className} tracking-normal md:tracking-tight`}
+      >
+        <Header /> <main>{children}</main>
+      </body>
     </html>
   );
 }

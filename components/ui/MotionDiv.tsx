@@ -25,7 +25,7 @@ export const HeroMotionDiv = (props: Props) => {
   const { children, className } = props;
   return (
     <motion.div
-      initial={{ x: "-100%", opacity: 0 }}
+      initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.4 }}
       className={cn(`${className}`)}
@@ -40,8 +40,8 @@ export const LineMotionDiv = (props: Props) => {
   const { children, className } = props;
   return (
     <motion.div
-      initial={{ x: "100%", opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.4 }}
       viewport={{ once: true }}
       className={cn(`${className}`)}

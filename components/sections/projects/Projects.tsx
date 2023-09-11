@@ -7,7 +7,7 @@ type Props = {};
 const Projects = (props: Props) => {
   return (
     <section className="md:px-16 mt-10 w-full">
-      <h1 className="text-5xl tracking-tighter uppercase mb-4 font-light">
+      <h1 className=" text-3xl md:text-5xl tracking-tighter uppercase mb-4 font-extrabold">
         Projects
       </h1>
 
@@ -20,7 +20,7 @@ const Projects = (props: Props) => {
       <div className="w-full md:mt-16 flex justify-end">
         <div className=" w-1/2 flex justify-end md:justify-start ">
           <div className="flex items-center underline underline-offset-2 text-gray-500 ">
-            <h1 className="text-base tracking-tighter uppercase mb-2 text-gray-600 ">
+            <h1 className="text-base tracking-tighter uppercase mb-2 text-gray-600 font-semibold ">
               AllProjects
             </h1>
             <Arrow />
