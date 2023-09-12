@@ -7,9 +7,9 @@ const LocationsGlobe = (props: Props) => {
   return (
     <div className="w-full flex flex-col md:flex-row justify-between  gap-x-10 items-center">
       <div className=" w-full md:justify-start flex items-center">
-        <div className="border-black border-t-2 ">
+        <div className="border-black border-t-2 max-md:mt-2">
           <div className="flex md:justify-start">
-            <div className="md:w-3/4 flex justify-between mt-2 ">
+            <div className="md:w-3/4 flex flex-col md:flex-row justify-between mt-4">
               <h1 className="font-extrabold text-4xl">DTX</h1>
               <p className="md:w-4/12 text-[12px] text-gray-500 font-bold leading-none">
                 515 maitama haruna street jabi park abuja nigeria
@@ -22,9 +22,9 @@ const LocationsGlobe = (props: Props) => {
         <Globe className="h-[400px] w-[400px]" />
       </div>
       <div className=" w-full flex md:justify-end items-center">
-        <div className="border-black border-t-2 ">
+        <div className="border-black border-t-2 max-md:mt-4">
           <div className="flex md:justify-end">
-            <div className="md:w-3/4 flex justify-between mt-2 ">
+            <div className="md:w-3/4 flex flex-col-reverse md:flex-row justify-between mt-2 ">
               <p className="md:w-4/12 text-[12px] text-gray-500 font-bold leading-none">
                 515 maitama haruna street jabi park abuja nigeria
               </p>

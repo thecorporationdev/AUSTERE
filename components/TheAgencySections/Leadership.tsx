@@ -16,7 +16,7 @@ const Leadership = (props: Props) => {
         </h3>
       </div>
 
-      <div className="mt-20 w-full h-full">
+      <div className="mt-16 w-full h-full">
         <div className="w-full h-auto sm:h-full grid grid-cols-2 xl:flex justify-end gap-x-4 gap-y-5 md:gap-x-10 md:gap-y-14 ">
           <LeadershipCard />
           <LeadershipCard />
