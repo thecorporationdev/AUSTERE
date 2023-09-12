@@ -6,10 +6,10 @@ type Props = {};
 
 const Values = (props: Props) => {
   return (
-    <div className="md:px-14 h-screen max-md:mt-20">
+    <div className="md:px-14 h-screen max-[400px]:mt-10 lg:mt-10">
       <div className="w-full flex ">
         <div className="flex justify-between items-start flex-col md:flex-row">
-          <h3 className="tracking-tighter font-black text-3xl md:text-4xl w-full uppercase py-4 md:py-0">
+          <h3 className="tracking-tighter font-black text-3xl md:text-4xl w-full uppercase  md:py-0">
             our values
           </h3>
           <div className="w-full md:border-t-2 md:border-black flex flex-col">
