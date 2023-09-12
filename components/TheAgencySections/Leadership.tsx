@@ -9,7 +9,7 @@ type Props = {};
 
 const Leadership = (props: Props) => {
   return (
-    <section className="w-full h-screen md:h-auto">
+    <section className="w-full max-w-[90%] mx-auto h-screen md:h-auto mt-20">
       <div className="w-full ">
         <h3 className=" text-2xl md:text-4xl font-extrabold tracking-tighter uppercase">
           Leadership

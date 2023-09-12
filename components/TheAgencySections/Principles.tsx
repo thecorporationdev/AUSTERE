@@ -5,7 +5,7 @@ type Props = {};
 
 const Principles = (props: Props) => {
   return (
-    <section className=" w-full flex flex-col md:justify-start md:items-center h-screen sm:h-[70vh] md:py-4 xl:px-14">
+    <section className=" w-full flex flex-col md:justify-start md:items-center sm:h-[70vh] md:py-4 xl:px-14">
       <div className="w-full flex md:justify-start ">
         <div className="w-full md:w-1/2">
           <div className="w-full flex justify-between items-center md:w-8/12">
