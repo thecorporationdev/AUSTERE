@@ -9,7 +9,7 @@ const Desc = (props: Props) => {
     <section className="mt-6 md:mt-20 w-[92%] mx-auto flex-col flex ">
       <LineMotionDiv className="h-[3px] w-full bg-black">.</LineMotionDiv>
       <div className="flex justify-end">
-        <DescMotionDiv className="md:w-[80%]  md:h-[30vh] mt-3 flex flex-col md:flex-row justify-between ">
+        <div className="md:w-[80%]  md:h-[30vh] mt-3 flex flex-col md:flex-row justify-between ">
           <div className="flex flex-col gap-y-0 leading-none font-bold uppercase tracking-tighter">
             <span>A</span>
             <span className="mt-0">Full-service</span>
@@ -53,7 +53,7 @@ const Desc = (props: Props) => {
               </div>
             </div>
           </div>
-        </DescMotionDiv>
+        </div>
       </div>
     </section>
   );

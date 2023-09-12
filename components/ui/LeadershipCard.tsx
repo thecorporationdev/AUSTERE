@@ -8,7 +8,7 @@ type Props = {};
 const LeadershipCard = (props: Props) => {
   return (
     <div className="">
-      <div className=" max-sm:h-[300px] xl:w-[250px] xl:h-[400px] relative overflow-hidden rounded-lg border-2 border-gray-200 bg-gray-100">
+      <div className=" max-sm:h-[300px] sm:h-[250px] xl:w-[250px] xl:h-[400px] relative overflow-hidden rounded-lg border-2 border-gray-200 bg-gray-100">
         <Image
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64, ${toBase64(

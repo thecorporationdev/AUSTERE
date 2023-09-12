@@ -18,7 +18,7 @@ const Principles = (props: Props) => {
         </div>
       </div>
       <div className="w-full flex md:justify-end max-md:mt-24">
-        <div className="md:w-1/2 mt-10 md:mt-0  space-y-10 w-full">
+        <div className="md:w-1/2 mt-10 md:mt-0  space-y-6 w-full">
           <Principle
             title="people"
             p="we employ and empower creative thinkers"
@@ -42,7 +42,7 @@ export default Principles;
 function Principle({ title, p }: { title: string; p: string }) {
   return (
     <div className=" border-t-2 border-black flex flex-col-reverse md:flex-row  md:justify-between mb-2  md:items-center">
-      <h3 className="w-full text-6xl lg:text-5xl mt-2 font-bold capitalize tracking-tight max-md:text-left py-1">
+      <h3 className="w-full text-4xl lg:text-5xl mt-2 font-bold capitalize tracking-tight max-md:text-left py-1">
         {title}
       </h3>
       <p className="break-words w-full whitespace-normal flex md:items-center md:justify-center text-[14px] font-extrabold sm:w-1/2 lg:w-4/12 md:text-right">

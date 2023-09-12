@@ -25,9 +25,17 @@ const Project = (props: Props) => {
         />
       </div>
       <div className="flex gap-x-3 mt-4 flex-wrap font-semibold ">
-        <SmallBtn className="text-sm md:text-base">strategy</SmallBtn>/
-        <SmallBtn className="text-sm md:text-base">development</SmallBtn>/
-        <SmallBtn className="text-sm md:text-base">development</SmallBtn>
+        <SmallBtn className="text-sm md:text-base mt-1 md:mt-0">
+          strategy
+        </SmallBtn>
+        /
+        <SmallBtn className="text-sm md:text-base mt-1 md:mt-0">
+          development
+        </SmallBtn>
+        /
+        <SmallBtn className="text-sm md:text-base m-1 md:mt-0">
+          development
+        </SmallBtn>
       </div>
       <p className="mt-2 text-xl tracking-tighter text-gray-900 font-bold">
         IBoats

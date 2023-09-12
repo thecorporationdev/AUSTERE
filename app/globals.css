@@ -122,10 +122,10 @@
 .bar.active .line::after {
   transform: rotate(45deg);
   transform-origin: center;
-  /* background: white; */
+  background: white;
 }
 .bar.active .line::before {
   transform: rotate(-45deg);
   transform-origin: center;
-  /* background: white; */
+  background: white;
 }

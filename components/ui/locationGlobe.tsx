@@ -5,7 +5,7 @@ type Props = {};
 
 const LocationsGlobe = (props: Props) => {
   return (
-    <div className="w-full flex  flex-col md:flex-row justify-between  gap-x-10 items-center">
+    <div className="w-full flex flex-col md:flex-row justify-between  gap-x-10 items-center">
       <div className=" w-full md:justify-start flex items-center">
         <div className="border-black border-t-2 ">
           <div className="flex md:justify-start">

@@ -6,7 +6,7 @@ type Props = {};
 
 const Values = (props: Props) => {
   return (
-    <div className="md:px-14 h-screen">
+    <div className="md:px-14 h-screen max-md:mt-20">
       <div className="w-full flex ">
         <div className="flex justify-between items-start flex-col md:flex-row">
           <h3 className="tracking-tighter font-black text-3xl md:text-4xl w-full uppercase py-4 md:py-0">
@@ -31,7 +31,7 @@ const Values = (props: Props) => {
 
       {/* <ValueCarousel /> */}
 
-      <div className=" hidden xl:grid xl:grid-cols-5 mt-10 md:mt-24 gap-y-6">
+      <div className=" hidden xl:grid xl:grid-cols-5 mt-10 md:mt-24 gap-y-6 max-sm:mt-16 ">
         <Value />
         <Value />
         <Value />

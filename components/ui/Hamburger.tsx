@@ -15,7 +15,7 @@ const Hamburger = (props: Props) => {
     <div
       className={cn(
         `${
-          barstate ? "bar active" : "bar"
+          barstate ? "bar active sticky z-40 overflow-y-none" : "bar"
         } flex flex-col items-center justify-center gap-y-2 ${className}`
       )}
       onClick={() => {

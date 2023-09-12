@@ -2,7 +2,6 @@ import Discover from "@/components/sections/Discover/Discover";
 import Projects from "@/components/sections/projects/Projects";
 import CarouselSection from "@/components/sections/SwiperSection/CarouselSection";
 import Desc from "@/components/sections/hero/Desc";
-import Header from "@/components/sections/hero/Header";
 import Hero from "@/components/sections/hero/Hero";
 import Insights from "@/components/sections/insights/Insights";
 import Footer from "@/components/ui/Footer";

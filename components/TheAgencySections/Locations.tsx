@@ -12,9 +12,11 @@ const Locations = (props: Props) => {
           our locations
         </h2>
       </div>
-      <Locationsdets />
-      <LocationsGlobe />
-      <Locationsdets />
+      <div className="">
+        <Locationsdets />
+        <LocationsGlobe />
+        <Locationsdets />
+      </div>
     </section>
   );
 };

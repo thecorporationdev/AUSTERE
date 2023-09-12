@@ -27,7 +27,7 @@ export const HeroMotionDiv = (props: Props) => {
     <motion.div
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.8, delay: 0.4 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
       className={cn(`${className}`)}
       viewport={{ once: true }}
     >

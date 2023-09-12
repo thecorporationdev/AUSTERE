@@ -7,7 +7,7 @@ const HeroAgency = (props: Props) => {
   return (
     <section className="w-full flex-col  md:px-10 hidden md:flex h-[80vh] md:mt-10 xxl:max-w-[80%]">
       <div className="flex w-full">
-        <h1 className="w-full text-4xl md:text-5xl xl:text-8xl font-extrabold tracking-tighter">
+        <h1 className="w-full text-4xl md:text-5xl xl:text-8xl font-extrabold tracking-tighter uppercase">
           The Agency
         </h1>
         <p className="mt-3 md:mt-0 text-xs md:text-base md:w-4/6 font-bold">
