@@ -5,6 +5,7 @@ import image from "../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import SmallBtn from "../ui/SmallBtn";
 import Arrow from "../icons/Arrow";
 import { FiArrowUpRight } from "react-icons/fi";
+import Link from "next/link";
 type Props = {};
 
 const ProjectItem = (props: Props) => {
@@ -42,7 +43,9 @@ const ProjectItem = (props: Props) => {
                 <h2 className="font-bold text-2xl lg:text-3xl uppercase">
                   iboats
                 </h2>
-                <FiArrowUpRight className="text-5xl font-semibold" />
+                <Link href="Workings/20">
+                  <FiArrowUpRight className="text-5xl font-semibold" />
+                </Link>
               </div>
               <p className="font-bold  text-[12px] md:text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi

@@ -19,9 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${unbounded.className} tracking-normal md:tracking-tight`}
-      >
+      <body className={`${unbounded.className} tracking-normal`}>
         <Header /> <main>{children}</main>
       </body>
     </html>

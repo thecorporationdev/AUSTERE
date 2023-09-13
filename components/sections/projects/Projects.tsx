@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "../../ui/Project";
 import Arrow from "../../icons/Arrow";
+import Link from "next/link";
 
 type Props = {};
 
@@ -17,16 +18,19 @@ const Projects = (props: Props) => {
         <Project />
         <Project />
       </section>
-      <div className="w-full md:mt-16 flex justify-end">
-        <div className=" w-1/2 flex justify-end md:justify-start ">
-          <div className="flex items-center underline underline-offset-2 text-gray-500 ">
-            <h1 className="text-base tracking-tighter uppercase mb-2 text-gray-600 font-semibold ">
-              AllProjects
-            </h1>
-            <Arrow />
+
+      <Link href="/Workings" className="group">
+        <div className="w-full md:mt-16 flex justify-end">
+          <div className=" w-1/2 flex justify-end md:justify-start ">
+            <div className="flex items-center underline underline-offset-2 text-gray-500 ">
+              <h1 className="text-base tracking-tighter uppercase mb-2 text-gray-600 font-semibold  ">
+                AllProjects
+              </h1>
+              <Arrow className="group-hover:scale-105  " />
+            </div>
           </div>
         </div>
-      </div>
+      </Link>
     </section>
   );
 };
