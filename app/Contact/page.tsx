@@ -22,7 +22,9 @@ const page = (props: Props) => {
               01
             </h2>
             <div className="w-full">
-              <p className="mb-4">brief TC on what you need</p>
+              <p className="mb-4 text-bold text-base">
+                Brief TC on what you need
+              </p>
               <div className="h-[190px] lg:w-[400px] py-10 px-4 lg:px-8 border-2 border-black flex flex-col justify-between">
                 <p className="text-2xl md:text-3xl font-bold">Project work:</p>
                 <div className="flex justify-evenly lg:justify-between w-full">
