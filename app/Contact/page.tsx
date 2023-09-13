@@ -23,9 +23,9 @@ const page = (props: Props) => {
             </h2>
             <div className="w-full">
               <p className="mb-4">brief TC on what you need</p>
-              <div className="h-[190px] lg:w-[400px] py-10 lg:px-8 border-2 border-black flex flex-col justify-between">
+              <div className="h-[190px] lg:w-[400px] py-10 px-4 lg:px-8 border-2 border-black flex flex-col justify-between">
                 <p className="text-2xl md:text-3xl font-bold">Project work:</p>
-                <div className="flex justify-between w-full">
+                <div className="flex justify-evenly lg:justify-between w-full">
                   <SmallBtn> 10,000</SmallBtn>
                   <SmallBtn> 10,000</SmallBtn>
                   <SmallBtn> 10,000</SmallBtn>
@@ -41,7 +41,7 @@ const page = (props: Props) => {
               02
             </h2>
             <div className="w-full">
-              <form className=" lg:w-[600px] py-10 lg:px-8 border-2 border-black flex flex-col justify-between rounded-lg">
+              <form className=" lg:w-[600px] py-10 px-4 lg:px-8 border-2 border-black flex flex-col justify-between rounded-lg">
                 <p className="text-2xl md:text-3xl font-bold capitalize pb-6 ">
                   more info:
                 </p>
