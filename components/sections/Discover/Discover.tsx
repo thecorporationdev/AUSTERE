@@ -12,7 +12,7 @@ const Discover = (props: Props) => {
             ONLY SIX KEYS TO
           </h2>
           <div className="md:mt-10 ">
-            <h2 className="tracking-tighter text-3xl md:text-5xl font-black">
+            <h2 className="tracking-tighter text-3xl md:text-5xl font-black uppercase">
               sucess
             </h2>
             <div className="bg-black w-full h-[3px] mt-4"></div>
