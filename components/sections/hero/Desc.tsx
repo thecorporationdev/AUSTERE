@@ -8,9 +8,9 @@ const Desc = (props: Props) => {
   return (
     <section className="mt-6 md:mt-20 w-[92%] mx-auto flex-col flex ">
       <LineMotionDiv className="h-[3px] w-full bg-black">.</LineMotionDiv>
-      <div className="flex justify-end">
-        <div className="md:w-[80%]  md:h-[30vh] mt-3 flex flex-col md:flex-row justify-between ">
-          <div className="flex flex-col gap-y-0 leading-none font-bold uppercase tracking-tighter">
+      <div className="w-full flex justify-end">
+        <div className=" w-full md:w-[80%]  md:h-[30vh] mt-3 flex flex-col md:flex-row justify-between ">
+          <div className="flex flex-col gap-y-0 leading-2 font-bold uppercase tracking-tight">
             <span>A</span>
             <span className="mt-0">Full-service</span>
             <span>Digital</span>
@@ -20,12 +20,12 @@ const Desc = (props: Props) => {
           <div className=" mt-4 md:mt-0 md:w-[50%] h-full flex flex-col md:flex-row md:justify-start ">
             <div className="w-[80%] flex  flex-col md:flex-row  justify-between">
               <div className="flex flex-col gap-y-[0.3rem] ">
-                <span className="uppercase tracking-tighter text-base font-semibold ">
+                <span className="uppercase tracking-normal text-base font-semibold ">
                   we&apos;re hiring
                 </span>
 
                 <a className="flex items-center w-28 underline">
-                  <span className="text-[0.7rem] tracking-tighter font-semibold cursor-pointer hover:scale-105 transition-all duration-75 ease-linear">
+                  <span className="text-[0.7rem] tracking-normal font-semibold cursor-pointer hover:scale-105 transition-all duration-75 ease-linear">
                     SeeJobOpenings
                   </span>
                   <Arrow className=" h-3 underline underline-offset-1 " />
@@ -44,7 +44,7 @@ const Desc = (props: Props) => {
                   </div>
                 </div>
 
-                <ul className="capitalize undeline leading-none tracking-tighter text-base">
+                <ul className="capitalize undeline  tracking-normal text-base">
                   <li className="underline tracking-tighter">dribble</li>
                   <li className="underline tracking-tighter">facebook</li>
                   <li className="underline tracking-tighter">twitter</li>

@@ -17,12 +17,12 @@ const page = (props: Props) => {
         </div>
 
         <section className="w-full mt-20">
-          <div className=" w-full lg:w-[65%] flex flex-col lg:flex-row justify-between items-center">
+          <div className=" w-full lg:w-[65%] flex flex-col lg:flex-row justify-between items-center rounded-lg">
             <h2 className="w-full mb-3 lg:mb-0 text-2xl lg:text-4xl font-bold ">
               01
             </h2>
             <div className="w-full">
-              <p className="mb-4 text-bold text-base">
+              <p className="mb-4 font-bold text-base">
                 Brief TC on what you need
               </p>
               <div className="h-[190px] lg:w-[400px] py-10 px-4 lg:px-8 border-2 border-black flex flex-col justify-between">
