@@ -80,7 +80,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
               workings
             </motion.li>
           </Link>
-          <Link href="/">
+          <Link href="/Contact">
             <motion.li
               variants={item}
               initial={{ opacity: 0 }}

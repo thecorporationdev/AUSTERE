@@ -6,10 +6,12 @@ type Props = {};
 
 const page = (props: Props) => {
   return (
-    <section className="max-w-[90%] mx-auto">
-      <CapabilityHero />
-      <Footer />
-    </section>
+    <>
+      <section className="max-w-[90%] mx-auto flex flex-col">
+        <CapabilityHero />
+        <Footer />
+      </section>
+    </>
   );
 };
 
