@@ -14,8 +14,9 @@ const page = (props: Props) => {
     <section className="max-w-[90%] mx-auto ">
       <div className="w-full mb-10">
         <div className="lg:w-[55%] flex justify-between h-[30vh] items-end lg:px-10 py-4">
-          <h2 className="text-xl md:text-4xl font-bold">iBoats ideospahere</h2>
-          <h3 className="text-xl md:text-4xl font-bold">iBoats ideosphere</h3>
+          <h2 className="text-xl md:text-4xl font-bold">
+            Ideosphere logo design
+          </h2>
         </div>
       </div>
       <div className="lg:px-10 w-full">
@@ -51,11 +52,32 @@ const page = (props: Props) => {
           doloribus quas provident explicabo quis consequatur numquam, est
           laboriosam, nesciunt, adipisci soluta. Provident cum incidunt ipsa.
         </p>
-      </div>
-      <div className="w-full mt-6 px-3 md:px-10">
-        <h3 className="text-xl lg:text-3xl font-bold ">
-          CORPORATE CULTURE DEPENDS ON WHAT YOUR CEO SAYS
-        </h3>
+        <p className="mt-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Necessitatibus doloremque consequatur pariatur quo consequuntur sequi
+          expedita dignissimos culpa! Ratione corporis minus fugit voluptas
+          laborum? Dolor cupiditate dolores voluptates et placeat? Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Neque itaque tempora
+          accusamus suscipit sapiente atque, magni doloremque eos repudiandae,
+          quas rem nesciunt recusandae veritatis ullam laudantium, accusantium
+          asperiores eius ipsam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Itaque omnis quo accusantium perspiciatis? Et
+          doloribus quas provident explicabo quis consequatur numquam, est
+          laboriosam, nesciunt, adipisci soluta. Provident cum incidunt ipsa.
+        </p>
+        <p className="mt-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Necessitatibus doloremque consequatur pariatur quo consequuntur sequi
+          expedita dignissimos culpa! Ratione corporis minus fugit voluptas
+          laborum? Dolor cupiditate dolores voluptates et placeat? Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Neque itaque tempora
+          accusamus suscipit sapiente atque, magni doloremque eos repudiandae,
+          quas rem nesciunt recusandae veritatis ullam laudantium, accusantium
+          asperiores eius ipsam. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Itaque omnis quo accusantium perspiciatis? Et
+          doloribus quas provident explicabo quis consequatur numquam, est
+          laboriosam, nesciunt, adipisci soluta. Provident cum incidunt ipsa.
+        </p>
         <p className="mt-3">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Necessitatibus doloremque consequatur pariatur quo consequuntur sequi
@@ -70,26 +92,8 @@ const page = (props: Props) => {
           laboriosam, nesciunt, adipisci soluta. Provident cum incidunt ipsa.
         </p>
       </div>
-      <div className="w-full mt-6 px-3 md:px-10">
-        <h3 className="text-xl lg:text-3xl font-bold ">
-          CORPORATE CULTURE DEPENDS ON WHAT YOUR CEO SAYS
-        </h3>
-        <p className="mt-3 ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Necessitatibus doloremque consequatur pariatur quo consequuntur sequi
-          expedita dignissimos culpa! Ratione corporis minus fugit voluptas
-          laborum? Dolor cupiditate dolores voluptates et placeat? Lorem ipsum,
-          dolor sit amet consectetur adipisicing elit. Neque itaque tempora
-          accusamus suscipit sapiente atque, magni doloremque eos repudiandae,
-          quas rem nesciunt recusandae veritatis ullam laudantium, accusantium
-          asperiores eius ipsam. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Itaque omnis quo accusantium perspiciatis? Et
-          doloribus quas provident explicabo quis consequatur numquam, est
-          laboriosam, nesciunt, adipisci soluta. Provident cum incidunt ipsa.
-        </p>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3  px-3 lg:px-10 mt-4 lg:mt-10  gap-x-4">
+      <div className="grid grid-cols-1 md:grid-cols-3  px-3 lg:px-10 md:mt-6 lg:mt-10  gap-x-4 mt-16 ">
         <Projectrelated />
         <Projectrelated />
         <Projectrelated />

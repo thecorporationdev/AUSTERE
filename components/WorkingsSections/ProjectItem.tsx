@@ -44,10 +44,10 @@ const ProjectItem = (props: Props) => {
                   iboats
                 </h2>
                 <Link href="Workings/20">
-                  <FiArrowUpRight className="text-5xl font-semibold" />
+                  <FiArrowUpRight className="text-5xl font-semibold mb-4" />
                 </Link>
               </div>
-              <p className="font-bold  text-[12px] md:text-sm">
+              <p className="font-bold  text-[12px] md:text-sm tracking-normal leading-[20px] md:leading-[30px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 esse, fuga ratione illo nam corporis qui est dolorem ex
                 blanditiis temporibus neque accusantium deserunt iste. Placeat

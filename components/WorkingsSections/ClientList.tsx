@@ -5,7 +5,7 @@ type Props = {};
 
 const ClientList = (props: Props) => {
   return (
-    <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-4">
+    <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-4 md:mt-20">
       <Clientbox word="client" />
       <Clientbox word="client" /> <Clientbox word="client" />{" "}
       <Clientbox word="client" /> <Clientbox word="client" />{" "}

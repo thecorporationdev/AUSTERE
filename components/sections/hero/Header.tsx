@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import { LogoMotionDiv } from "@/components/ui/MotionDiv";
 import SmallBtn from "@/components/ui/SmallBtn";
 import Mobilenav from "@/components/ui/Mobilenav";
+import Link from "next/link";
 
 type Props = {};
 
@@ -21,7 +22,10 @@ const Header = (props: Props) => {
       <header className="py-2 md:px-16">
         <LogoMotionDiv className="px-5 md:px-14 py-2 flex items-center justify-between w-full ">
           <div className="flex justify-between w-full items-center">
-            <LargeLogo classes=" h-10 w-24 md:w-32 " />
+            <Link href="/">
+              <LargeLogo classes=" h-10 w-24 md:w-32 " />
+            </Link>
+
             <div className="flex gap-x-20 items-center ">
               <SmallBtn className="hidden md:flex font-bold">
                 Getintouch

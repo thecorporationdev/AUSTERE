@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import SmallBtn from "./SmallBtn";
 
@@ -18,6 +19,12 @@ const CapabilityLink = (props: Props) => {
         </div>
         <FiArrowUpRight className="text-5xl font-semibold" />
       </div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga odit
+        voluptatum molestias dolorem maxime aliquam qui culpa ut laudantium
+        temporibus praesentium atque, possimus illo ab inventore pariatur porro
+        nisi deleniti.
+      </p>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const page = (props: Props) => {
 
       <ProjectList />
 
-      <div className="w-full lg:px-12">
+      <div className="w-full lg:px-12 mt-10">
         <div className="w-full">
           <h3 className="text-3xl md:text-5xl uppercase tracking-tighter font-extrabold">
             clients
