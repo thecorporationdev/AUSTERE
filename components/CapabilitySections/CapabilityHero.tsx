@@ -12,7 +12,7 @@ const CapabilityHero = (props: Props) => {
           the Capabilities
         </h1>
       </div>
-      <div className="h-[3px] w-full bg-black mt-4">.</div>
+      <div className="h-[3px] w-full bg-black mt-10"></div>
 
       <div className="w-full flex justify-end mt-10 md:my-20">
         <div className="lg:w-1/2">

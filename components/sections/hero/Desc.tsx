@@ -10,7 +10,7 @@ const Desc = (props: Props) => {
       <LineMotionDiv className="h-[3px] w-full bg-black">.</LineMotionDiv>
       <div className="flex justify-end">
         <div className=" md:w-[80%]  md:h-[30vh] mt-3 flex flex-col md:flex-row justify-between ">
-          <div className="flex flex-col gap-y-0 leading-none font-bold uppercase tracking-tight">
+          <div className="flex flex-col gap-y-0  font-bold uppercase tracking-tight">
             <span>AFRICA&apos;S FOREMOST</span>
             <span className="mt-0">HUMAN CENTERED</span>
             <span>MINIMALIST</span>

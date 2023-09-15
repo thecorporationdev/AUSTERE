@@ -19,7 +19,7 @@ const CapabilityLink = (props: Props) => {
         </div>
         <FiArrowUpRight className="text-5xl font-semibold" />
       </div>
-      <p>
+      <p className="text-xs md:text-sm font-bold leading-[20px] lg:leading-[30px] tracking-wide">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga odit
         voluptatum molestias dolorem maxime aliquam qui culpa ut laudantium
         temporibus praesentium atque, possimus illo ab inventore pariatur porro

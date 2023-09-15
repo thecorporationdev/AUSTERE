@@ -1,6 +1,6 @@
 import React from "react";
 import Slide from "../ui/Slide";
-import logo1 from "../../public/logo 1.svg";
+import logo1 from "../../public/logo1.svg";
 
 const clients = [logo1];
 
@@ -27,7 +27,7 @@ function Clientbox(props: Propsclient) {
   const { word, logo } = props;
   return (
     <div className="border-2 border-black rounded-xl py-16 flex flex-col  items-center justify-center px-14">
-      <div className="text-base tracking-tighter h-20 w-20">{logo}</div>
+      <div className="text-base tracking-tighter h-50 w-50">{logo}</div>
     </div>
   );
 }

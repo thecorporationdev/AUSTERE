@@ -7,15 +7,13 @@ const HeroAgency = (props: Props) => {
   return (
     <section className="w-full flex-col  md:px-10 hidden md:flex h-[80vh] md:mt-10">
       <div className="flex w-full">
-        <h1 className="w-full text-4xl md:text-5xl xl:text-8xl font-extrabold tracking-tighter uppercase">
+        <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-extrabold text-center uppercase">
           The Agency
         </h1>
-        <p className="mt-3 md:mt-0 text-xs md:text-base md:w-4/6 font-bold">
-          we create brand experiences
-        </p>
       </div>
+      <div className="h-[3px] w-full bg-black mt-10" />
 
-      <div className="flex md:grid md:grid-cols-5 mt-8  h-[200px] md:h-[400px] relative flex-col gap-y-12 border-t-2 border-b-2 border-gray-600">
+      <div className="flex md:grid md:grid-cols-5 mt-20  h-[200px] md:h-[400px] relative flex-col gap-y-12 border-t-2 border-b-2 border-gray-600">
         <div className=" z-5 md:text-center md:items-center md:justify-center w-full md:w-[40%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-y-4">
           <h3 className="uppercase text-base md:text-3xl font-bold">
             increase your revenue
