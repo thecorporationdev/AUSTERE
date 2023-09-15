@@ -1,11 +1,11 @@
 "use client";
 import * as React from "react";
 
-interface GlobeProps extends React.SVGProps<SVGSVGElement> {
+interface titansProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-export const Trustbank: React.FC<GlobeProps> = ({ className, ...props }) => (
+export const Trustbank: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"

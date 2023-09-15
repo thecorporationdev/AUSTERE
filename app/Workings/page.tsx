@@ -8,11 +8,12 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <section className="max-w-[90%] mx-auto ">
-      <div className="lg:px-10 md:mt-3 w-full">
-        <h1 className="font-[800] flex items-center text-wine-400 uppercase w-full text-[3rem] md:text-[4.5rem] xl:text-[6rem] xxl:text-[9.5rem] tracking-tight leading-[0.9] mt-6">
-          workings
+      <div className=" w-full max-md:flex-col mx-auto flex items-center justify-center">
+        <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-extrabold text-center uppercase">
+          THE workings
         </h1>
       </div>
+      <div className="h-[3px] w-full bg-black mt-10"></div>
 
       <ProjectList />
 

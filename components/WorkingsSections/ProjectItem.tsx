@@ -30,15 +30,6 @@ const ProjectItem = (props: Props) => {
         <div className="lg:w-6/12 ">
           <div className="w-[90%] mx-auto">
             <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-10">
-              <div className="w-full">
-                <SmallBtn className="text-sm md:text-base mt-1 md:mt-0">
-                  strategy
-                </SmallBtn>
-                /
-                <SmallBtn className="text-sm md:text-base mt-1 md:mt-0">
-                  development
-                </SmallBtn>
-              </div>
               <div className="w-full flex justify-between lg:mt-20 ">
                 <h2 className="font-bold text-2xl lg:text-3xl uppercase">
                   iboats
