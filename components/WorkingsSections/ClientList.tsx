@@ -1,17 +1,17 @@
 import React from "react";
 import Slide from "../ui/Slide";
+import logo1 from "../../public/logo 1.svg";
+
+const clients = [logo1];
 
 type Props = {};
 
 const ClientList = (props: Props) => {
   return (
     <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-4 md:mt-20">
-      <Clientbox word="client" />
-      <Clientbox word="client" /> <Clientbox word="client" />{" "}
-      <Clientbox word="client" /> <Clientbox word="client" />{" "}
-      <Clientbox word="client" /> <Clientbox word="client" />{" "}
-      <Clientbox word="client" /> <Clientbox word="client" />{" "}
-      <Clientbox word="client" />{" "}
+      {clients.map((logo, i) => (
+        <Clientbox key={i} logo={logo.logo} />
+      ))}
     </div>
   );
 };
@@ -19,14 +19,15 @@ const ClientList = (props: Props) => {
 export default ClientList;
 
 type Propsclient = {
-  word: string;
+  word?: string;
+  logo: any;
 };
 
 function Clientbox(props: Propsclient) {
-  const { word } = props;
+  const { word, logo } = props;
   return (
     <div className="border-2 border-black rounded-xl py-16 flex flex-col  items-center justify-center px-14">
-      <h1 className="text-base tracking-tighter">{word}</h1>
+      <div className="text-base tracking-tighter h-20 w-20">{logo}</div>
     </div>
   );
 }
