@@ -1,13 +1,15 @@
 "use client";
 import React from "react";
-import { HeroMotionDiv } from "../../ui/MotionDiv";
+import { HeroMotionDiv, LineMotionDiv } from "../../ui/MotionDiv";
 
 const Hero = () => {
   return (
     <HeroMotionDiv className="px-12 md:mt-3 w-full">
-      <h1 className="font-[800] justify-start flex items-center text-wine-400 uppercase w-full text-[3rem] md:text-[4.5rem] xl:text-[8rem] xxl:text-[9.5rem] tracking-wide leading-[0.9]">
-        get started
+      <h1 className="justify-between flex items-center text-wine-400 uppercase w-full text-[2rem] md:text-[2.5rem] xl:text-[2rem] xxl:text-[4.5rem] tracking-wide font-[800]">
+        we&apos;re born to create a simple,clean , beautiful yet purposeful
+        africa, one design at a time
       </h1>
+      <div className="h-[3px] w-full bg-black mt-5">.</div>
     </HeroMotionDiv>
   );
 };

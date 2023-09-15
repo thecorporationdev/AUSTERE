@@ -12,11 +12,11 @@ export default function Home() {
       <main className="bg-butter h-screen font-bold ">
         <section className="max-w-[90%] mx-auto font-bold">
           <Hero />
-          <Desc />
+
           <Projects />
           <Discover />
         </section>
-        <CarouselSection />
+        {/* <CarouselSection /> */}
         <section className="max-w-[90%] mx-auto">
           <Insights />
         </section>

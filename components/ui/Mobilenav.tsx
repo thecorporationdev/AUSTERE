@@ -24,7 +24,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 botton-0 overflow-hidden flex items-center  text-white text-2xl lg:text-4xl justify-center h-screen w-screen bg-black z-[400] text-center"
+        className="fixed top-0 left-0 right-0 botton-0 overflow-hidden flex items-center  text-white text-2xl lg:text-4xl justify-center h-screen w-screen bg-[#303030] z-[400] text-center"
         variants={item}
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: "100vh", opacity: 1 }}
@@ -44,18 +44,6 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
               The start
             </motion.li>
           </Link>
-          <Link href="/Capability">
-            <motion.li
-              variants={item}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              onClick={() => {
-                hideModalHandler(!barstate);
-              }}
-            >
-              capability
-            </motion.li>
-          </Link>
           <Link href="/TheAgency">
             <motion.li
               variants={item}
@@ -65,7 +53,19 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 hideModalHandler(!barstate);
               }}
             >
-              the agency
+              The agency
+            </motion.li>
+          </Link>
+          <Link href="/Capability">
+            <motion.li
+              variants={item}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              onClick={() => {
+                hideModalHandler(!barstate);
+              }}
+            >
+              the capabilities
             </motion.li>
           </Link>
           <Link href="/Workings">
@@ -77,7 +77,19 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 hideModalHandler(!barstate);
               }}
             >
-              workings
+              the workings
+            </motion.li>
+          </Link>
+          <Link href="/">
+            <motion.li
+              variants={item}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              onClick={() => {
+                hideModalHandler(!barstate);
+              }}
+            >
+              the insights
             </motion.li>
           </Link>
           <Link href="/Contact">
@@ -89,7 +101,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
                 hideModalHandler(!barstate);
               }}
             >
-              contact us
+              the contacts
             </motion.li>
           </Link>
         </ul>

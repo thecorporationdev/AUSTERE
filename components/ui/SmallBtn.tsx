@@ -12,7 +12,7 @@ const SmallBtn = (props: Props) => {
   return (
     <Button
       className={cn(
-        ` py-[0.5rem] capitalize items-center justify-center bg-transparent font-medium border-gray-500 px-2 text-gray-500 border-2 rounded-xl h-5 text-xs leading-none hover:text-white ${className}`
+        `py-[0.5rem] capitalize items-center justify-center bg-transparent font-medium px-2 text-gray-500 border-none  h-5 text-xs leading-none hover:text-white ${className}`
       )}
     >
       {children}

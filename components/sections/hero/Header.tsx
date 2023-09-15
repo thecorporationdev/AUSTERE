@@ -27,9 +27,9 @@ const Header = (props: Props) => {
             </Link>
 
             <div className="flex gap-x-20 items-center ">
-              <SmallBtn className="hidden md:flex font-bold">
+              {/* <SmallBtn className="hidden md:flex font-bold">
                 Getintouch
-              </SmallBtn>
+              </SmallBtn> */}
 
               <Hamburger
                 barstate={bar}

@@ -12,7 +12,7 @@ const Projects = (props: Props) => {
         Projects
       </h1>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8 mt-3 md:mt-4 w-full">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-10 mt-3 md:mt-4 w-full">
         <Project />
         <Project />
         <Project />

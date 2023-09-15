@@ -2,8 +2,6 @@ import { shimmer, toBase64 } from "@/lib/image";
 import Image from "next/image";
 import React from "react";
 import image from "../../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
-import ProjectItem from "@/components/WorkingsSections/ProjectItem";
-import Project from "@/components/ui/Project";
 import Link from "next/link";
 import Footer from "@/components/ui/Footer";
 
