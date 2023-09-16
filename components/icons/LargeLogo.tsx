@@ -2,20 +2,28 @@ import { cn } from "@/lib/utils";
 import * as React from "react";
 import { motion } from "framer-motion";
 
-type Props = {
+interface titansProps extends React.SVGProps<SVGSVGElement> {
   classes?: string;
-};
-const LargeLogo = (props: Props) => (
+  barstate?: boolean;
+}
+
+export const LargeLogo: React.FC<titansProps> = ({
+  classes,
+  barstate,
+  ...props
+}) => (
   <svg
     id="Layer_1"
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 209.98 33.06"
-    className={cn(props.classes)}
+    className={cn(classes)}
     {...props}
   >
     <defs>
-      <style>{".cls-1,.cls-2{fill:#303030;}.cls-1{fill-rule:evenodd;}"}</style>
+      <style>{`.cls-1,.cls-2{fill:${
+        barstate ? "#fff" : "#303030"
+      };}.cls-1{fill-rule:evenodd;}`}</style>
     </defs>
     <g id="Layer_1-2" data-name="Layer_1">
       <g id="_2425308915984" data-name={2425308915984}>
@@ -70,4 +78,3 @@ const LargeLogo = (props: Props) => (
     </g>
   </svg>
 );
-export default LargeLogo;

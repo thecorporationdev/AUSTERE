@@ -5,18 +5,18 @@ type Props = {};
 
 const Principles = (props: Props) => {
   return (
-    <section className=" w-full flex flex-col md:justify-start md:items-center sm:h-[70vh] md:py-4 xl:px-14">
+    <section className=" w-full flex flex-col md:justify-start md:items-center sm:h-[70vh] md:py-4 xl:px-14 md:mt-20">
       <div className="w-full flex md:justify-start ">
         <div className="w-full md:w-1/2">
           <div className="w-full flex justify-between items-center md:w-8/12">
-            <h3 className="tracking-tighter font-black text-2xl md:text-4xl uppercase">
+            <h3 className=" w-full tracking-tighter max-md:text-4xl max-md:text-center font-black  md:text-4xl uppercase">
               our core <br /> principles
             </h3>
             <BsArrowDownRight className=" hidden md:block md:text-5xl" />
-            <BsArrowDownLeft className="inline-flex md:hidden text-6xl" />
           </div>
         </div>
       </div>
+      <div className="h-[3px] w-full bg-black mt-10 md:hidden" />
       <div className="w-full flex md:justify-end max-md:mt-24">
         <div className="md:w-1/2 mt-10 md:mt-0 space-y-4  min-[400px]:space-y-10 w-full">
           <Principle

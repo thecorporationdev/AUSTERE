@@ -1,9 +1,40 @@
 import React from "react";
-import { Trustbank, Sec } from "../icons/logo1";
+import { Trustbank, Sec } from "../icons/treustandsec";
+import Psn from "../icons/psnIcon";
+import Nfvb from "../icons/nfvbicon";
+import { Eye } from "../icons/eye";
+import Nama from "../icons/Nama";
+import { Boxes } from "../icons/Boxes";
+import { Cbn } from "../icons/cbn";
+import { Secs } from "../icons/Secs";
 
 const clients = [
   { id: 1, logo: <Trustbank /> },
-  { id: 1, logo: <Sec /> },
+  { id: 2, logo: <Secs /> },
+  {
+    id: 3,
+    logo: <Psn />,
+  },
+  {
+    id: 4,
+    logo: <Nfvb />,
+  },
+  {
+    id: 89,
+    logo: <Eye />,
+  },
+  {
+    id: 5,
+    logo: <Nama />,
+  },
+  {
+    id: 6,
+    logo: <Boxes />,
+  },
+  {
+    id: 9,
+    logo: <Cbn />,
+  },
 ];
 
 type Props = {};
@@ -28,7 +59,7 @@ type Propsclient = {
 function Clientbox(props: Propsclient) {
   const { word, logo } = props;
   return (
-    <div className="border-2 border-black rounded-xl  flex  items-center justify-center py-10 ">
+    <div className="border-2 border-black rounded-xl  flex  items-center justify-center py-10 px-3 md:px-1">
       <div className="h-30 w-40">{logo}</div>
     </div>
   );
