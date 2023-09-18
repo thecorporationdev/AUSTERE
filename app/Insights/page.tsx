@@ -1,15 +1,14 @@
+import CapabilityLink from "@/components/ui/Capacitylink";
 import React from "react";
-import InsightLink from "../ui/InsightLink";
-import CapabilityLink from "../ui/Capacitylink";
 
 type Props = {};
 
-const CapabilityHero = (props: Props) => {
+const insights = (props: Props) => {
   return (
-    <section className="w-full flex-col  flex md:mt-10">
+    <section className="w-full flex-col  flex md:mt-10 max-w-[90%] mx-auto flex flex-col">
       <div className=" w-full max-md:flex-col mx-auto flex items-left justify-center">
         <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-extrabold text-left uppercase md:py-10">
-          the Capabilities
+          the insights
         </h1>
       </div>
       <div className="h-[3px] w-full bg-black mt-10"></div>
@@ -50,4 +49,4 @@ const CapabilityHero = (props: Props) => {
   );
 };
 
-export default CapabilityHero;
+export default insights;

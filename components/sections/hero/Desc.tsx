@@ -11,10 +11,11 @@ const Desc = (props: Props) => {
       <div className="flex justify-end">
         <div className=" md:w-[80%]  md:h-[30vh] mt-3 flex flex-col md:flex-row justify-between ">
           <div className="flex flex-col gap-y-0  font-bold uppercase tracking-tight">
-            <span>AFRICA&apos;S FOREMOST</span>
-            <span className="mt-0">HUMAN CENTERED</span>
-            <span>MINIMALIST</span>
-            <span>DESIGN AGENCY</span>
+            <span className="mt-0 text-xs">AFRICA&apos;S FOREMOST</span>
+            <span className="text-xs">HUMAN CENTERED</span>
+            <span className="mt-0 text-xs ">AFRICA&apos;S FOREMOST</span>
+            <span className="text-xs">MINIMALIST</span>
+            <span className="text-xs">DESIGN AGENCY</span>
           </div>
           <div className=" mt-4 md:mt-0 md:w-[50%] h-full flex flex-col md:flex-row md:justify-start ">
             <div className=" w-[100%] flex  flex-col md:flex-row  justify-end">
@@ -32,27 +33,29 @@ const Desc = (props: Props) => {
               </div> */}
 
               <div className="flex mt-3 md:mt-0 flex-col justify-start font-semibold">
-                <ul className="text-xs fobt-medium">
-                  <li className="underline">8 IBM Haruna Street</li>
-                  <li className="underline">Utako District Abuja-FCT 900211</li>
+                <ul className="text-xs">
+                  <li className="underline text-xs">8 IBM Haruna Street</li>
+                  <li className="underline text-xs">
+                    Utako District Abuja-FCT 900211
+                  </li>
                 </ul>
-                <div className="my-8 text-sm">
+                <div className="my-8 text-xs">
                   <div className="">+234 (09) 291 0060</div>
                   <div className="mt-3 underline underline-offset-1 tracking-tight">
                     office@thecorporation.xyz
                   </div>
                 </div>
 
-                <ul className="capitalize undeline  text-base">
+                <ul className="capitalize undeline text-xs">
                   <li className="underline ">dribble</li>
                   <li className="underline ">facebook</li>
                   <li className="underline">twitter</li>
-                  <li className="underline">linkdin</li>
+                  <li className="underline">linkedin</li>
                 </ul>
 
-                <ul className="mt-20">
-                  <li>legal</li>
-                  <li>privacy</li>
+                <ul className="mt-24 text-xs uppercase">
+                  <li className="capitalize">legal</li>
+                  <li className="capitalize">privacy</li>
                 </ul>
               </div>
             </div>

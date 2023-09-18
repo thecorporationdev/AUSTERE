@@ -11,7 +11,7 @@ type Props = {};
 const Project = (props: Props) => {
   return (
     <Link href="/" className="group text-sm w-full">
-      <div className=" h-[400px] relative overflow-hidden border-2 border-gray-200 bg-gray-100">
+      <div className=" h-[400px] relative overflow-hidden  bg-gray-100">
         <Image
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64, ${toBase64(
