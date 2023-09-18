@@ -6,7 +6,7 @@ type Props = {};
 
 const Values = (props: Props) => {
   return (
-    <div className="md:px-14  max-[400px]:mt-20 mt-28">
+    <div className=" max-[400px]:mt-20 mt-28">
       <div className="w-full flex ">
         <div className="flex justify-between items-start flex-col md:flex-row">
           <h3 className="tracking-tighter font-black text-3xl md:text-4xl w-full uppercase  md:py-0">
