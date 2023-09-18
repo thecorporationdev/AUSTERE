@@ -1,6 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { unbounded } from "@/lib/utils";
+
+import { Unbounded } from "next/font/google";
+
+const unbound = Unbounded({
+  subsets: ["latin"],
+});
 
 import Header from "@/components/sections/hero/Header";
 
@@ -20,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${unbounded.className} tracking-normal font-bold text-black`}
+        className={`${unbound.className} tracking-normal font-bold text-black`}
       >
         <Header /> <main>{children}</main>
       </body>

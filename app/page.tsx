@@ -17,9 +17,9 @@ export default function Home() {
           {/* <Discover /> */}
         </section>
         {/* <CarouselSection /> */}
-        {/* <section className="max-w-[90%] mx-auto">
+        <section className="max-w-[90%] mx-auto">
           <Insights />
-        </section> */}
+        </section>
         <Footer />
       </main>
     </>
