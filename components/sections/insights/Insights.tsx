@@ -6,13 +6,13 @@ type Props = {};
 
 const Insights = (props: Props) => {
   return (
-    <section className="md:px-14 py-10">
+    <section className="py-10">
       <div className="w-full">
         <div className="lg:w-[53%] flex justify-between capitalize items-center text-center ">
           <h3 className="text-3xl md:text-5xl uppercase tracking-tighter font-extrabold">
             insights
           </h3>
-          <p className=" text-xs lg:text-base text-gray-600 mt-3 md:mt-0">
+          <p className=" text-[12px] md:text-[14px]  mt-3 md:mt-0">
             our lastest news , views and more
           </p>
         </div>

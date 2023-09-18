@@ -19,8 +19,8 @@ const Header = (props: Props) => {
       <AnimatePresence>
         {bar && <Mobilenav hideModalHandler={setbar} barstate={bar} />}
       </AnimatePresence>
-      <header className="py-2 md:px-16">
-        <LogoMotionDiv className="px-5 md:px-14 py-2 flex items-center justify-between w-full ">
+      <header className="py-2 md:px-12 ">
+        <LogoMotionDiv className="px-5 md:px-8 py-2 flex items-center justify-between w-full ">
           <div className="flex justify-between w-full items-center">
             <Link href="/">
               <LargeLogo

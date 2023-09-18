@@ -7,7 +7,7 @@ type Props = {};
 
 const ProjectList = (props: Props) => {
   return (
-    <section className="lg:px-12 mt-20">
+    <section className=" mt-20">
       <div className="w-full">
         <h1 className="text-2xl md:text-3xl font-bold uppercase ">projects</h1>
       </div>

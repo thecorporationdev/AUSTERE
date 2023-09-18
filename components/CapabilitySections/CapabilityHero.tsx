@@ -16,7 +16,7 @@ const CapabilityHero = (props: Props) => {
 
       <div className="w-full flex justify-end mt-10 md:my-20">
         <div className="lg:w-1/2">
-          <p className="lg:w-[60%] mx-auto text-xs md:text-sm font-bold leading-[20px] lg:leading-[30px] tracking-wide">
+          <p className="lg:w-[60%] mx-auto text-xs md:text-[14px] font-bold leading-[20px] lg:leading-[30px] tracking-wide">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
             laboriosam dolore ipsum tempore voluptate illo fugit, facere aliquid
             facilis, laudantium aperiam suscipit eaque minima maxime. Minus

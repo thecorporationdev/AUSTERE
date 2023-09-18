@@ -13,7 +13,7 @@ const ProjectItem = (props: Props) => {
     <div className=" w-full  border-b-2 border-gray-400 py-4 ">
       <div className="w-full flex flex-col lg:flex-row justify-between gap-y-4">
         <div className="lg:w-5/12">
-          <div className=" h-[350px] relative overflow-hidden rounded-lg border-2 border-gray-200 bg-gray-100">
+          <div className=" h-[350px] relative overflow-hidden  border-2 border-gray-200 bg-gray-100">
             <Image
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64, ${toBase64(
@@ -35,7 +35,7 @@ const ProjectItem = (props: Props) => {
                   iboats
                 </h2>
                 <Link href="Workings/20">
-                  <FiArrowUpRight className="text-5xl font-semibold mb-4" />
+                  <FiArrowUpRight className="text-5xl font-semibold mb-4 animate-bounce" />
                 </Link>
               </div>
               <p className="font-bold  text-[12px] md:text-sm tracking-normal leading-[20px] md:leading-[30px]">

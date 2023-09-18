@@ -7,10 +7,12 @@ import Nama from "../icons/Nama";
 import { Boxes } from "../icons/Boxes";
 import { Cbn } from "../icons/cbn";
 import { Secs } from "../icons/Secs";
+import { Mango } from "../icons/Mango";
 
 const clients = [
   { id: 1, logo: <Trustbank /> },
   { id: 2, logo: <Secs /> },
+  { id: 30, logo: <Mango /> },
   {
     id: 3,
     logo: <Psn />,
@@ -60,7 +62,7 @@ function Clientbox(props: Propsclient) {
   const { word, logo } = props;
   return (
     <div className="border-2 border-black rounded-xl  flex  items-center justify-center py-10 px-3 md:px-1">
-      <div className="h-30 w-40">{logo}</div>
+      <div className="h-28 w-28 flex items-center justify-center">{logo}</div>
     </div>
   );
 }
