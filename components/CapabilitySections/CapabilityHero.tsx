@@ -7,7 +7,7 @@ type Props = {};
 const CapabilityHero = (props: Props) => {
   return (
     <section className="w-full flex-col  md:px-10 flex md:mt-10">
-      <div className=" w-full max-md:flex-col mx-auto flex items-center justify-center">
+      <div className=" w-full max-md:flex-col mx-auto flex items-left justify-center">
         <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-extrabold text-center uppercase">
           the Capabilities
         </h1>
