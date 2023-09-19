@@ -3,7 +3,6 @@ import SmallBtn from "@/components/ui/SmallBtn";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import React from "react";
-import { FiArrowDownRight } from "react-icons/fi";
 
 type Props = {};
 
@@ -18,7 +17,7 @@ const page = (props: Props) => {
         </div>
         <div className="h-[3px] w-full bg-black mt-10"></div>
 
-        <div className="flex justify-end py-10 flex-col">
+        <div className="w-full flex justify-end py-10 flex-col">
           <div className=" w-full lg:w-[70%] flex gap-y-14 flex-col ">
             <div className="w-full">
               <p className="mb-4 font-bold text-base">
