@@ -9,8 +9,8 @@ const page = (props: Props) => {
     <>
       <section className="max-w-[90%] mx-auto flex flex-col">
         <CapabilityHero />
-        <Footer />
       </section>
+      <Footer />
     </>
   );
 };

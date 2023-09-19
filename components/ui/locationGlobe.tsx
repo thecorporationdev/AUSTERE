@@ -11,7 +11,7 @@ const LocationsGlobe = (props: Props) => {
           <div className="flex md:justify-start">
             <div className="md:w-3/4 flex flex-col md:flex-row justify-between mt-4">
               <h1 className="font-[500]  text-4xl">DTX</h1>
-              <p className="md:w-4/12 text-[12px]  font-[500] leading-none">
+              <p className="md:w-4/12 text-[12px]  font-[500] leading-none mt-2">
                 515 maitama haruna street jabi park abuja nigeria
               </p>
             </div>
@@ -25,7 +25,7 @@ const LocationsGlobe = (props: Props) => {
         <div className="border-black border-t-2 max-md:mt-4">
           <div className="flex md:justify-end">
             <div className="md:w-3/4 flex flex-col-reverse md:flex-row justify-between mt-2 ">
-              <p className="md:w-4/12 text-[12px]  font-[400] leading-none">
+              <p className="md:w-4/12 text-[12px]  font-[400] leading-none mt-2">
                 515 maitama haruna street jabi park abuja nigeria
               </p>
               <h1 className="font-[500] text-4xl">MPLS</h1>

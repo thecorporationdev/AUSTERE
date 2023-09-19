@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="flex justify-end">
         <div className=" md:w-[80%] mt-3 flex flex-col md:flex-row justify-between ">
           <div
-            className="flex flex-col gap-y-0  font-normal
+            className="flex flex-col gap-y-0  font-[500]
            uppercase tracking-tight"
           >
             <span className="mt-0 text-base">AFRICA&apos;S FOREMOST</span>

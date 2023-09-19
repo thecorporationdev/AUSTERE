@@ -25,11 +25,11 @@ const page = (props: Props) => {
               </p>
               <div className="h-[190px] lg:w-[400px] py-10 px-4 lg:px-8 border-2 border-black flex flex-col  justify-between">
                 <p className="text-2xl md:text-3xl font-bold">Project work:</p>
-                <div className="flex justify-evenly lg:justify-between w-full">
+                {/* <div className="flex justify-evenly lg:justify-between w-full">
                   <SmallBtn> 10,000</SmallBtn>
                   <SmallBtn> 10,000</SmallBtn>
                   <SmallBtn> 10,000</SmallBtn>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="w-full">

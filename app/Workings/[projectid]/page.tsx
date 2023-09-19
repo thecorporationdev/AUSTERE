@@ -79,7 +79,7 @@ const page = (props: Props) => {
             <div className="w-full pb-10">
               <h1 className="font-[400] text-2xl md:text-3xl">IBOATS</h1>
             </div>
-            <p className=" md:text-sm">
+            <p className=" text-[12px] md:text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatum eum eius ipsa qui earum! Dolorem earum quae maiores
               laboriosam, ullam repellendus dignissimos ea? Esse ipsum animi
@@ -92,31 +92,31 @@ const page = (props: Props) => {
               culpa repudiandae quam aspernatur, consequatur asperiores hic
               distinctio illum ducimus!
             </p>
-            <p className="mt-4  md:text-sm">
+            <p className="mt-4  text-[12px] md:text-sm">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
               ad. Corporis ex, minima nulla tempore consequatur laborum sint
               doloribus ratione illo ab deleniti ipsum nesciunt fugit
               perspiciatis! Blanditiis, minima cupiditate.
             </p>
-            <p className="mt-4  md:text-sm">
+            <p className="mt-4  text-[12px] md:text-sm">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
               ad. Corporis ex, minima nulla tempore consequatur laborum sint
               doloribus ratione illo ab deleniti ipsum nesciunt fugit
               perspiciatis! Blanditiis, minima cupiditate.
             </p>
-            <p className="mt-4  md:text-sm">
+            <p className="mt-4  text-[12px] md:text-sm">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
               ad. Corporis ex, minima nulla tempore consequatur laborum sint
               doloribus ratione illo ab deleniti ipsum nesciunt fugit
               perspiciatis! Blanditiis, minima cupiditate.
             </p>
-            <p className="mt-4  md:text-sm">
+            <p className="mt-4  text-[12px] md:text-sm">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
               ad. Corporis ex, minima nulla tempore consequatur laborum sint
               doloribus ratione illo ab deleniti ipsum nesciunt fugit
               perspiciatis! Blanditiis, minima cupiditate.
             </p>
-            <p className="mt-4  md:text-sm">
+            <p className="mt-4  text-[12px] md:text-sm">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
               ad. Corporis ex, minima nulla tempore consequatur laborum sint
               doloribus ratione illo ab deleniti ipsum nesciunt fugit
@@ -171,7 +171,7 @@ function Projectrelated(props: Props) {
         />
       </div>
 
-      <p className="mt-2 text-xl tracking-tighter text-gray-900 font-bold">
+      <p className="mt-2 text-xl tracking-tighter text-gray-900 font-[400]">
         IBoats
       </p>
     </Link>
