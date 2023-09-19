@@ -1,5 +1,6 @@
 import Arrow from "@/components/icons/Arrow";
 import InsightLink from "@/components/ui/InsightLink";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -18,20 +19,32 @@ const Insights = (props: Props) => {
         </div>
         <div className=" w-full mt-10 md:mt-20 flex justify-end">
           <div className="w-full md:w-[65%] ">
-            <InsightLink />
-            <InsightLink />
-            <InsightLink />
-            <InsightLink />
-            <InsightLink />
-            <InsightLink />
+            <Link href="/Insights/20">
+              <InsightLink />
+            </Link>
+            <Link href="/Insights/20">
+              <InsightLink />
+            </Link>
+            <Link href="/Insights/20">
+              <InsightLink />
+            </Link>
+            <Link href="/Insights/20">
+              <InsightLink />
+            </Link>
+            <Link href="/Insights/20">
+              <InsightLink />
+            </Link>
           </div>
         </div>
         <div className="w-full mt-3 md:mt-16 flex justify-end">
           <div className=" w-1/2 flex justify-end md:justify-start ">
             <div className="flex items-center underline underline-offset-2 ">
-              <h1 className="text-xs md:text-base tracking-tighter uppercase mb-2  font-light ">
-                AllNews
-              </h1>
+              <Link href="/Insights">
+                <h1 className="text-xs md:text-base tracking-tighter uppercase mb-2  font-light ">
+                  AllNews
+                </h1>
+              </Link>
+
               <Arrow />
             </div>
           </div>
