@@ -4,7 +4,7 @@ type Props = {};
 
 const Locationsdets = (props: Props) => {
   return (
-    <div className="w-full flex flex-col md:flex-row justify-between gap-x-10 my-4">
+    <div className="w-full flex flex-col md:flex-row justify-between gap-x-10">
       <div className=" w-full md:justify-start flex">
         <div className="border-black border-t-2 md:w-[85%] max-md:mt-4">
           <div className="flex  justify-between md:justify-start">
