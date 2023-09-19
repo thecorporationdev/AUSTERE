@@ -13,7 +13,7 @@ const page = (props: Props) => {
     <>
       <section className="max-w-[90%] mx-auto snap-mandatory snap-y">
         <HeroAgency />
-        <Principles />
+        {/* <Principles /> */}
         <Values />
         <Leadership />
         <Locations />

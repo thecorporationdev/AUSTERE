@@ -31,7 +31,7 @@ const Mobilenav: FC<MobileNavProps> = (props: MobileNavProps) => {
         transition={{ duration: 0.4 }}
         exit="exit"
       >
-        <ul className=" flex flex-col gap-y-6 px-2 py-10 uppercase font-black underline underline-offset-8 ">
+        <ul className=" flex flex-col gap-y-6 px-2 py-10 uppercase font-[400] underline underline-offset-8 ">
           <Link href="/">
             <motion.li
               variants={item}

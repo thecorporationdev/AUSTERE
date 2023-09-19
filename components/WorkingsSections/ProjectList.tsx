@@ -9,7 +9,7 @@ const ProjectList = (props: Props) => {
   return (
     <section className=" mt-20">
       <div className="w-full">
-        <h1 className="text-2xl md:text-3xl font-bold uppercase ">projects</h1>
+        <h1 className="text-2xl md:text-3xl font-[500] uppercase ">projects</h1>
       </div>
 
       {/* <div className="border-b-2 flex md:justify-end border-gray-300 w-full mt-4">
@@ -33,7 +33,7 @@ const ProjectList = (props: Props) => {
         <div className="w-full md:mt-16 flex justify-end mt-4">
           <div className="w-1/2 flex justify-end md:justify-start ">
             <div className="flex items-center underline underline-offset-2 text-gray-500 ">
-              <h1 className="text-base tracking-tighter uppercase mb-2 text-gray-600 font-bold ">
+              <h1 className="text-base tracking-tighter uppercase mb-2 text-gray-600 font-[400] ">
                 showmore
               </h1>
               <Arrow />

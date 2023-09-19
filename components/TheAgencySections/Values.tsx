@@ -9,17 +9,17 @@ const Values = (props: Props) => {
     <div className=" max-[400px]:mt-20 mt-28">
       <div className="w-full flex ">
         <div className="flex justify-between items-start flex-col md:flex-row">
-          <h3 className="tracking-tighter font-black text-3xl md:text-4xl w-full uppercase  md:py-0">
+          <h3 className="tracking-tighter  text-3xl md:text-4xl w-full uppercase  md:py-0 font-[400]">
             our values
           </h3>
           <div className="w-full md:border-t-2 md:border-black flex flex-col">
-            <h3 className="hidden text-base mt-10 md:mt-2  capitalize tracking-tighter font-black">
+            <h3 className="hidden text-base mt-10 md:mt-2  capitalize tracking-tighter font-[500]">
               Accountability <br /> breeds success
             </h3>
-            <h3 className="text-base mt-14 md:mt-2 font-b capitalize tracking-tighter font-black">
+            <h3 className="text-base mt-14 md:mt-2 font-b capitalize tracking-tighter font-[500]">
               Accountability breeds success
             </h3>
-            <p className="break-words whitespace-normal mt-10 text-[13px] font-extrabold xl:w-7/12 text-left">
+            <p className="break-words whitespace-normal mt-10 text-[13px] font-[400] xl:w-7/12 text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Necessitatibus sapiente est temporibus, sequi ipsa provident,
               eligendi omnis consequatur expedita maxime ipsam, quidem pariatur

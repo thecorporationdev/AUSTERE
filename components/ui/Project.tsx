@@ -25,7 +25,7 @@ const Project = (props: Props) => {
         />
       </div>
 
-      <p className="mt-4 text-xl tracking-tighter text-gray-900 font-bold">
+      <p className="mt-4 text-xl tracking-tighter text-gray-900 font-light">
         IBoats
       </p>
     </Link>

@@ -61,8 +61,10 @@ type Propsclient = {
 function Clientbox(props: Propsclient) {
   const { word, logo } = props;
   return (
-    <div className="border-2 border-black rounded-xl  flex  items-center justify-center py-10 px-3 md:px-1">
-      <div className="h-28 w-28 flex items-center justify-center">{logo}</div>
+    <div className="border-2 border-black  flex  items-center justify-center py-14 px-14 md:px-1">
+      <div className="h-[5.5rem] w-[5.5rem] flex items-center justify-center">
+        {logo}
+      </div>
     </div>
   );
 }

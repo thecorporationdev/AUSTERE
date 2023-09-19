@@ -6,16 +6,14 @@ type Props = {};
 
 const Desc = (props: Props) => {
   return (
-    <section className="mt-6 md:mt-20 w-[92%] mx-auto flex-col flex ">
+    <section className="mt-6 md:mt-16 w-[92%] mx-auto flex-col flex">
       <LineMotionDiv className="h-[3px] w-full bg-black">.</LineMotionDiv>
       <div className="flex justify-end">
         <div className=" md:w-[80%]  md:h-[30vh] mt-3 flex flex-col md:flex-row justify-between ">
-          <div className="flex flex-col gap-y-0  font-bold uppercase tracking-tight">
+          <div className="flex flex-col gap-y-1  font-semibold uppercase ">
             <span className="mt-0 text-xs">AFRICA&apos;S FOREMOST</span>
             <span className="text-xs">HUMAN CENTERED</span>
-            <span className="mt-0 text-xs ">AFRICA&apos;S FOREMOST</span>
-            <span className="text-xs">MINIMALIST</span>
-            <span className="text-xs">DESIGN AGENCY</span>
+            <span className="text-xs">MINIMALIST DESIGN AGENCY</span>
           </div>
           <div className=" mt-4 md:mt-0 md:w-[50%] h-full flex flex-col md:flex-row md:justify-start ">
             <div className=" w-[100%] flex  flex-col md:flex-row  justify-end">
@@ -32,30 +30,52 @@ const Desc = (props: Props) => {
                 </a>
               </div> */}
 
-              <div className="flex mt-3 md:mt-0 flex-col justify-start font-semibold">
-                <ul className="text-xs">
-                  <li className="underline text-xs">8 IBM Haruna Street</li>
-                  <li className="underline text-xs">
+              <div className="flex mt-3 md:mt-0 flex-col justify-start font-semibold gap-y-8 md:gap-y-12">
+                <ul className="text-xs font-semibold">
+                  <li className="underline text-xs text-light">
+                    8 IBM Haruna Street
+                  </li>
+                  <li className="underline text-xs text-light">
                     Utako District Abuja-FCT 900211
                   </li>
                 </ul>
-                <div className="my-8 text-xs">
-                  <div className="">+234 (09) 291 0060</div>
-                  <div className="mt-3 underline underline-offset-1 tracking-tight">
-                    office@thecorporation.xyz
+                <div className=" text-light text-xs">
+                  <div className=" underline-offset-1 underline hover:scale-105">
+                    <a href="tel:+23492910050">+234 929 10050</a>
+                  </div>
+                  <div className=" underline underline-offset-1 hover:scale-105">
+                    <a href="mailto:office@thecorporation.xyz ">
+                      office@thecorporation.xyz
+                    </a>
                   </div>
                 </div>
 
-                <ul className="capitalize undeline text-xs">
-                  <li className="underline ">dribble</li>
-                  <li className="underline ">facebook</li>
-                  <li className="underline">twitter</li>
-                  <li className="underline">linkedin</li>
+                <ul className="capitalize undeline text-xs  font-medium">
+                  <li className="underline ">
+                    <a href="https://www.behance.net/TheAustereAFR">behance</a>
+                  </li>
+                  <li className="underline ">
+                    <a href="https://web.facebook.com/TheAustereAFR">
+                      facebook
+                    </a>
+                  </li>
+                  <li className="underline">
+                    <a href="https://twitter.com/TheAustereAFR">twitter</a>
+                  </li>
+                  <li className="underline">
+                    <a href="ttps://www.instagram.com/TheAustereAFR/">
+                      instagram
+                    </a>
+                  </li>
                 </ul>
 
-                <ul className="mt-24 text-xs uppercase">
-                  <li className="capitalize">legal</li>
-                  <li className="capitalize">privacy</li>
+                <ul className=" text-xs uppercase">
+                  <li className="capitalize font-medium underline underline-offset-1">
+                    legal
+                  </li>
+                  <li className="capitalize font-medium underline underline-offset-1">
+                    privacy
+                  </li>
                 </ul>
               </div>
             </div>
@@ -67,3 +87,11 @@ const Desc = (props: Props) => {
 };
 
 export default Desc;
+
+// https://www.behance.net/TheAustereAFR
+
+// https://web.facebook.com/TheAustereAFR
+
+// https://twitter.com/TheAustereAFR
+
+// https://www.instagram.com/TheAustereAFR/

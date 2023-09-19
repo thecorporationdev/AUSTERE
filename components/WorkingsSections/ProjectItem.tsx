@@ -32,13 +32,13 @@ const ProjectItem = (props: Props) => {
             <div className="w-[90%] mx-auto">
               <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-10">
                 <div className="w-full flex justify-between lg:mt-20 ">
-                  <h2 className="font-bold text-2xl lg:text-3xl uppercase">
+                  <h2 className="font-[400] text-2xl lg:text-3xl uppercase">
                     iboats
                   </h2>
 
                   <FiArrowUpRight className="text-5xl font-semibold mb-4 " />
                 </div>
-                <p className="font-bold  text-[12px] md:text-sm tracking-normal leading-[20px] md:leading-[30px]">
+                <p className="font-[300]  text-[12px] md:text-sm tracking-normal leading-[20px] md:leading-[30px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                   esse, fuga ratione illo nam corporis qui est dolorem ex
                   blanditiis temporibus neque accusantium deserunt iste. Placeat

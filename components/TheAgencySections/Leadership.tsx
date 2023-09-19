@@ -9,9 +9,9 @@ type Props = {};
 
 const Leadership = (props: Props) => {
   return (
-    <section className="w-full max-w-[90%] mx-auto h-screen md:h-auto mt-20">
+    <section className="w-full mx-auto h-screen md:h-auto mt-28">
       <div className="w-full ">
-        <h3 className=" text-2xl md:text-4xl font-extrabold tracking-tighter uppercase">
+        <h3 className=" text-2xl md:text-4xl font-[400] tracking-tighter uppercase">
           Leadership
         </h3>
       </div>
@@ -21,11 +21,7 @@ const Leadership = (props: Props) => {
           <LeadershipCard />
           <LeadershipCard />
           <LeadershipCard />
-          <div className=" max-sm:h-[300px] xl:w-[250px] xl:h-[400px] flex items-center justify-center relative overflow-hidden rounded-lg border-2 border-black">
-            <p className="tracking-tighter underline underline-offset-2 flex items-center justify-center text-[10px] font-bold uppercase md:text-base">
-              joinourteam <Arrow />
-            </p>
-          </div>
+          <LeadershipCard />
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ const CapabilityHero = (props: Props) => {
   return (
     <section className="w-full flex-col  flex md:mt-10">
       <div className=" w-full max-md:flex-col mx-auto flex items-left justify-center">
-        <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-extrabold text-left uppercase md:py-10">
+        <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
           the Capabilities
         </h1>
       </div>
@@ -16,7 +16,7 @@ const CapabilityHero = (props: Props) => {
 
       <div className="w-full flex justify-end mt-10 md:my-20 ">
         <div className="lg:w-1/2 flex justify-end ">
-          <p className=" text-xs md:text-[18px] font-bold leading-[20px] lg:leading-[30px] tracking-wide">
+          <p className=" text-xs md:text-[18px] font-[400] leading-[20px] lg:leading-[30px] tracking-wide">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
             laboriosam dolore ipsum tempore voluptate illo fugit, facere aliquid
             facilis, laudantium aperiam suscipit eaque minima maxime. Minus
@@ -33,17 +33,6 @@ const CapabilityHero = (props: Props) => {
           <CapabilityLink />
           <CapabilityLink />
           <CapabilityLink />
-        </div>
-      </div>
-
-      <div className="w-full justify-start py-10 mt-10">
-        <div className="lg:w-1/2 font-bold ">
-          <p className="text-xs md:text-sm leading-[20px] lg:leading-[30px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-            temporibus aliquid dignissimos adipisci autem consectetur voluptates
-            odio molestiae cupiditate, doloremque recusandae reprehenderit quo
-            minus quibusdam deserunt quam nihil deleniti illo!
-          </p>
         </div>
       </div>
     </section>

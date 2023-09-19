@@ -5,11 +5,11 @@ type Props = {};
 
 const Principles = (props: Props) => {
   return (
-    <section className=" w-full flex flex-col md:justify-start md:items-center sm:h-[70vh] md:py-4  md:mt-20">
+    <section className=" w-full flex flex-col md:justify-start md:items-center sm:h-[70vh]">
       <div className="w-full flex md:justify-start ">
         <div className="w-full md:w-1/2">
           <div className="w-full flex justify-between items-center md:w-8/12">
-            <h3 className=" w-full tracking-tighter max-md:text-4xl max-md:text-center font-black  md:text-4xl uppercase">
+            <h3 className=" w-full tracking-tighter max-md:text-4xl max-md:text-center font-bold  md:text-4xl uppercase">
               our core <br /> principles
             </h3>
             <BsArrowDownRight className=" hidden md:block md:text-5xl" />

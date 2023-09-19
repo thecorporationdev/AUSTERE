@@ -7,8 +7,8 @@ type Props = {};
 
 const Projects = (props: Props) => {
   return (
-    <section className=" mt-16 md:mt-28 w-full">
-      <h1 className=" text-2xl md:text-3xl tracking-tighter uppercase mb-4 font-extrabold">
+    <section className=" mt-16 md:mt-32 w-full">
+      <h1 className=" text-2xl md:text-3xl tracking-tighter uppercase mb-4 font-[500]">
         Projects
       </h1>
 
@@ -20,13 +20,13 @@ const Projects = (props: Props) => {
       </section>
 
       <Link href="/Workings" className="group">
-        <div className="w-full md:mt-16 flex justify-end">
+        <div className="w-full md:mt-10 flex justify-end">
           <div className=" w-1/2 flex justify-end md:justify-start ">
-            <div className="flex items-center underline underline-offset-2 text-gray-500 ">
-              <h1 className="text-[12px] md:text-[14px] tracking-tighter uppercase mb-2 text-gray-600 font-semibold  ">
+            <div className="flex items-center underline underline-offset-2 ">
+              <h1 className="text-[12px] md:text-[14px] tracking-tighter uppercase mb-2  font-bold  ">
                 AllProjects
               </h1>
-              <Arrow className="group-hover:scale-105  " />
+              <Arrow className="group-hover:scale-105" />
             </div>
           </div>
         </div>
