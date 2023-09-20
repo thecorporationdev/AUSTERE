@@ -5,11 +5,11 @@ type Props = {};
 
 const Principles = (props: Props) => {
   return (
-    <section className=" w-full flex flex-col md:justify-start md:items-center sm:h-[70vh]">
+    <section className=" w-full flex mt-14 flex-col md:justify-start md:items-center sm:h-[70vh]">
       <div className="w-full flex md:justify-start ">
         <div className="w-full md:w-1/2">
           <div className="w-full flex justify-between items-center md:w-8/12">
-            <h3 className=" w-full tracking-tighter max-md:text-4xl max-md:text-center font-bold  md:text-4xl uppercase">
+            <h3 className=" w-full tracking-tighter max-md:text-4xl max-md:text-center font-[500]  md:text-4xl uppercase">
               our core <br /> principles
             </h3>
             <BsArrowDownRight className=" hidden md:block md:text-5xl" />
@@ -42,10 +42,10 @@ export default Principles;
 function Principle({ title, p }: { title: string; p: string }) {
   return (
     <div className=" border-t-2 border-black flex flex-col-reverse md:flex-row  md:justify-between mb-2  md:items-center">
-      <h3 className="w-full text-4xl min-[400px]:text-6xl lg:text-5xl mt-2 font-semibold capitalize tracking-tight max-md:text-left py-1">
+      <h3 className="w-full text-4xl min-[400px]:text-6xl lg:text-5xl mt-2 font-[500] capitalize tracking-tight max-md:text-left py-1">
         {title}
       </h3>
-      <p className="break-words w-full whitespace-normal flex md:items-center md:justify-center text-[14px] min-[400px]:mt-4 font-extrabold sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
+      <p className="break-words w-full whitespace-normal flex md:items-center md:justify-center text-[14px] min-[400px]:mt-4 font-[400] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
         {p}
       </p>
     </div>

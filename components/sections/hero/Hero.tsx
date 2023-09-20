@@ -13,12 +13,12 @@ const Hero = () => {
       <div className="flex justify-end">
         <div className=" md:w-[80%] mt-3 flex flex-col md:flex-row justify-between ">
           <div
-            className="flex flex-col gap-y-0  font-[500]
-           uppercase tracking-tight"
+            className="flex flex-col gap-y-1  font-[500]
+           uppercase "
           >
-            <span className="mt-0 text-base">AFRICA&apos;S FOREMOST</span>
-            <span className="text-base">HUMAN CENTERED</span>
-            <span className="text-base">MINIMALIST DESIGN AGENCY</span>
+            <span className="text-xs">AFRICA&apos;S FOREMOST</span>
+            <span className="text-xs">HUMAN CENTERED</span>
+            <span className="text-xs">MINIMALIST DESIGN AGENCY</span>
           </div>
           <div className=" mt-4 md:mt-0 md:w-[50%] h-full flex flex-col md:flex-row md:justify-start ">
             <div className=" w-[100%] flex  flex-col md:flex-row  justify-end"></div>

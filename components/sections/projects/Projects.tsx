@@ -24,7 +24,7 @@ const Projects = (props: Props) => {
           <div className=" w-1/2 flex justify-end md:justify-start ">
             <div className="flex items-center underline underline-offset-2 ">
               <h1 className="text-[12px] md:text-[14px] tracking-tighter uppercase mb-2  font-[300]  ">
-                AllProjects
+                All Projects
               </h1>
               <Arrow className="group-hover:scale-105" />
             </div>

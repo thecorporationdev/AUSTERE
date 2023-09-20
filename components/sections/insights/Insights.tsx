@@ -13,9 +13,6 @@ const Insights = (props: Props) => {
           <h3 className="text-2xl md:text-3xl uppercase tracking-tighter font-[500]">
             insights
           </h3>
-          <p className=" text-[12px] md:text-[14px]  mt-3 md:mt-0 font-light">
-            our lastest news , views and more
-          </p>
         </div>
         <div className=" w-full mt-10 md:mt-20 flex justify-end">
           <div className="w-full md:w-[65%] ">
@@ -41,7 +38,7 @@ const Insights = (props: Props) => {
             <div className="flex items-center underline underline-offset-2 ">
               <Link href="/Insights">
                 <h1 className="text-xs md:text-base tracking-tighter uppercase mb-2  font-light ">
-                  AllNews
+                  All insights
                 </h1>
               </Link>
 

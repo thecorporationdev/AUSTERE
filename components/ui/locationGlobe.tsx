@@ -16,7 +16,7 @@ const LocationsGlobe = (props: Props) => {
               </p>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
       <div className="hidden lg:inline-block">
         <Globe className="h-[400px] w-[400px]" />

@@ -16,6 +16,18 @@ const page = (props: Props) => {
           </h1>
         </div>
         <div className="h-[3px] w-full bg-black mt-10"></div>
+        <div className="w-full flex justify-end mt-10 md:my-20 ">
+          <div className="lg:w-1/2 flex justify-end ">
+            <p className=" text-xs md:text-[18px] font-[400] leading-[20px] lg:leading-[30px] tracking-wide">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              laboriosam dolore ipsum tempore voluptate illo fugit, facere
+              aliquid facilis, laudantium aperiam suscipit eaque minima maxime.
+              Minus consectetur tenetur officia illo? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Magnam laboriosam dolore ipsum
+              tempore vo illo?
+            </p>
+          </div>
+        </div>
 
         <div className="w-full flex justify-end py-10 ">
           <div className=" w-full lg:w-[70%] flex gap-y-14 flex-col ">

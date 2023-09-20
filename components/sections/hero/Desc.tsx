@@ -7,10 +7,10 @@ type Props = {};
 const Desc = (props: Props) => {
   return (
     <section className="mt-6 md:mt-16 w-[92%] mx-auto flex-col flex">
-      <LineMotionDiv className="h-[3px] w-full bg-black">.</LineMotionDiv>
+      <div className="h-[3px] w-full bg-black"></div>
       <div className="flex justify-end">
         <div className=" md:w-[80%]  md:h-[30vh] mt-3 flex flex-col md:flex-row justify-between ">
-          <div className="flex flex-col gap-y-1  font-semibold uppercase ">
+          <div className="flex flex-col gap-y-1  font-[500] uppercase ">
             <span className="mt-0 text-xs">AFRICA&apos;S FOREMOST</span>
             <span className="text-xs">HUMAN CENTERED</span>
             <span className="text-xs">MINIMALIST DESIGN AGENCY</span>
@@ -31,7 +31,7 @@ const Desc = (props: Props) => {
               </div> */}
 
               <div className="flex mt-3 md:mt-0 flex-col justify-start font-semibold gap-y-8 md:gap-y-12">
-                <ul className="text-xs font-semibold">
+                <ul className="text-xs font-[500]">
                   <li className="underline text-xs text-light">
                     8 IBM Haruna Street
                   </li>
@@ -39,7 +39,7 @@ const Desc = (props: Props) => {
                     Utako District Abuja-FCT 900211
                   </li>
                 </ul>
-                <div className=" text-light text-xs">
+                <div className=" text-light text-xs font-[500]">
                   <div className=" underline-offset-1 underline hover:scale-105">
                     <a href="tel:+23492910050">+234 929 10050</a>
                   </div>
@@ -50,7 +50,7 @@ const Desc = (props: Props) => {
                   </div>
                 </div>
 
-                <ul className="capitalize undeline text-xs  font-medium">
+                <ul className="capitalize undeline text-xs  font-[500]">
                   <li className="underline ">
                     <a href="https://www.behance.net/TheAustereAFR">behance</a>
                   </li>
@@ -69,7 +69,7 @@ const Desc = (props: Props) => {
                   </li>
                 </ul>
 
-                <ul className=" text-xs uppercase">
+                <ul className=" text-xs uppercase font-[500]">
                   <li className="capitalize font-medium underline underline-offset-1">
                     legal
                   </li>

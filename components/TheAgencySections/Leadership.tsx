@@ -11,7 +11,7 @@ const Leadership = (props: Props) => {
   return (
     <section className="w-full mx-auto h-screen md:h-auto mt-28">
       <div className="w-full ">
-        <h3 className=" text-2xl md:text-4xl font-[400] tracking-tighter uppercase">
+        <h3 className=" text-2xl md:text-4xl font-[500] tracking-tighter uppercase">
           Leadership
         </h3>
       </div>

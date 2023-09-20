@@ -3,6 +3,7 @@ import Footer from "@/components/ui/Footer";
 import React from "react";
 import { RelatedinsightLink } from "./[insightsid]/page";
 import Link from "next/link";
+import InsightLink from "@/components/ui/InsightLink";
 
 type Props = {};
 
@@ -31,16 +32,24 @@ const insights = (props: Props) => {
         </div>
 
         <div className="w-full flex lg:justify-end mt-4">
-          <div className=" w-full lg:w-[75%]">
-            <Link href="/Insights/89">
-              <RelatedinsightLink />
-            </Link>
-            <Link href="/Insights/89">
-              <RelatedinsightLink />
-            </Link>
-            <Link href="/Insights/89">
-              <RelatedinsightLink />
-            </Link>
+          <div className=" w-full mt-10 md:mt-20 flex justify-end">
+            <div className="w-full ">
+              <Link href="/Insights/20">
+                <InsightLink />
+              </Link>
+              <Link href="/Insights/20">
+                <InsightLink />
+              </Link>
+              <Link href="/Insights/20">
+                <InsightLink />
+              </Link>
+              <Link href="/Insights/20">
+                <InsightLink />
+              </Link>
+              <Link href="/Insights/20">
+                <InsightLink />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
