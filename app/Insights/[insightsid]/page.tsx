@@ -4,8 +4,7 @@ import React from "react";
 import image from "../../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import Link from "next/link";
 import Footer from "@/components/ui/Footer";
-import InsightLink from "@/components/ui/InsightLink";
-import Arrow from "@/components/icons/Arrow";
+
 import SmallBtn from "@/components/ui/SmallBtn";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -117,7 +116,7 @@ const page = (props: Props) => {
               </Link>
               <Link href="/Insights/90">
                 <RelatedinsightLink />
-              </Link>{" "}
+              </Link>
               <Link href="/Insights/90">
                 <RelatedinsightLink />
               </Link>
@@ -131,8 +130,7 @@ const page = (props: Props) => {
 };
 
 export default page;
-
-export function RelatedinsightLink(props: Props) {
+function RelatedinsightLink(props: Props) {
   return (
     <div className="w-full mt-4">
       <div className="flex border-b-2 border-gray-500 justify-between  py-2 lg:py-5">
