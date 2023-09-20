@@ -13,10 +13,10 @@ const CapabilityLink = (props: Props) => {
         <div className="tracking-[-0.02] text-base md:text-3xl capitalize font-semibold">
           digital producer
         </div>
-        <div className="flex font-[400]  gap-x-4 lg:gap-x-6">
+        {/* <div className="flex font-[400]  gap-x-4 lg:gap-x-6">
           <SmallBtn className="text-[11px]">blog</SmallBtn>
           <SmallBtn className="text-[11px]">2000</SmallBtn>
-        </div>
+        </div> */}
         <FiArrowUpRight className="text-5xl font-semibold" />
       </div>
       <p className="text-xs md:text-sm font-[300] leading-[20px] lg:leading-[30px] tracking-wide">

@@ -1,15 +1,17 @@
 import Footer from "@/components/ui/Footer";
 import SmallBtn from "@/components/ui/SmallBtn";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import React from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 
 type Props = {};
 
 const page = (props: Props) => {
   return (
     <>
-      <section className="max-w-[90%] mx-auto ">
+      <section className="max-w-[90%] mx-auto  text-black">
         <div className=" w-full max-md:flex-col mx-auto flex items-left justify-center ">
           <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
             the contacts
@@ -32,17 +34,9 @@ const page = (props: Props) => {
         <div className="w-full flex justify-end py-10 ">
           <div className=" w-full lg:w-[70%] flex gap-y-14 flex-col ">
             <div className="w-full">
-              <p className="mb-4 font-bold text-base">
-                Brief TC on what you need
+              <p className="font-bold text-base">
+                contact AUSTERE on what you need
               </p>
-              <div className="h-[190px] lg:w-[400px] py-10 px-4 lg:px-8 border-2 border-black flex flex-col  justify-between">
-                <p className="text-2xl md:text-3xl font-bold">Project work:</p>
-                {/* <div className="flex justify-evenly lg:justify-between w-full">
-                  <SmallBtn> 10,000</SmallBtn>
-                  <SmallBtn> 10,000</SmallBtn>
-                  <SmallBtn> 10,000</SmallBtn>
-                </div> */}
-              </div>
             </div>
             <div className="w-full">
               <form className=" lg:w-[600px] py-10 px-4 lg:px-8 border-2 border-black flex flex-col justify-between">
@@ -51,14 +45,27 @@ const page = (props: Props) => {
                 </p>
                 <div className="flex justify-between w-full flex-col gap-y-10 mt-10 ">
                   <Input
+                    placeholder="your fullname"
+                    className="border-gray-400 rounded-none"
+                  />
+                  <Input
+                    placeholder="your phone number"
+                    className="border-gray-400 rounded-none"
+                  />
+                  <Input
                     placeholder="your email"
                     className="border-gray-400 rounded-none"
                   />
                   <Textarea
                     className="resize-none border-gray-400 rounded-none"
-                    placeholder="A few words about your project"
+                    placeholder="message"
                   />
                 </div>
+
+                <button className="border-b-2 text-left flex items-center justify-center text-sm border-black bg-ransparent w-2/12 bg-transparent mt-8 text-black px-0 py-0 hover:bg-transparent hover:text-black hover:border-b-2 hover:border-black">
+                  send
+                  <FiArrowUpRight className="  text-2xl font-semibold transition-all ease-in duration-300" />
+                </button>
               </form>
             </div>
           </div>

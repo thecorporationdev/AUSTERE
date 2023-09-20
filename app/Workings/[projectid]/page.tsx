@@ -156,7 +156,7 @@ export default page;
 
 function Projectrelated(props: Props) {
   return (
-    <Link href="/" className="group text-sm w-full">
+    <Link href="/Workings/id" className="group text-sm w-full">
       <div className=" h-[400px] relative overflow-hidden bg-gray-100">
         <Image
           placeholder="blur"

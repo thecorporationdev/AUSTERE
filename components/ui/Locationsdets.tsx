@@ -18,7 +18,7 @@ const Locationsdets = (props: Props) => {
         </div>
       </div>
       <div className=" w-full flex md:justify-end">
-        <div className="border-black border-t-4 md:w-[85%] max-md:mt-4">
+        <div className="border-black border-t-2 md:w-[85%] max-md:mt-4">
           <div className="flex md:justify-end">
             <div className="md:w-3/4 flex-col-reverse  md:flex-row  justify-between mt-2 flex">
               <p className="md:w-4/12 text-[12px]  font-[400] leading-none mt-3 ">

@@ -7,6 +7,7 @@ import Footer from "@/components/ui/Footer";
 
 import SmallBtn from "@/components/ui/SmallBtn";
 import { FiArrowUpRight } from "react-icons/fi";
+import InsightLink from "@/components/ui/InsightLink";
 
 type Props = {};
 
@@ -110,15 +111,21 @@ const page = (props: Props) => {
             More insights
           </h3>
           <div className="flex flex-col items-end justify-center">
-            <div className="lg:w-[60%]">
-              <Link href="/Insights/90">
-                <RelatedinsightLink />
+            <div className="w-full ">
+              <Link href="/Insights/20">
+                <InsightLink />
               </Link>
-              <Link href="/Insights/90">
-                <RelatedinsightLink />
+              <Link href="/Insights/20">
+                <InsightLink />
               </Link>
-              <Link href="/Insights/90">
-                <RelatedinsightLink />
+              <Link href="/Insights/20">
+                <InsightLink />
+              </Link>
+              <Link href="/Insights/20">
+                <InsightLink />
+              </Link>
+              <Link href="/Insights/20">
+                <InsightLink />
               </Link>
             </div>
           </div>

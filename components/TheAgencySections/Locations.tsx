@@ -15,7 +15,7 @@ const Locations = (props: Props) => {
       <div className="">
         <Locationsdets />
         <LocationsGlobe />
-        <Locationsdets />
+        {/* <Locationsdets /> */}
       </div>
     </section>
   );

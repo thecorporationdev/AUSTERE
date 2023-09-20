@@ -14,8 +14,8 @@ const Insights = (props: Props) => {
             insights
           </h3>
         </div>
-        <div className=" w-full mt-10 md:mt-20 flex justify-end">
-          <div className="w-full md:w-[65%] ">
+        <div className="w-full mt-10 md:mt-20 flex justify-end">
+          <div className="w-full ">
             <Link href="/Insights/20">
               <InsightLink />
             </Link>

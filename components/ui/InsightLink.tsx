@@ -1,6 +1,7 @@
 import React from "react";
 import SmallBtn from "./SmallBtn";
 import Arrow from "../icons/Arrow";
+import { FiArrowUpRight } from "react-icons/fi";
 
 type Props = {};
 
@@ -21,7 +22,7 @@ const InsightLink = (props: Props) => {
           <div className="tracking-[-0.02] text-black text-[12px] md:text-base font-light mb-4">
             TC Works with EFCC - rethinking crime in Nigeria
           </div>
-          <Arrow className="" />
+          <FiArrowUpRight className="text-5xl font-semibold" />
         </div>
       </div>
     </div>
