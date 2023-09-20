@@ -20,7 +20,7 @@ const page = (props: Props) => {
         <div className="h-[3px] w-full bg-black mt-10"></div>
         <div className="w-full flex justify-end mt-10 md:my-20 ">
           <div className="lg:w-1/2 flex justify-end ">
-            <p className=" text-xs md:text-[18px] font-[400] leading-[20px] lg:leading-[30px] tracking-wide">
+            <p className=" text-xs md:text-[18px] font-[400] leading-[20px] lg:leading-[40px] tracking-wide">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
               laboriosam dolore ipsum tempore voluptate illo fugit, facere
               aliquid facilis, laudantium aperiam suscipit eaque minima maxime.
@@ -39,11 +39,11 @@ const page = (props: Props) => {
               </p>
             </div>
             <div className="w-full">
-              <form className=" lg:w-[600px] py-10 px-4 lg:px-8 border-2 border-black flex flex-col justify-between">
+              <form className=" lg:w-full py-10 px-4 lg:px-8 border-t-2 border-b-2  border-black flex flex-col justify-between">
                 <p className="text-2xl md:text-3xl font-bold capitalize pb-6 ">
                   more info:
                 </p>
-                <div className="flex justify-between w-full flex-col gap-y-10 mt-10 ">
+                <div className="flex justify-between w-1/2 flex-col gap-y-10 mt-10 ">
                   <Input
                     placeholder="your fullname"
                     className="border-gray-400 rounded-none"

@@ -24,7 +24,7 @@ const Header = (props: Props) => {
           <div className="flex justify-between w-full items-center">
             <Link href="/">
               <LargeLogo
-                classes=" h-10 w-24 md:w-32 z-[90000] sticky "
+                classes=" h-10 w-20 md:w-28 z-[90000] sticky "
                 barstate={bar}
               />
             </Link>

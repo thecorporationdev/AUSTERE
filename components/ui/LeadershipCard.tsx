@@ -8,36 +8,36 @@ import React from "react";
 import image from "../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import { shimmer, toBase64 } from "@/lib/image";
 
-type Props = {};
+type Props = {
+  cardId: number;
+  isOpen: boolean;
+  toggleOverlay: (cardId: number) => void;
+};
 
-const LeadershipCard = (props: Props) => {
+const LeadershipCard = ({ cardId, isOpen, toggleOverlay }: Props) => {
   const [showOverlay, setShowOverlay] = useState(false);
   const controls = useAnimation();
 
-  const toggleOverlay = () => {
-    // Toggle the overlay and animate it
-    setShowOverlay(!showOverlay);
-    controls.start(showOverlay ? "hidden" : "visible");
+  const toggle = () => {
+    toggleOverlay(cardId);
   };
 
   const closeOverlay = () => {
-    // Close the overlay and animate it out
-    setShowOverlay(false);
-    controls.start("hidden");
+    toggleOverlay(-1);
   };
 
   return (
     <div className="relative">
       <motion.div
         initial="hidden"
-        animate={controls}
+        animate={isOpen ? "visible" : "hidden"}
         variants={{
           visible: { opacity: 1, y: 0 },
-          hidden: { opacity: 0, y: "5%" },
+          hidden: { opacity: 0, y: "9%" },
         }}
         transition={{ duration: 0.5 }}
-        className={`absolute h-[88%] w-full bg-black/50 top-0 left-0 z-[30] ${
-          showOverlay ? "" : "pointer-events-none"
+        className={`absolute h-[88%] w-full bg-black text-white top-0 left-0 z-[30] ${
+          isOpen ? "" : "pointer-events-none" // Disable pointer events when hidden
         }`}
       >
         <button
@@ -75,8 +75,8 @@ const LeadershipCard = (props: Props) => {
             Micheal carouso
           </p>
         </div>
-        <div className="cursor-pointer" onClick={toggleOverlay}>
-          {showOverlay ? (
+        <div className="cursor-pointer" onClick={toggle}>
+          {isOpen ? (
             <FiArrowUpRight className="text-2xl font-semibold transition-all ease-in duration-300" />
           ) : (
             <FiArrowDownRight className="text-2xl font-semibold transition-all ease-in duration-300" />
