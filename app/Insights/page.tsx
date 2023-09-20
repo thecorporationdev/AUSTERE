@@ -1,7 +1,7 @@
 import CapabilityLink from "@/components/ui/Capacitylink";
 import Footer from "@/components/ui/Footer";
 import React from "react";
-import { RelatedinsightLink } from "./[insightsid]/page";
+
 import Link from "next/link";
 import InsightLink from "@/components/ui/InsightLink";
 
