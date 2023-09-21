@@ -17,7 +17,7 @@ const page = (props: Props) => {
       <section className="">
         <div className="flex w-full max-w-[90%] mx-auto ">
           <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[400] text-left uppercase md:py-10">
-            the insights
+            the <br className="md:hidden" /> insights
           </h1>
         </div>
         <div className="h-[3px] w-full bg-black mt-10 max-w-[90%] mx-auto " />
