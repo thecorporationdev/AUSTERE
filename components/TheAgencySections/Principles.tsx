@@ -42,7 +42,7 @@ export default Principles;
 function Principle({ title, p }: { title: string; p: string }) {
   return (
     <div className=" border-t-2 border-black flex flex-col-reverse md:flex-row  md:justify-between mb-2  md:items-center">
-      <h3 className="w-full text-4xl min-[400px]:text-4xl lg:text-5xl mt-2 font-[500] capitalize tracking-tight max-md:text-left py-1">
+      <h3 className="w-full text-5xl mt-2 font-[500] capitalize tracking-tight max-md:text-left py-1">
         {title}
       </h3>
       <p className="break-words w-full whitespace-normal flex md:items-center md:justify-center text-[14px] min-[400px]:mt-4 font-[400] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
