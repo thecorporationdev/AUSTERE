@@ -43,18 +43,18 @@ const page = (props: Props) => {
                 <p className="text-2xl md:text-3xl font-bold capitalize pb-6 ">
                   more info:
                 </p>
-                <div className="flex justify-between w-1/2 flex-col gap-y-10 mt-10 ">
+                <div className="flex justify-between md:w-1/2 flex-col gap-y-10 mt-10 ">
                   <Input
                     placeholder="your fullname"
-                    className="border-gray-400 rounded-none"
+                    className="border-gray-500 rounded-none"
                   />
                   <Input
                     placeholder="your phone number"
-                    className="border-gray-400 rounded-none"
+                    className="border-gray-500 rounded-none"
                   />
                   <Input
                     placeholder="your email"
-                    className="border-gray-400 rounded-none"
+                    className="border-gray-500 rounded-none"
                   />
                   <Textarea
                     className="resize-none border-gray-400 rounded-none"
