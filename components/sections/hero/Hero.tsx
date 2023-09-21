@@ -6,8 +6,9 @@ const Hero = () => {
   return (
     <HeroMotionDiv className=" md:mt-3 w-full text-black">
       <h1 className="justify-between items-center text-wine-400 text-left  uppercase w-full text-[2rem] md:text-[2.5rem] xl:text-[3rem] xxl:text-[3.8rem] tracking-normal py-10 font-[500]">
-        we were born to create a simple, <br />
-        clean, beautiful yet purposeful africa, <br /> one design at a time...
+        we were born to create a simple, <br className="hidden md:block" />
+        clean, beautiful yet purposeful africa,{" "}
+        <br className="hidden md:block" /> one design at a time...
       </h1>
       <div className="h-[3px] w-full bg-black mt-5" />
       <div className="flex justify-end">
