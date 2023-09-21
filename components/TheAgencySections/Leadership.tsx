@@ -1,27 +1,26 @@
 "use client";
 import { shimmer, toBase64 } from "@/lib/image";
 import Image from "next/image";
-
 import React, { useState } from "react";
 import image from "../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import LeadershipCard from "../ui/LeadershipCard";
 import Arrow from "../icons/Arrow";
 
 interface ParentProps {
-  cardId: number;
-  isOpen: boolean;
-  toggleOverlay: (cardId: number) => void;
+  cardId?: number;
+  isOpen?: boolean;
+  toggleOverlay?: (cardId: number) => void;
 }
 
 const Leadership = (props: ParentProps) => {
   const [openCardId, setOpenCardId] = useState(null);
 
   const toggleOverlay = (cardId: any) => {
-    // Close the currently open card if it's the same as the clicked card
+    
     if (openCardId === cardId) {
       setOpenCardId(null);
     } else {
-      // Open the clicked card
+      
       setOpenCardId(cardId);
     }
   };
