@@ -5,7 +5,7 @@ import { HeroMotionDiv, LineMotionDiv } from "../../ui/MotionDiv";
 const Hero = () => {
   return (
     <HeroMotionDiv className=" md:mt-3 w-full text-black">
-      <h1 className="justify-between  items-center text-wine-400 text-left  uppercase w-full text-[1.2rem] md:text-[2.5rem] xl:text-[3rem] xxl:text-[3.8rem] tracking-normal py-10 font-[500]">
+      <h1 className="justify-between  items-center text-wine-400 text-left  uppercase w-full text-[1.1rem] md:text-[2.5rem] xl:text-[3rem] xxl:text-[3.8rem] tracking-normal py-10 font-[500]">
         <span className="max-sm:text-4xl inline-block">we were born </span>
         <br className="md:hidden" /> to create a simple, clean, <br /> beautiful
         yet purposeful africa, <br /> one design at a time...
