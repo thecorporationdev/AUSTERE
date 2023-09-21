@@ -9,15 +9,13 @@ const Principles = (props: Props) => {
       <div className="w-full flex md:justify-start ">
         <div className="w-full md:w-1/2">
           <div className="w-full flex justify-between items-center md:w-8/12">
-            <h3 className=" w-full tracking-tighter max-md:text-4xl max-md:text-center font-[500]  md:text-4xl uppercase">
+            <h3 className=" w-full tracking-tighter max-md:text-4xl  font-[500]  md:text-4xl uppercase">
               our core <br /> principles
             </h3>
-            <BsArrowDownRight className=" hidden md:block md:text-5xl" />
           </div>
         </div>
       </div>
-      <div className="h-[3px] w-full bg-black mt-10 md:hidden" />
-      <div className="w-full flex md:justify-end max-md:mt-24">
+      <div className="w-full flex md:justify-end max-md:mt-10">
         <div className="md:w-1/2 mt-10 md:mt-0 space-y-4  min-[400px]:space-y-10 w-full">
           <Principle
             title="people"
