@@ -1,6 +1,6 @@
+"use client";
+import Reveal from "@/components/Reveal";
 import React from "react";
-import Arrow from "../../icons/Arrow";
-import { DescMotionDiv, LineMotionDiv } from "../../ui/MotionDiv";
 
 type Props = {};
 
@@ -32,33 +32,46 @@ const Desc = (props: Props) => {
 
               <div className="flex mt-3 md:mt-0 flex-col justify-start font-semibold gap-y-8 md:gap-y-12">
                 <ul className="text-xs font-[500]">
-                  <li className="underline text-xs text-light">
-                    8 IBM Haruna Street
-                  </li>
-                  <li className="underline text-xs text-light">
-                    Utako District Abuja-FCT 900211
-                  </li>
+                  <Reveal>
+                    <li className="underline text-xs text-light">
+                      8 IBM Haruna Street
+                    </li>
+                  </Reveal>
+
+                  <Reveal>
+                    <li className="underline text-xs text-light">
+                      Utako District Abuja-FCT 900211
+                    </li>
+                  </Reveal>
                 </ul>
-                <div className=" text-light text-xs font-[500]">
-                  <div className=" underline-offset-1 underline hover:scale-105">
-                    <a href="tel:+23492910050">+234 929 10050</a>
+                <Reveal>
+                  <div className=" text-light text-xs font-[500]">
+                    <div className=" underline-offset-1 underline hover:scale-105">
+                      <a href="tel:+23492910050">+234 929 10050</a>
+                    </div>
+                    <div className=" underline underline-offset-1 hover:scale-105">
+                      <a href="mailto:office@thecorporation.xyz ">
+                        office@thecorporation.xyz
+                      </a>
+                    </div>
                   </div>
-                  <div className=" underline underline-offset-1 hover:scale-105">
-                    <a href="mailto:office@thecorporation.xyz ">
-                      office@thecorporation.xyz
-                    </a>
-                  </div>
-                </div>
+                </Reveal>
 
                 <ul className="capitalize undeline text-xs  font-[500]">
-                  <li className="underline ">
-                    <a href="https://www.behance.net/TheAustereAFR">behance</a>
-                  </li>
-                  <li className="underline ">
-                    <a href="https://web.facebook.com/TheAustereAFR">
-                      facebook
-                    </a>
-                  </li>
+                  <Reveal>
+                    <li className="underline ">
+                      <a href="https://www.behance.net/TheAustereAFR">
+                        behance
+                      </a>
+                    </li>
+                  </Reveal>
+                  <Reveal>
+                    <li className="underline ">
+                      <a href="https://web.facebook.com/TheAustereAFR">
+                        facebook
+                      </a>
+                    </li>
+                  </Reveal>
                   <li className="underline">
                     <a href="https://twitter.com/TheAustereAFR">twitter</a>
                   </li>
