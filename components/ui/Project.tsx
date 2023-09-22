@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import React from "react";
 import image from "../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import SmallBtn from "./SmallBtn";
 import Arrow from "../icons/Arrow";

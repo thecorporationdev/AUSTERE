@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { HeroMotionDiv, LineMotionDiv } from "../../ui/MotionDiv";
 import Reveal from "@/components/Reveal";

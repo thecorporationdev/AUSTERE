@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Desc from "../sections/hero/Desc";
 import Reveal from "../Reveal";
@@ -9,13 +8,13 @@ const Footer = (props: Props) => {
   return (
     <footer className="pb-[12rem] text-black h-screen mt-4 mb-10">
       <div className="w-full">
-        <Reveal>
-          <div className="w-full flex items-center justify-center py-24">
+        <div className="w-full flex items-center justify-center py-24">
+          <Reveal>
             <div className="border-b-2 font-medium border-black py-1 text-2xl md:text-6xl  tracking-normal px-4 uppercase">
               Let&apos;s go to work
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
 
         <Desc />
         <Reveal>
