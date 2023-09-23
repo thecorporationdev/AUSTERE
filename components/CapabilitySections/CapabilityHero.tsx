@@ -6,7 +6,7 @@ type Props = {};
 
 const CapabilityHero = (props: Props) => {
   return (
-    <section className="w-full flex-col  flex md:mt-10 text-black">
+    <section className="w-full flex-col  flex md:mt-10 text-black py-20">
       <div className=" w-full max-md:flex-col text-black mx-auto flex items-left justify-center">
         <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
           the <br className="md:hidden" /> Capabilities

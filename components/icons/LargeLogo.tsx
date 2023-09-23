@@ -6,13 +6,33 @@ interface titansProps extends React.SVGProps<SVGSVGElement> {
   classes?: string;
   barstate?: boolean;
 }
+const svgvariants = {
+  hidden: {
+    rotate: -10,
+  },
+  visible: {
+    rotate: 0,
+    transition: { duration: 0.4, ease: "easeInOut" },
+  },
+};
 
-export const LargeLogo: React.FC<titansProps> = ({
-  classes,
-  barstate,
-  ...props
-}) => (
-  <svg
+const pathVariants = {
+  hidden: {
+    opacity: 0,
+    pathLength: 0,
+  },
+  visible: {
+    opacity: 1,
+    pathLength: 1,
+    transition: { duration: 2, ease: "easeInOut" },
+  },
+};
+
+export const LargeLogo = ({ classes, barstate, ...props }: any) => (
+  <motion.svg
+    variants={svgvariants}
+    initial="hidden"
+    animate="visible"
     id="Layer_1"
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -76,5 +96,5 @@ export const LargeLogo: React.FC<titansProps> = ({
         />
       </g>
     </g>
-  </svg>
+  </motion.svg>
 );

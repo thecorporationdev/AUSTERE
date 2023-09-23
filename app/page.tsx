@@ -9,7 +9,7 @@ import Footer from "@/components/ui/Footer";
 export default function Home() {
   return (
     <>
-      <main className="bg-butter h-screen font-bold ">
+      <main className="bg-butter h-screen font-bold py-20">
         <section className="max-w-[90%] mx-auto font-bold">
           <Hero />
 

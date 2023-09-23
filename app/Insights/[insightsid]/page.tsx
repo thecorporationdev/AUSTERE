@@ -14,7 +14,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <section className="">
+      <section className="py-20">
         <div className="flex w-full max-w-[90%] mx-auto ">
           <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[400] text-left uppercase md:py-10">
             the <br className="md:hidden" /> insights

@@ -10,7 +10,7 @@ type Props = {};
 const insights = (props: Props) => {
   return (
     <>
-      <section className="w-full flex-col  flex md:mt-10 max-w-[90%] mx-auto">
+      <section className="w-full flex-col  flex md:mt-10 max-w-[90%] mx-auto py-20">
         <div className=" w-full max-md:flex-col mx-auto flex items-left justify-center">
           <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
             the <br className="md:hidden" /> insights

@@ -7,7 +7,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <section className="max-w-[90%] mx-auto flex flex-col">
+      <section className="max-w-[90%] mx-auto flex flex-col ">
         <CapabilityHero />
       </section>
       <Footer />
