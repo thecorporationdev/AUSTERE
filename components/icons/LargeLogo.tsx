@@ -8,7 +8,7 @@ interface titansProps extends React.SVGProps<SVGSVGElement> {
 }
 const svgvariants = {
   hidden: {
-    rotate: -10,
+    rotate: -4,
   },
   visible: {
     rotate: 0,

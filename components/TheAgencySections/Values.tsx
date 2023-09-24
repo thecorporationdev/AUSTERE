@@ -22,18 +22,20 @@ const Values = (props: Props) => {
               <h3 className="text-base mt-14 md:mt-2 font-b capitalize tracking-tighter font-[500]">
                 Accountability breeds success
               </h3>
-              <p className="mt-10 text-sm font-[400]  text-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus sapiente est temporibus, sequi ipsa provident,
-                eligendi omnis consequatur expedita maxime ipsam, quidem
-                pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
-                Necessitatibus sapiente est temporibus, sequi ipsa provident,
-                eligendi omnis consequatur expedita maxime ipsam, quidem
-                pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
-                Necessitatibus sapiente est temporibus, sequi ipsa provident,
-                eligendi omnis consequatur expedita maxime ipsam, quidem
-                pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
-              </p>
+              <Reveal>
+                <p className="mt-10 text-sm font-[400]  text-right">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus sapiente est temporibus, sequi ipsa provident,
+                  eligendi omnis consequatur expedita maxime ipsam, quidem
+                  pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
+                  Necessitatibus sapiente est temporibus, sequi ipsa provident,
+                  eligendi omnis consequatur expedita maxime ipsam, quidem
+                  pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
+                  Necessitatibus sapiente est temporibus, sequi ipsa provident,
+                  eligendi omnis consequatur expedita maxime ipsam, quidem
+                  pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
+                </p>
+              </Reveal>
             </div>
           </div>
         </Reveal>

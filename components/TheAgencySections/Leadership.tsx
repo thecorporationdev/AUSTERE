@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import image from "../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import LeadershipCard from "../ui/LeadershipCard";
 import Arrow from "../icons/Arrow";
+import Reveal from "../Reveal";
 
 interface ParentProps {
   cardId?: number;
@@ -16,11 +17,9 @@ const Leadership = (props: ParentProps) => {
   const [openCardId, setOpenCardId] = useState(null);
 
   const toggleOverlay = (cardId: any) => {
-    
     if (openCardId === cardId) {
       setOpenCardId(null);
     } else {
-      
       setOpenCardId(cardId);
     }
   };
@@ -46,9 +45,11 @@ const Leadership = (props: ParentProps) => {
   return (
     <section className="w-full mx-auto h-screen md:h-auto mt-28">
       <div className="w-full ">
-        <h3 className=" text-2xl md:text-4xl font-[500] tracking-tighter uppercase">
-          Leadership
-        </h3>
+        <Reveal>
+          <h3 className=" text-2xl md:text-4xl font-[500] tracking-tighter uppercase">
+            Leadership
+          </h3>
+        </Reveal>
       </div>
 
       <div className="mt-16 w-full h-full">

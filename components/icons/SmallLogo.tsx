@@ -2,14 +2,15 @@ import * as React from "react";
 import { motion } from "framer-motion";
 interface titansProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
+  barstate?: boolean;
 }
 const svgvariants = {
   hidden: {
-    rotate: -5,
+    transform: "rotateY(0deg)",
   },
   visible: {
-    rotate: 0,
-    transition: { duration: 1 },
+    transform: "rotateY(180deg)",
+    transition: { duration: 1, yoyo: 10 },
   },
 };
 
@@ -24,7 +25,7 @@ const pathVariants = {
     transition: { duration: 2, ease: "easeInOut" },
   },
 };
-export const SmallLogo = ({ className, ...props }: any) => (
+export const SmallLogo = ({ className, barstate, ...props }: any) => (
   <motion.svg
     variants={svgvariants}
     initial="hidden"
@@ -37,7 +38,9 @@ export const SmallLogo = ({ className, ...props }: any) => (
     {...props}
   >
     <defs>
-      <style>{".cls-1{fill:#303030;fill-rule:evenodd;}"}</style>
+      <style>{`.cls-1{fill:${
+        barstate ? "#fff" : "#303030"
+      };fill-rule:evenodd;}`}</style>
     </defs>
     <g id="Layer_1-2" data-name="Layer_1">
       <motion.path

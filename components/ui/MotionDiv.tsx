@@ -13,7 +13,7 @@ export const LogoMotionDiv = (props: Props) => {
     <motion.div
       initial={{ y: -39, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, delay: 0.3 }}
+      transition={{ duration: 0.4 }}
       className={cn(`${className}`)}
       viewport={{ once: true }}
     >

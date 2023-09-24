@@ -17,7 +17,7 @@ const HeroAgency = (props: Props) => {
       <div className="w-full flex justify-end mt-10 md:my-20 ">
         <div className="lg:w-1/2 flex justify-end ">
           <Reveal>
-            <p className=" text-xs md:text-[18px] font-medium leading-[20px] lg:leading-[35px] tracking-wide">
+            <p className=" text-xs md:text-[18px] font-[400] leading-[20px] lg:leading-[35px] tracking-wide">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
               laboriosam dolore ipsum tempore voluptate illo fugit, facere
               aliquid facilis, laudantium aperiam suscipit eaque minima mlor sit
