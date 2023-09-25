@@ -8,6 +8,7 @@ import Footer from "@/components/ui/Footer";
 import SmallBtn from "@/components/ui/SmallBtn";
 import { FiArrowUpRight } from "react-icons/fi";
 import InsightLink from "@/components/ui/InsightLink";
+import Reveal from "@/components/Reveal";
 
 type Props = {};
 
@@ -15,11 +16,13 @@ const page = (props: Props) => {
   return (
     <>
       <section className="py-20">
-        <div className="flex w-full max-w-[90%] mx-auto ">
-          <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[400] text-left uppercase md:py-10">
-            the <br className="md:hidden" /> insights
-          </h1>
-        </div>
+        <Reveal>
+          <div className="flex w-full max-w-[90%] mx-auto ">
+            <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[400] text-left uppercase md:py-10">
+              the <br className="md:hidden" /> insights
+            </h1>
+          </div>
+        </Reveal>
         <div className="h-[3px] w-full bg-black mt-10 max-w-[90%] mx-auto " />
 
         <div className="w-full mb-10 max-w-[90%] mx-auto ">
