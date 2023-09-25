@@ -12,7 +12,10 @@ const InsightLink = (props: Props) => {
       <div className="w-full md:mt-4 py-2 ">
         <div className="flex border-b-2 border-black gap-x-2 flex-col md:flex-row  w-full">
           <div className="flex flex-1">
-            <h2 className="text-[18px] underline text-black">insights</h2> /{" "}
+            <h2 className="text-[18px] underline text-black font-[500]">
+              insights
+            </h2>{" "}
+            /{" "}
             <SmallBtn className="text-[11px]  underline text-black">
               2000
             </SmallBtn>
