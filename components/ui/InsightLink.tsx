@@ -11,20 +11,25 @@ const InsightLink = (props: Props) => {
     <Reveal>
       <div className="w-full md:mt-4 py-2 ">
         <div className="flex border-b-2 border-black gap-x-2 flex-col md:flex-row  w-full items-center">
-          <div className="flex flex-1 items-center">
-            <h2 className="text-[18px] underline text-black font-[500]">
-              insights
-            </h2>{" "}
-            /{" "}
-            <SmallBtn className="text-[18px]  underline text-black">
-              2000
-            </SmallBtn>
-          </div>
-          <div className="flex justify-between lg:w-[65%] text-left">
-            <div className="tracking-[-0.02] text-black text-[10px] md:text-[16px] font-light mb-4">
+          <div className="flex flex-col md:flex-row justify-between  w-full">
+            <div className="tracking-[-0.02] flex-1 text-black text-[14px] md:text-[18px] font-[500] mb-4  ">
               TC Works with EFCC - rethinking crime in Nigeria
             </div>
-            <FiArrowUpRight className=" text-3xl lg:text-5xl font-semibold" />
+            <div className="flex gap-x-2  items-center justify-between lg:w-[50%]  ">
+              <div className="flex  items-center ">
+                <h2 className="text-[10px] md:text-[14px] underline text-black font-[400] mr-2">
+                  insights
+                </h2>
+                |
+                <SmallBtn className="text-[10px]  underline text-black">
+                  2000
+                </SmallBtn>
+              </div>
+
+              <div className="flex  items-center justify-end ">
+                <FiArrowUpRight className=" text-2xl lg:text-5xl font-semibold" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
