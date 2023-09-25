@@ -1,18 +1,22 @@
 import { shimmer, toBase64 } from "@/lib/image";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
-import image from "../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
-import SmallBtn from "../ui/SmallBtn";
-import Arrow from "../icons/Arrow";
+
 import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
 import Reveal from "../Reveal";
-type Props = {};
+type Props = {
+  image: StaticImageData;
+  projectname: string;
+  description: string;
+  slug: string;
+};
 
 const ProjectItem = (props: Props) => {
+  const { image, projectname, slug, description } = props;
   return (
     <div className=" w-full  border-b-2 border-gray-400 py-4 ">
-      <Link href="Workings/20" className="hover:scale-105">
+      <Link href={`Workings/${slug}`} className="hover:scale-105">
         <div className="w-full flex flex-col lg:flex-row justify-between gap-y-4">
           <div className="lg:w-5/12">
             <Reveal>
@@ -36,17 +40,14 @@ const ProjectItem = (props: Props) => {
               <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-10">
                 <div className="w-full flex justify-between lg:mt-20 ">
                   <h2 className="font-[400] text-2xl lg:text-3xl uppercase">
-                    iboats
+                    {projectname}
                   </h2>
 
                   <FiArrowUpRight className="text-5xl font-semibold mb-4 " />
                 </div>
                 <Reveal>
                   <p className="font-[300]  text-[12px] md:text-sm tracking-normal leading-[20px] md:leading-[30px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi esse, fuga ratione illo nam corporis qui est dolorem
-                    ex blanditiis temporibus neque accusantium deserunt iste.
-                    Placeat earum incidunt iste dignissimos.
+                    {description}
                   </p>
                 </Reveal>
               </div>

@@ -5,7 +5,7 @@ type Props = {};
 
 const HeroAgency = (props: Props) => {
   return (
-    <section className="w-full flex-col  md:flex  md:mt-10">
+    <section className="w-full flex-col  md:flex md:mt-10">
       <div className="flex w-full">
         <Reveal>
           <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">

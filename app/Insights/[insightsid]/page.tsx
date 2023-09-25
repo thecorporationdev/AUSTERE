@@ -15,7 +15,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <section className="py-20">
+      <section className="py-32 md:py-24">
         <Reveal>
           <div className="flex w-full max-w-[90%] mx-auto ">
             <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[400] text-left uppercase md:py-10">

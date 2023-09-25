@@ -2,6 +2,7 @@ import React from "react";
 import Project from "../../ui/Project";
 import Arrow from "../../icons/Arrow";
 import Link from "next/link";
+import { workings } from "@/app/Data/data";
 
 type Props = {};
 
@@ -13,10 +14,14 @@ const Projects = (props: Props) => {
       </h1>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-10 mt-3 md:mt-4 w-full">
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {workings.slice(0, 4).map((project, idx) => (
+          <Project
+            slug={project?.id}
+            key={idx}
+            projectname={project?.brandname}
+            image={project.images?.[0]}
+          />
+        ))}
       </section>
 
       <Link href="/Workings" className="group">

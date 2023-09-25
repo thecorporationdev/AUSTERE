@@ -5,10 +5,38 @@ import image from "../../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import Link from "next/link";
 import Footer from "@/components/ui/Footer";
 import Reveal from "@/components/Reveal";
+import { workings } from "@/app/Data/data";
+import Project from "@/components/ui/Project";
 
-type Props = {};
+type Props = {
+  params: { projectid: string };
+};
 
 const page = (props: Props) => {
+  const { params } = props;
+  function pickRandomObjects(arr: any, numObjectsToPick: number) {
+    if (numObjectsToPick >= arr.length) {
+      return [...arr];
+    }
+
+    const shuffledArray = arr.slice();
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      // Shuffle the array using Fisher-Yates shuffle algorithm
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [
+        shuffledArray[j],
+        shuffledArray[i],
+      ];
+    }
+
+    // Pick the first numObjectsToPick elements from the shuffled array
+    return shuffledArray.slice(0, numObjectsToPick);
+  }
+  const randomObjects = pickRandomObjects(workings, 3);
+  const projectdata = workings.find(
+    (project) => project.id === params.projectid
+  );
+
   return (
     <>
       <section className="max-w-[90%] mx-auto py-32 md:py-24">
@@ -24,78 +52,57 @@ const page = (props: Props) => {
         <div className="w-full flex gap-x-20 mt-10 flex-col md:flex-row">
           <div className="w-full ">
             <div className=" w-full flex flex-col gap-y-10 items-center justify-center ">
-              <div className="h-[300px] w-full  relative overflow-hidden  bg-gray-100 ">
-                <Image
-                  placeholder="blur"
-                  blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-                    shimmer(400, 400)
-                  )}`}
-                  src={image}
-                  alt="boatimage"
-                  fill
-                  // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
-                />
-              </div>
-              <div className=" h-[300px] w-full   relative overflow-hidden  bg-gray-100">
-                <Image
-                  placeholder="blur"
-                  blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-                    shimmer(400, 400)
-                  )}`}
-                  src={image}
-                  alt="boatimage"
-                  fill
-                  // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
-                />
-              </div>
+              {projectdata?.images.slice(0, 3).map((image, idx) => (
+                <div
+                  className=" h-[400px] w-full relative overflow-hidden  bg-gray-100 mt-10"
+                  key={idx}
+                >
+                  <Image
+                    placeholder="blur"
+                    blurDataURL={`data:image/svg+xml;base64, ${toBase64(
+                      shimmer(400, 400)
+                    )}`}
+                    src={image}
+                    alt="boatimage"
+                    fill
+                    // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
+                  />
+                </div>
+              ))}
             </div>
           </div>
           <div className="w-full max-md:mt-10">
             <div className="w-full pb-10">
-              <h1 className="font-[400] text-2xl md:text-3xl">IBOATS</h1>
+              <h1 className="font-[400] text-2xl md:text-3xl uppercase">
+                {projectdata?.brandname}
+              </h1>
             </div>
             <Reveal>
               <p className=" text-[12px] md:text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum eum eius ipsa qui earum! Dolorem earum quae maiores
-                laboriosam, ullam repellendus dignissimos ea? Esse ipsum animi
-                doloremque quas nisi nemo! Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Asperiores nam, voluptatum libero
-                earum nemo, fuga veniam rem consequuntur ad esse, non eveniet
-                eligendi nisi aliquam amet sint deleniti nesciunt quas?Lorem
-                ipsum dolor, sit amet consectetur adipisicing elit. Amet,
-                aliquid suscipit! Ut asperiores, eos nulla facere sunt numquam.
-                Esse exercitationem culpa repudiandae quam aspernatur,
-                consequatur asperiores hic distinctio illum ducimus!
+                {projectdata?.description}
               </p>
             </Reveal>
-            <div className=" h-[300px] w-full relative overflow-hidden  bg-gray-100 mt-10">
-              <Image
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-                  shimmer(400, 400)
-                )}`}
-                src={image}
-                alt="boatimage"
-                fill
-                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
-              />
-            </div>
-            <div className=" h-[300px] w-full    relative overflow-hidden  bg-gray-100 mt-10">
-              <Image
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-                  shimmer(400, 400)
-                )}`}
-                src={image}
-                alt="boatimage"
-                fill
-                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
-              />
+
+            <div className="">
+              {projectdata?.images.slice(3, 8).map((image, idx) => (
+                <div
+                  className=" h-[400px] w-full relative overflow-hidden  bg-gray-100 mt-10"
+                  key={idx}
+                >
+                  <Image
+                    placeholder="blur"
+                    blurDataURL={`data:image/svg+xml;base64, ${toBase64(
+                      shimmer(400, 400)
+                    )}`}
+                    src={image}
+                    alt="boatimage"
+                    fill
+                    // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -106,9 +113,14 @@ const page = (props: Props) => {
             Other projects
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 ">
-            <Projectrelated />
-            <Projectrelated />
-            <Projectrelated />
+            {randomObjects.map((projectrelated: any, idx: number) => (
+              <Project
+                key={idx}
+                image={projectrelated.images?.[0]}
+                projectname={projectrelated?.brandname}
+                slug={projectrelated?.id}
+              />
+            ))}
           </div>
         </div>
       </section>
