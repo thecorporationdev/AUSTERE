@@ -4,21 +4,23 @@ import React from "react";
 import image from "../../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import Link from "next/link";
 import Footer from "@/components/ui/Footer";
+import Reveal from "@/components/Reveal";
 
 type Props = {};
 
 const page = (props: Props) => {
   return (
     <>
-      <section className="max-w-[90%] mx-auto py-24">
-        <div className="flex w-full">
-          <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
-            the
-            <br className="md:hidden" /> workings
-          </h1>
-        </div>
-        <div className="h-[3px] w-full bg-black mt-10" />
-
+      <section className="max-w-[90%] mx-auto py-32 md:py-24">
+        <Reveal>
+          <div className="flex w-full">
+            <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
+              the
+              <br className="md:hidden" /> workings
+            </h1>
+          </div>
+          <div className="h-[3px] w-full bg-black mt-10" />
+        </Reveal>
         <div className="w-full flex gap-x-20 mt-10 flex-col md:flex-row">
           <div className="w-full ">
             <div className=" w-full flex flex-col gap-y-10 items-center justify-center ">
@@ -54,19 +56,21 @@ const page = (props: Props) => {
             <div className="w-full pb-10">
               <h1 className="font-[400] text-2xl md:text-3xl">IBOATS</h1>
             </div>
-            <p className=" text-[12px] md:text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum eum eius ipsa qui earum! Dolorem earum quae maiores
-              laboriosam, ullam repellendus dignissimos ea? Esse ipsum animi
-              doloremque quas nisi nemo! Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Asperiores nam, voluptatum libero earum nemo,
-              fuga veniam rem consequuntur ad esse, non eveniet eligendi nisi
-              aliquam amet sint deleniti nesciunt quas?Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Amet, aliquid suscipit! Ut
-              asperiores, eos nulla facere sunt numquam. Esse exercitationem
-              culpa repudiandae quam aspernatur, consequatur asperiores hic
-              distinctio illum ducimus!
-            </p>
+            <Reveal>
+              <p className=" text-[12px] md:text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum eum eius ipsa qui earum! Dolorem earum quae maiores
+                laboriosam, ullam repellendus dignissimos ea? Esse ipsum animi
+                doloremque quas nisi nemo! Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Asperiores nam, voluptatum libero
+                earum nemo, fuga veniam rem consequuntur ad esse, non eveniet
+                eligendi nisi aliquam amet sint deleniti nesciunt quas?Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+                aliquid suscipit! Ut asperiores, eos nulla facere sunt numquam.
+                Esse exercitationem culpa repudiandae quam aspernatur,
+                consequatur asperiores hic distinctio illum ducimus!
+              </p>
+            </Reveal>
             <div className=" h-[300px] w-full    relative overflow-hidden  bg-gray-100 mt-10">
               <Image
                 placeholder="blur"

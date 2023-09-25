@@ -8,6 +8,7 @@ import { Boxes } from "../icons/Boxes";
 import { Cbn } from "../icons/cbn";
 import { Secs } from "../icons/Secs";
 import { Mango } from "../icons/Mango";
+import Reveal from "../Reveal";
 
 const clients = [
   { id: 1, logo: <Trustbank /> },
@@ -61,10 +62,12 @@ type Propsclient = {
 function Clientbox(props: Propsclient) {
   const { word, logo } = props;
   return (
-    <div className="border-2 border-black  flex  items-center justify-center py-14 px-14 md:px-1">
-      <div className=" h-[6rem] w-[6rem]  md:h-[5.5rem] md:w-[5.5rem] flex items-center justify-center">
-        {logo}
+    <Reveal>
+      <div className="border-2 border-black  flex  items-center justify-center py-14 px-14 md:px-1">
+        <div className=" h-[6rem] w-[6rem]  md:h-[5.5rem] md:w-[5.5rem] flex items-center justify-center">
+          {logo}
+        </div>
       </div>
-    </div>
+    </Reveal>
   );
 }

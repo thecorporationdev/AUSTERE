@@ -6,6 +6,7 @@ import SmallBtn from "../ui/SmallBtn";
 import Arrow from "../icons/Arrow";
 import { FiArrowUpRight } from "react-icons/fi";
 import Link from "next/link";
+import Reveal from "../Reveal";
 type Props = {};
 
 const ProjectItem = (props: Props) => {
@@ -14,19 +15,21 @@ const ProjectItem = (props: Props) => {
       <Link href="Workings/20" className="hover:scale-105">
         <div className="w-full flex flex-col lg:flex-row justify-between gap-y-4">
           <div className="lg:w-5/12">
-            <div className=" h-[350px] relative overflow-hidden  bg-gray-100">
-              <Image
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-                  shimmer(400, 400)
-                )}`}
-                src={image}
-                alt="BOAT IMAGE"
-                fill={true}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover group-hover:scale-105 transition-all duration-150 bg-top h-full"
-              />
-            </div>
+            <Reveal>
+              <div className=" h-[350px] relative overflow-hidden  bg-gray-100">
+                <Image
+                  placeholder="blur"
+                  blurDataURL={`data:image/svg+xml;base64, ${toBase64(
+                    shimmer(400, 400)
+                  )}`}
+                  src={image}
+                  alt="BOAT IMAGE"
+                  fill={true}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-all duration-150 bg-top h-full"
+                />
+              </div>
+            </Reveal>
           </div>
           <div className="lg:w-6/12 ">
             <div className="w-[90%] mx-auto">
@@ -38,12 +41,14 @@ const ProjectItem = (props: Props) => {
 
                   <FiArrowUpRight className="text-5xl font-semibold mb-4 " />
                 </div>
-                <p className="font-[300]  text-[12px] md:text-sm tracking-normal leading-[20px] md:leading-[30px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                  esse, fuga ratione illo nam corporis qui est dolorem ex
-                  blanditiis temporibus neque accusantium deserunt iste. Placeat
-                  earum incidunt iste dignissimos.
-                </p>
+                <Reveal>
+                  <p className="font-[300]  text-[12px] md:text-sm tracking-normal leading-[20px] md:leading-[30px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi esse, fuga ratione illo nam corporis qui est dolorem
+                    ex blanditiis temporibus neque accusantium deserunt iste.
+                    Placeat earum incidunt iste dignissimos.
+                  </p>
+                </Reveal>
               </div>
             </div>
           </div>
