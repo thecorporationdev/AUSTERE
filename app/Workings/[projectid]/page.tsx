@@ -19,8 +19,9 @@ const page = (props: Props) => {
               <br className="md:hidden" /> workings
             </h1>
           </div>
-          <div className="h-[3px] w-full bg-black mt-10" />
         </Reveal>
+        <div className="h-[3px] w-full bg-black mt-10" />
+
         <div className="w-full flex gap-x-20 mt-10 flex-col md:flex-row">
           <div className="w-full ">
             <div className=" w-full flex flex-col gap-y-10 items-center justify-center ">
