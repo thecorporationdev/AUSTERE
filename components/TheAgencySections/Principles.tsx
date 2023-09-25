@@ -48,11 +48,10 @@ function Principle({ title, p }: { title: string; p: string }) {
           {title}
         </h3>
       </Reveal>
-      <Reveal>
-        <p className="break-words w-full whitespace-normal flex md:items-center md:justify-center text-[14px] min-[400px]:mt-4 font-[400] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
-          {p}
-        </p>
-      </Reveal>
+
+      <p className="break-words w-full whitespace-normal flex md:items-center md:justify-center text-[14px] min-[400px]:mt-4 font-[400] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
+        {p}
+      </p>
     </div>
   );
 }

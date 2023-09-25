@@ -71,7 +71,7 @@ const page = (props: Props) => {
                 consequatur asperiores hic distinctio illum ducimus!
               </p>
             </Reveal>
-            <div className=" h-[300px] w-full    relative overflow-hidden  bg-gray-100 mt-10">
+            <div className=" h-[300px] w-full relative overflow-hidden  bg-gray-100 mt-10">
               <Image
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64, ${toBase64(
