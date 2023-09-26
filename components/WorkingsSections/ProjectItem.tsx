@@ -39,7 +39,7 @@ const ProjectItem = (props: Props) => {
             <div className="w-[90%] mx-auto">
               <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-10">
                 <div className="w-full flex justify-between lg:mt-20 ">
-                  <h2 className="font-[400] text-2xl lg:text-3xl uppercase">
+                  <h2 className="font-[400] text-base lg:text-3xl uppercase">
                     {projectname}
                   </h2>
 

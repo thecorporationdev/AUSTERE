@@ -54,7 +54,7 @@ const page = (props: Props) => {
             <div className=" w-full flex flex-col gap-y-10 items-center justify-center ">
               {projectdata?.images.slice(0, 3).map((image, idx) => (
                 <div
-                  className=" h-[400px] w-full relative overflow-hidden  bg-gray-100 mt-10"
+                  className="h-[400px] w-full relative overflow-hidden  bg-gray-100 mt-10"
                   key={idx}
                 >
                   <Image
@@ -98,8 +98,8 @@ const page = (props: Props) => {
                     src={image}
                     alt="boatimage"
                     fill
-                    // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover bg-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
                   />
                 </div>
               ))}

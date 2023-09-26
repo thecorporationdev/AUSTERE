@@ -132,3 +132,24 @@ export const workings = [
       "The logo was inspired by the transformation of key buildings into iconic logos for institutions. However, despite our efforts, the client rejected this particular design. On a positive note, we have successfully created other brands for the same client, which we will be uploading soon.",
   },
 ];
+
+export const designCategories = [
+  {
+    id: 1,
+    category: "UI/UX Design",
+    description:
+      "You never have a second chance to make a first impression. At Austere, we apply a full range of UI/UX services to build efficient customer retention strategies and help brands create genuine, human—centered identities that engage, excite, and build trust. We push brands to define their image with visuals and well—crafted user experience achieved through deep understanding of design and synergy with technical aspects of development. Yet, providing an extensive set of UI/UX services, Austere can cut delivery times by a third — or even in half.",
+  },
+  {
+    id: 2,
+    category: "ARCHITECTURAL DESIGNS",
+    description:
+      "Austere helps clients create distinctive environments where architecture, landscape, culture and local community merge to create a place. We approach architectural design in an integrated way through exploration and holistic thinking, basing our design on the symbiotic relationship between land, form, structure, systems, and materials to drive high performing buildings. As a team of designers, we believe in collective intelligence, and we thrive through collaboration. Our studio is inclusive, bringing together designers, consultants, stakeholders, and users to build consensus and create visionary solutions",
+  },
+  {
+    id: 3,
+    category: "INTERIOR DESIGNS",
+    description:
+      "Our designers and strategists help transform a brand’s business, culture, and experience through the built internal environment by developing branded communications, spaces, and experiences that define, inspire, and engage. Our integrated team brings diverse areas of expertise to deliver insights that drive rich experiences and a return on investment for brands. We collaborate with clients all over Africa to create healthy, sustainable places in which to live, learn, work, play, and heal.",
+  },
+];
