@@ -65,8 +65,8 @@ const page = (props: Props) => {
                     src={image}
                     alt="boatimage"
                     fill
-                    // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-all duration-150 bg-cover h-full"
                   />
                 </div>
               ))}
@@ -79,7 +79,7 @@ const page = (props: Props) => {
               </h1>
             </div>
             <Reveal>
-              <p className=" text-[12px] md:text-sm">
+              <p className="text-base md:text-[18px]">
                 {projectdata?.description}
               </p>
             </Reveal>
