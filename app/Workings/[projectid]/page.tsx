@@ -54,7 +54,7 @@ const page = (props: Props) => {
             <div className=" w-full flex flex-col  items-center justify-center ">
               {projectdata?.images.slice(0, 4).map((image, idx) => (
                 <div
-                  className="h-[400px] w-full relative overflow-hidden border-gray-400  border-2   bg-gray-100 mt-5"
+                  className=" h-[300px] md:h-[400px] w-full relative overflow-hidden border-gray-400  border-2   bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
