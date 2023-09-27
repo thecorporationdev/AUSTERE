@@ -12,7 +12,7 @@ import Reveal from "../Reveal";
 
 const clients = [
   { id: 1, logo: <Trustbank /> },
-  { id: 2, logo: <Secs /> },
+  { id: 2, logo: <Eye /> },
   { id: 30, logo: <Mango /> },
   {
     id: 3,
@@ -20,7 +20,7 @@ const clients = [
   },
   {
     id: 4,
-    logo: <Nfvb />,
+    logo: <Boxes />,
   },
   {
     id: 89,
@@ -28,11 +28,11 @@ const clients = [
   },
   {
     id: 5,
-    logo: <Nama />,
+    logo: <Cbn />,
   },
   {
     id: 6,
-    logo: <Boxes />,
+    logo: <Nfvb />,
   },
   {
     id: 9,

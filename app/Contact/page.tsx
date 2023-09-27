@@ -12,7 +12,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <section className="max-w-[90%] mx-auto  text-black py-32 md:py-24">
+      <section className="max-w-[90%] mx-auto  text-black pt-32 md:pt-24">
         <Reveal>
           <div className=" w-full max-md:flex-col mx-auto flex items-left justify-center ">
             <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
@@ -37,7 +37,7 @@ const page = (props: Props) => {
         </div>
 
         <div className="w-full flex justify-end py-10 ">
-          <div className=" w-full lg:w-[70%] flex gap-y-14 flex-col ">
+          <div className=" w-full flex gap-y-14 flex-col ">
             <div className="w-full">
               <Reveal>
                 <p className="font-bold text-base">
@@ -45,7 +45,7 @@ const page = (props: Props) => {
                 </p>
               </Reveal>
             </div>
-            <div className="w-full">
+            <div className="w-full flex items-center justify-center flex-col">
               <form className=" lg:w-full py-10 px-4 lg:px-8 border-t-2 border-b-2  border-black flex flex-col justify-between">
                 <p className="text-2xl md:text-3xl font-bold capitalize pb-6 ">
                   more info:

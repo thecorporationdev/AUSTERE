@@ -11,7 +11,7 @@ const Insights = (props: Props) => {
       <div className="w-full">
         <div className="lg:w-[53%] flex justify-between capitalize items-center text-center ">
           <h3 className="text-2xl md:text-3xl uppercase tracking-tighter font-[500]">
-            insights
+           the insights
           </h3>
         </div>
         <div className="w-full mt-10 md:mt-20 flex justify-end">

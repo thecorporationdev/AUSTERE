@@ -1,5 +1,4 @@
 import React from "react";
-import { HeroMotionDiv, LineMotionDiv } from "../../ui/MotionDiv";
 import Reveal from "@/components/Reveal";
 
 const Hero = () => {
@@ -14,7 +13,20 @@ const Hero = () => {
       </Reveal>
       <div className="h-[3px] w-full bg-black mt-5" />
 
-      <div className="flex justify-end">
+      <div className="w-full flex justify-end mt-10 md:my-20 ">
+        <div className="lg:w-1/2 flex justify-end ">
+          <Reveal>
+            <p className=" text-base md:text-[17px] font-[400] text-black leading-[20px] lg:leading-[30px] tracking-wide">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              assumenda nostrum distinctio. Fuga nemo accusamus libero molestiae
+              quod maxime dolore aspernatur non! Dicta quibusdam asperiores
+              quaerat labore cupiditate obcaecati eaque?
+            </p>
+          </Reveal>
+        </div>
+      </div>
+
+      {/* <div className="flex justify-end">
         <div className=" md:w-[80%] mt-3 flex flex-col md:flex-row justify-between ">
           <Reveal>
             <div
@@ -30,7 +42,7 @@ const Hero = () => {
             <div className=" w-[100%] flex  flex-col md:flex-row  justify-end"></div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

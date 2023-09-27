@@ -39,7 +39,7 @@ const page = (props: Props) => {
 
   return (
     <>
-      <section className="max-w-[90%] mx-auto py-32 md:py-24">
+      <section className="max-w-[90%] mx-auto pt-32 md:pt-24">
         <div className="flex w-full">
           <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
             the
@@ -51,10 +51,10 @@ const page = (props: Props) => {
 
         <div className="w-full flex gap-x-20 mt-10 flex-col md:flex-row">
           <div className="w-full ">
-            <div className=" w-full flex flex-col gap-y-10 items-center justify-center ">
-              {projectdata?.images.slice(0, 3).map((image, idx) => (
+            <div className=" w-full flex flex-col  items-center justify-center ">
+              {projectdata?.images.slice(0, 4).map((image, idx) => (
                 <div
-                  className="h-[400px] w-full relative overflow-hidden  bg-gray-100 mt-10"
+                  className="h-[400px] w-full relative overflow-hidden border-gray-400  border-2   bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -66,7 +66,7 @@ const page = (props: Props) => {
                     alt="boatimage"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-all duration-150 bg-cover h-full"
+                    className="group-hover:scale-105 transition-all duration-150 bg-cover h-full"
                   />
                 </div>
               ))}
@@ -79,15 +79,15 @@ const page = (props: Props) => {
               </h1>
             </div>
             <Reveal>
-              <p className="text-base md:text-[18px]">
+              <p className="text-base md:text-[17px]">
                 {projectdata?.description}
               </p>
             </Reveal>
 
             <div className="">
-              {projectdata?.images.slice(3, 8).map((image, idx) => (
+              {projectdata?.images.slice(4, 7).map((image, idx) => (
                 <div
-                  className=" h-[400px] w-full relative overflow-hidden  bg-gray-100 mt-10"
+                  className=" h-[400px] w-full relative overflow-hidden border-gray-400  border-2 bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -99,7 +99,7 @@ const page = (props: Props) => {
                     alt="boatimage"
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover bg-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
+                    className="bg-cover group-hover:scale-105 transition-all duration-150  h-full"
                   />
                 </div>
               ))}
@@ -110,7 +110,7 @@ const page = (props: Props) => {
         <div className="h-[3px] w-full bg-black mt-10"></div>
         <div className="max-lg:px-3 mt-14  md:mt-10">
           <h3 className="uppercase font-bold text-base md:text-xl mb-4">
-            Other projects
+            Other workings
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 ">
             {randomObjects.map((projectrelated: any, idx: number) => (
@@ -131,26 +131,26 @@ const page = (props: Props) => {
 
 export default page;
 
-function Projectrelated(props: Props) {
-  return (
-    <Link href="/Workings/id" className="group text-sm w-full">
-      <div className=" h-[400px] relative overflow-hidden bg-gray-100">
-        <Image
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-            shimmer(400, 400)
-          )}`}
-          src={image}
-          alt="BOAT IMAGE"
-          fill={true}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover group-hover:scale-105 transition-all duration-150 bg-top h-full"
-        />
-      </div>
+// function Projectrelated(props: Props) {
+//   return (
+//     <Link href="/Workings/id" className="group text-sm w-full">
+//       <div className=" h-[400px] relative overflow-hidden bg-gray-100">
+//         <Image
+//           placeholder="blur"
+//           blurDataURL={`data:image/svg+xml;base64, ${toBase64(
+//             shimmer(400, 400)
+//           )}`}
+//           src={image}
+//           alt="BOAT IMAGE"
+//           fill={true}
+//           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+//           className="object-cover group-hover:scale-105 transition-all duration-150 bg-top h-full"
+//         />
+//       </div>
 
-      <p className="mt-2 text-xl tracking-tighter text-gray-900 font-[400]">
-        IBoats
-      </p>
-    </Link>
-  );
-}
+//       <p className="mt-2 text-xl tracking-tighter text-gray-900 font-[400]">
+//         IBoats
+//       </p>
+//     </Link>
+//   );
+// }

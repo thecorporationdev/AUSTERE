@@ -10,7 +10,7 @@ const Projects = (props: Props) => {
   return (
     <section className=" mt-16 md:mt-32 w-full">
       <h1 className=" text-2xl md:text-3xl tracking-tighter uppercase mb-4 font-[500]">
-        Projects
+        the workings
       </h1>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-10 mt-3 md:mt-4 w-full">
@@ -29,7 +29,7 @@ const Projects = (props: Props) => {
           <div className=" w-1/2 flex justify-end md:justify-start ">
             <div className="flex items-center underline underline-offset-2 ">
               <h1 className="text-[12px] md:text-[14px] tracking-tighter uppercase mb-2  font-[300]  ">
-                All Projects
+                All workings
               </h1>
               <Arrow className="group-hover:scale-105" />
             </div>

@@ -19,11 +19,11 @@ const Values = (props: Props) => {
               <h3 className="hidden text-base mt-10 md:mt-2  capitalize tracking-tighter font-[500]">
                 Accountability <br /> breeds success
               </h3>
-              <h3 className="text-base mt-14 md:mt-2 font-b capitalize tracking-tighter font-[500]">
+              <h3 className="text-xl mt-14 md:mt-2 font-b capitalize tracking-tighter font-[500]">
                 Accountability breeds success
               </h3>
               <Reveal>
-                <p className="mt-10 text-sm font-[400]  text-right">
+                <p className="mt-10 text-base md:text-[17px]  text-left leading-[20px] md:leading-[28px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Necessitatibus sapiente est temporibus, sequi ipsa provident,
                   eligendi omnis consequatur expedita maxime ipsam, quidem

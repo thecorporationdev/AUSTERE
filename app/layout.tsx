@@ -9,8 +9,10 @@ const unbound = Unbounded({
 import Header from "@/components/sections/hero/Header";
 
 export const metadata: Metadata = {
-  title: "AUSTERE",
-  description: "Profile website of Austere",
+  title:
+    "AUSTERE  —  AFRICA'S FOREMOST HUMAN — CENTERED MINIMALIST DESIGN AGENCY",
+  description:
+    "AUSTERE  —  AFRICA'S FOREMOST HUMAN — CENTERED MINIMALIST DESIGN AGENCY",
   icons: {
     icon: "./AUSTEREICO.png",
   },

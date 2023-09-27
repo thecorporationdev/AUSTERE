@@ -1,5 +1,6 @@
 "use client";
 import Reveal from "@/components/Reveal";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -60,20 +61,28 @@ const Desc = (props: Props) => {
                 <ul className="capitalize undeline text-xs  font-[500]">
                   <Reveal>
                     <li className="underline ">
-                      <a href="https://www.behance.net/TheAustereAFR">
+                      <a
+                        href="https://www.behance.net/TheAustereAFR"
+                        target="_blank"
+                      >
                         behance
                       </a>
                     </li>
                   </Reveal>
                   <Reveal>
                     <li className="underline ">
-                      <a href="https://web.facebook.com/TheAustereAFR">
+                      <a
+                        href="https://web.facebook.com/TheAustereAFR"
+                        target="_blank"
+                      >
                         facebook
                       </a>
                     </li>
                   </Reveal>
                   <li className="underline">
-                    <a href="https://twitter.com/TheAustereAFR">twitter</a>
+                    <a href="https://twitter.com/TheAustereAFR" target="_blank">
+                      twitter
+                    </a>
                   </li>
                   <li className="underline">
                     <a href="ttps://www.instagram.com/TheAustereAFR/">
@@ -83,12 +92,17 @@ const Desc = (props: Props) => {
                 </ul>
 
                 <ul className=" text-xs uppercase font-[500]">
-                  <li className="capitalize font-medium underline underline-offset-1">
-                    legal
-                  </li>
-                  <li className="capitalize font-medium underline underline-offset-1">
-                    privacy
-                  </li>
+                  <Link href="/Legal">
+                    <li className="capitalize font-medium underline underline-offset-1">
+                      legal
+                    </li>
+                  </Link>
+
+                  <Link href="/Privacy">
+                    <li className="capitalize font-medium underline underline-offset-1">
+                      privacy
+                    </li>
+                  </Link>
                 </ul>
               </div>
             </div>

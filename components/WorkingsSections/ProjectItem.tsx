@@ -14,6 +14,11 @@ type Props = {
 
 const ProjectItem = (props: Props) => {
   const { image, projectname, slug, description } = props;
+  const truncatedDescription =
+    description.length > 400
+      ? description.slice(0, 400 - 3) + "..." // Subtract 3 characters for "..."
+      : description;
+
   return (
     <div className=" w-full  border-b-2 border-gray-400 py-4 ">
       <Link href={`Workings/${slug}`} className="hover:scale-105">
@@ -37,17 +42,24 @@ const ProjectItem = (props: Props) => {
           </div>
           <div className="lg:w-6/12 ">
             <div className="w-[90%] mx-auto">
-              <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-10">
-                <div className="w-full flex justify-between lg:mt-20 ">
-                  <h2 className="font-[400] text-base lg:text-3xl uppercase">
+              <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-8">
+                <div className="w-full flex justify-between lg:mt-10 ">
+                  <h2 className="font-[400] text-base lg:text-2xl uppercase">
                     {projectname}
                   </h2>
 
                   <FiArrowUpRight className="text-5xl font-semibold mb-4 " />
                 </div>
                 <Reveal>
-                  <p className="font-[300]  text-[12px] md:text-sm tracking-normal leading-[20px] md:leading-[30px]">
-                    {description}
+                  <p className="font-[300] text-[15px] md:text-[17px] tracking-wide leading-[20px] md:leading-[28px]">
+                    {truncatedDescription}
+                    {description.length > 400 && (
+                      <Link href={`Workings/${slug}`}>
+                        <p className="text-blue-500 inline-block text-xs">
+                          Read more
+                        </p>
+                      </Link>
+                    )}
                   </p>
                 </Reveal>
               </div>

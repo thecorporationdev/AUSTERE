@@ -6,20 +6,20 @@ type Props = {};
 
 const Principles = (props: Props) => {
   return (
-    <section className=" w-full flex mt-14 flex-col md:justify-start md:items-center sm:h-[70vh]">
+    <section className=" w-full flex mt-14 flex-col md:justify-start md:items-center sm:h-[70vh] text-black">
       <div className="w-full flex md:justify-start ">
         <div className="w-full md:w-1/2">
           <div className="w-full flex justify-between items-center md:w-8/12">
             <Reveal>
-              <h3 className=" w-full tracking-tighter max-md:text-4xl  font-[500]  md:text-4xl uppercase">
+              <h3 className=" w-full tracking-wide max-md:text-4xl  font-[500]  md:text-4xl uppercase">
                 our core <br /> principles
               </h3>
             </Reveal>
           </div>
         </div>
       </div>
-      <div className="w-full flex md:justify-end max-md:mt-10">
-        <div className="md:w-1/2 mt-10 md:mt-0 space-y-4  min-[400px]:space-y-10 w-full">
+      <div className="w-full flex mt-10 md:mt-16">
+        <div className="mt-10 md:mt-0 space-y-4  min-[400px]:space-y-10 w-full">
           <Principle
             title="people"
             p="we employ and empower creative thinkers"
@@ -44,12 +44,12 @@ function Principle({ title, p }: { title: string; p: string }) {
   return (
     <div className=" border-t-2 border-black flex flex-col-reverse md:flex-row  md:justify-between mb-2  md:items-center">
       <Reveal>
-        <h3 className="w-full text-5xl mt-2 font-[500] capitalize tracking-tight max-md:text-left py-1">
+        <h3 className="w-full text-5xl mt-7 md:mt-4 font-[500] capitalize tracking-tight max-md:text-left py-1 leading-[20px] lg:leading-[30px]">
           {title}
         </h3>
       </Reveal>
 
-      <p className="break-words w-full whitespace-normal flex md:items-center md:justify-center text-[14px] min-[400px]:mt-4 font-[400] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
+      <p className=" w-full  flex md:items-center md:justify-center text-[15px] min-[400px]:mt-4 text-base md:text-[17px] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
         {p}
       </p>
     </div>

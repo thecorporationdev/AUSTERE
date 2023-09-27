@@ -1,6 +1,7 @@
 import React from "react";
 import Desc from "../sections/hero/Desc";
 import Reveal from "../Reveal";
+import Link from "next/link";
 
 type Props = {};
 
@@ -10,9 +11,11 @@ const Footer = (props: Props) => {
       <div className="w-full">
         <div className="w-full flex items-center justify-center py-24">
           <Reveal>
-            <div className="border-b-2 font-medium border-black py-1 text-2xl md:text-6xl  tracking-normal px-4 uppercase">
-              Let&apos;s go to work
-            </div>
+            <Link href="/Contact">
+              <div className="border-b-2 hover:scale-105  transition-all duration-150 font-medium border-black py-1 text-2xl md:text-6xl  tracking-normal px-4 uppercase">
+                Let&apos;s go to work
+              </div>
+            </Link>
           </Reveal>
         </div>
 
