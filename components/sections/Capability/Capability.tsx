@@ -73,7 +73,7 @@ function Capabilityhero(props: Propscapa) {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[15px] font-[300] max-sm:break-all md:text-[17px]  mt-2 flex flex-wrap tracking-wide mb-2 leading-[20px] lg:leading-[30px]"
+              className="text-base font-[300] md:text-[17px]  mt-2 flex flex-wrap tracking-tight mb-2 leading-[24px] lg:leading-[30px]"
             >
               {description}
             </motion.p>

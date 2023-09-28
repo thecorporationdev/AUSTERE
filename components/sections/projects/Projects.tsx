@@ -4,9 +4,12 @@ import Arrow from "../../icons/Arrow";
 import Link from "next/link";
 import { workings } from "@/app/Data/data";
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
 const Projects = (props: Props) => {
+  const { className } = props;
   return (
     <section className=" mt-16 md:mt-32 w-full">
       <h1 className=" text-2xl md:text-3xl tracking-tighter uppercase mb-4 font-[500]">
@@ -25,7 +28,7 @@ const Projects = (props: Props) => {
       </section>
 
       <Link href="/Workings" className="group my-10">
-        <div className="w-full md:mt-10 flex justify-end">
+        <div className="w-full my-10 flex justify-end">
           <div className=" w-1/2 flex justify-end md:justify-start ">
             <div className="flex items-center underline underline-offset-2 ">
               <h1 className="text-[12px] md:text-[14px] tracking-tighter uppercase mb-2  font-[300]  ">

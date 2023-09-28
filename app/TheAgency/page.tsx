@@ -11,7 +11,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <section className="max-w-[90%] mx-auto snap-mandatory snap-y py-32 md:py-24">
+      <section className="max-w-[90%] mx-auto snap-mandatory snap-y pt-32 md:pt-24">
         <HeroAgency />
         <Principles />
         <Values />

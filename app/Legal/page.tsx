@@ -21,21 +21,21 @@ const page = (props: Props) => {
           <h3 className="text-xl uppercase lg:text-3xl font-bold ">
             website legal statement
           </h3>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
             Website Legal Statement for www.theaustere.xyzThank you for visiting
             www.theaustere.xyz. We strive to provide a safe and enjoyable online
             experience for all of our users. Please take a moment to review our
             legal statement, which outlines the terms and conditions governing
             the use of our website.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
             <span className="uppercase font-[400]">1. Acceptance of Terms</span>{" "}
             By accessing and using www.theaustere.xyz, you agree to comply with
             and be bound by the terms and conditions outlined in this legal
             statement. If you do not agree with any of these terms, please
             refrain from using our website.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
             <span className="uppercase font-[400]">
               {" "}
               2. intellectual Property :{" "}
@@ -47,7 +47,7 @@ const page = (props: Props) => {
             reproduce, distribute, or modify any content from our website
             without prior written consent.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
             <span className="uppercase font-[400]">
               3. Limitation of Liability:{" "}
             </span>{" "}
@@ -58,7 +58,7 @@ const page = (props: Props) => {
             regarding the accuracy or completeness of the content on our
             website.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
             <span className="uppercase font-[400]">
               {" "}
               4. Third-Party Links:{" "}
@@ -70,14 +70,14 @@ const page = (props: Props) => {
             we recommend reviewing the terms and privacy policies of those
             websites.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
             <span className="uppercase font-[400]"> 5. Privacy Policy: </span>{" "}
             We respect your privacy and are committed to protecting your
             personal information. Please review our Privacy Policy to understand
             how we collect, use, and disclose your data when you visit
             www.theaustere.xyz.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
             <span className="uppercase font-[400]">
               6. Changes to the Legal Statement:
             </span>{" "}
@@ -86,7 +86,7 @@ const page = (props: Props) => {
             website after any changes, you acknowledge and agree to be bound by
             the revised terms and conditions.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
             We hope you find this legal statement clear and helpful. If you have
             any questions or concerns regarding our terms and conditions, please
             contact us at [insert contact information]. Thank you for your

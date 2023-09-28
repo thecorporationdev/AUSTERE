@@ -49,7 +49,7 @@ function Principle({ title, p }: { title: string; p: string }) {
         </h3>
       </Reveal>
 
-      <p className=" w-full  flex md:items-center md:justify-center text-[15px] min-[400px]:mt-4 text-base md:text-[17px] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
+      <p className=" w-full  flex md:items-center md:justify-center text-base min-[400px]:mt-4  md:text-[17px] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
         {p}
       </p>
     </div>

@@ -40,7 +40,7 @@ const CapabilityLink = (props: Props) => {
             />
           </div>
         </div>
-        <p className="text-base max-w-[90%] mx-auto md:text-[17px] mt-2 tracking-wide mb-10 leading-[20px] lg:leading-[30px] ">
+        <p className="text-base max-w-[90%] mx-auto md:text-[17px] mt-2 tracking-wide mb-10 leading-[24px] lg:leading-[30px] ">
           {description}
         </p>
       </div>

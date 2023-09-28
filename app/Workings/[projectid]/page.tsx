@@ -1,12 +1,12 @@
 import { shimmer, toBase64 } from "@/lib/image";
 import Image from "next/image";
 import React from "react";
-import image from "../../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
-import Link from "next/link";
+
 import Footer from "@/components/ui/Footer";
 import Reveal from "@/components/Reveal";
 import { workings } from "@/app/Data/data";
 import Project from "@/components/ui/Project";
+import { cn } from "@/lib/utils";
 
 type Props = {
   params: { projectid: string };
@@ -72,14 +72,14 @@ const page = (props: Props) => {
               ))}
             </div>
           </div>
-          <div className="w-full max-md:mt-10">
+          <div className="w-full max-md:mt-8">
             <div className="w-full pb-10">
-              <h1 className="font-[400] text-2xl md:text-3xl uppercase">
+              <h1 className={cn(`font-[500] text-2xl md:text-3xl uppercase`)}>
                 {projectdata?.brandname}
               </h1>
             </div>
             <Reveal>
-              <p className="text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px] tracking-wide">
+              <p className="text-base md:text-[17px] leading-[20px] lg:leading-[30px] tracking-wide">
                 {projectdata?.description}
               </p>
             </Reveal>
@@ -115,6 +115,7 @@ const page = (props: Props) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 ">
             {randomObjects.map((projectrelated: any, idx: number) => (
               <Project
+                className=" md:h-[300px]"
                 key={idx}
                 image={projectrelated.images?.[0]}
                 projectname={projectrelated?.brandname}

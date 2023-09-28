@@ -4,19 +4,25 @@ import React from "react";
 import Link from "next/link";
 import { shimmer, toBase64 } from "@/lib/image";
 import Reveal from "../Reveal";
+import { cn } from "@/lib/utils";
 
 type Props = {
   image: StaticImageData;
   projectname: string;
   slug: string;
+  className?: string;
 };
 
 const Project = (props: Props) => {
-  const { image, projectname, slug } = props;
+  const { image, projectname, slug, className } = props;
   return (
-    <Link href={`/Workings/${slug}`} className="group text-sm w-full">
+    <Link href={`/Workings/${slug}`} className={cn(`group text-sm w-full `)}>
       <Reveal>
-        <div className="h-[230px] md:h-[400px] relative overflow-hidden max-md:mt-8 bg-gray-100">
+        <div
+          className={cn(
+            `h-[230px] md:h-[400px] relative overflow-hidden max-md:mt-8 bg-gray-100 ${className}`
+          )}
+        >
           <Image
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64, ${toBase64(

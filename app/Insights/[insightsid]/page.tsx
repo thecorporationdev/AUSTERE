@@ -46,11 +46,11 @@ const page = (props: Props) => {
           </div>
         </div>
 
-        <div className="w-full mt-6 max-md:px-3 max-w-[90%] mx-auto ">
+        <div className="w-full mt-6 max-md:px-3  md:max-w-[90%] mx-auto ">
           <h3 className="text-xl lg:text-3xl font-bold ">
             CORPORATE CULTURE DEPENDS ON WHAT YOUR CEO SAYS
           </h3>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Necessitatibus doloremque consequatur pariatur quo consequuntur
             sequi expedita dignissimos culpa! Ratione corporis minus fugit
@@ -64,7 +64,7 @@ const page = (props: Props) => {
             numquam, est laboriosam, nesciunt, adipisci soluta. Provident cum
             incidunt ipsa.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Necessitatibus doloremque consequatur pariatur quo consequuntur
             sequi expedita dignissimos culpa! Ratione corporis minus fugit
@@ -78,7 +78,7 @@ const page = (props: Props) => {
             numquam, est laboriosam, nesciunt, adipisci soluta. Provident cum
             incidunt ipsa.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Necessitatibus doloremque consequatur pariatur quo consequuntur
             sequi expedita dignissimos culpa! Ratione corporis minus fugit
@@ -92,7 +92,7 @@ const page = (props: Props) => {
             numquam, est laboriosam, nesciunt, adipisci soluta. Provident cum
             incidunt ipsa.
           </p>
-          <p className="mt-3 text-[15px] md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px] ">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Necessitatibus doloremque consequatur pariatur quo consequuntur
             sequi expedita dignissimos culpa! Ratione corporis minus fugit

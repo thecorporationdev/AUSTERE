@@ -41,7 +41,7 @@ const ProjectItem = (props: Props) => {
             </Reveal>
           </div>
           <div className="lg:w-6/12 ">
-            <div className="w-[90%] mx-auto">
+            <div className="w-full">
               <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-8">
                 <div className="w-full flex justify-between lg:mt-10 ">
                   <h2 className="font-[400] text-base lg:text-2xl uppercase">
@@ -51,7 +51,7 @@ const ProjectItem = (props: Props) => {
                   <FiArrowUpRight className="text-5xl font-semibold mb-4 " />
                 </div>
                 <Reveal>
-                  <p className="font-[300] text-[15px] md:text-[17px] tracking-wide leading-[20px] md:leading-[28px]">
+                  <p className="font-[300] text-base md:text-[17px] tracking-wide leading-[24px] md:leading-[28px]">
                     {truncatedDescription}
                     {description.length > 400 && (
                       <Link href={`Workings/${slug}`}>
