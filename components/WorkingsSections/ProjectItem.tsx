@@ -44,14 +44,14 @@ const ProjectItem = (props: Props) => {
             <div className="w-full">
               <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-8">
                 <div className="w-full flex justify-between lg:mt-10 ">
-                  <h2 className="font-[400] text-base lg:text-2xl uppercase">
+                  <h2 className="font-[500] text-base lg:text-2xl uppercase">
                     {projectname}
                   </h2>
 
                   <FiArrowUpRight className="text-5xl font-semibold mb-4 " />
                 </div>
                 <Reveal>
-                  <p className="font-[300] text-base md:text-[17px] tracking-wide leading-[24px] md:leading-[28px]">
+                  <p className="text-base md:text-[17px] leading-[24px] md:leading-[30px]">
                     {truncatedDescription}
                     {description.length > 400 && (
                       <Link href={`Workings/${slug}`}>
