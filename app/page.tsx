@@ -11,14 +11,22 @@ export default function Home() {
   return (
     <>
       <main className="bg-butter h-screen font-bold py-20">
-        <section className="max-w-[90%] mx-auto">
-          <Hero />
+        <section className="">
+          <section className="max-w-[90%] mx-auto">
+            <Hero />
+          </section>
 
-          <Projects />
+          <section className="max-sm:max-w-[94%] max-w-[90%] mx-auto">
+            <Projects />
+          </section>
+
           {/* <Discover /> */}
         </section>
         {/* <CarouselSection /> */}
-        <Capability />
+        <section>
+          <Capability />
+        </section>
+
         <section className="max-w-[90%] mx-auto">
           <Insights />
         </section>
