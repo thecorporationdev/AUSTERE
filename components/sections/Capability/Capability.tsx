@@ -15,10 +15,9 @@ const Capability = (props: Props) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <div className="w-full flex  flex-col mt-4 font-[400] bg-black text-white py-10 ">
+    <div className="w-full flex  flex-col mt-4  bg-black text-white py-10 ">
       <div className=" w-full max-w-[90%] mx-auto">
         <div className="uppercase text-2xl md:text-3xl  mb-16">
-          {" "}
           the capability
         </div>
         {designCategories.map((design, idx) => (
@@ -52,16 +51,18 @@ function Capabilityhero(props: Propscapa) {
   return (
     <Reveal>
       <div className="w-full mt-4">
-        <div className="flex border-b-2 border-black justify-between  py-2">
+        <div
+          className="flex border-b-2 border-black justify-between cursor-pointer py-2"
+          onClick={() => onArrowClick(index)}
+        >
           <div className="tracking-[-0.02] text-xl md:text-2xl capitalize font-semibold">
             {title}
           </div>
 
           <FiArrowUpRight
-            className={`text-5xl font-semibold cursor-pointer ${
+            className={` max-md:text-3xl md:text-5xl font-semibold cursor-pointer animate-pulse ${
               isOpen ? "rotate-90" : ""
             }`}
-            onClick={() => onArrowClick(index)}
           />
         </div>
         <AnimatePresence>
@@ -72,7 +73,7 @@ function Capabilityhero(props: Propscapa) {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-base md:text-[17px] font-[400] mt-2 flex flex-wrap tracking-wide mb-2 leading-[20px] lg:leading-[30px]"
+              className="text-[15px] font-[300] max-sm:break-all md:text-[17px]  mt-2 flex flex-wrap tracking-wide mb-2 leading-[20px] lg:leading-[30px]"
             >
               {description}
             </motion.p>

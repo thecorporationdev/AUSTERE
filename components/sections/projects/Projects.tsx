@@ -24,7 +24,7 @@ const Projects = (props: Props) => {
         ))}
       </section>
 
-      <Link href="/Workings" className="group">
+      <Link href="/Workings" className="group my-10">
         <div className="w-full md:mt-10 flex justify-end">
           <div className=" w-1/2 flex justify-end md:justify-start ">
             <div className="flex items-center underline underline-offset-2 ">

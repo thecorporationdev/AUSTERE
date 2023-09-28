@@ -16,7 +16,7 @@ const Project = (props: Props) => {
   return (
     <Link href={`/Workings/${slug}`} className="group text-sm w-full">
       <Reveal>
-        <div className="h-[300px] md:h-[400px] relative overflow-hidden  bg-gray-100">
+        <div className="h-[300px] md:h-[400px] relative overflow-hidden max-md:mt-8 bg-gray-100">
           <Image
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64, ${toBase64(

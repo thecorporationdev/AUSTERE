@@ -49,7 +49,7 @@ const page = (props: Props) => {
 
         <div className="h-[3px] w-full bg-black mt-10" />
 
-        <div className="w-full flex gap-x-20 mt-10 flex-col md:flex-row">
+        <div className="w-full flex gap-x-20 mt-10 flex-col-reverse md:flex-row">
           <div className="w-full ">
             <div className=" w-full flex flex-col  items-center justify-center ">
               {projectdata?.images.slice(0, 4).map((image, idx) => (
