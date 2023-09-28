@@ -72,8 +72,8 @@ const page = (props: Props) => {
               ))}
             </div>
           </div>
-          <div className="w-full max-md:mt-8">
-            <div className="w-full pb-10">
+          <div className="w-full max-md:mt-4">
+            <div className="w-full pb-2">
               <h1 className={cn(`font-[500] text-2xl md:text-3xl uppercase`)}>
                 {projectdata?.brandname}
               </h1>
