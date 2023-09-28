@@ -7,7 +7,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <section className="py-32 md:py-24">
+      <section className="pt-32 md:pt-24">
         <Reveal>
           <div className="flex w-full max-w-[90%] mx-auto ">
             <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[400] text-left uppercase md:py-10">

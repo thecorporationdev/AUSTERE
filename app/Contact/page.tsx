@@ -45,8 +45,8 @@ const page = (props: Props) => {
                 </p>
               </Reveal>
             </div>
-            <div className="w-full flex items-center justify-center flex-col">
-              <form className=" lg:w-full py-10 px-4 lg:px-8 border-t-2 border-b-2  border-black flex flex-col justify-between">
+            <div className="w-full flex items-center justify-center flex-col ">
+              <form className="w-full py-10  lg:px-8 border-t-2 border-b-2 border-black flex flex-col justify-between">
                 <p className="text-2xl md:text-3xl font-bold capitalize pb-6 ">
                   more info:
                 </p>
@@ -79,7 +79,7 @@ const page = (props: Props) => {
 
                 <button className="border-b-2 text-left flex items-center justify-center text-sm border-black bg-ransparent w-2/12 bg-transparent mt-8 text-black px-0 py-0 hover:bg-transparent hover:text-black hover:border-b-2 hover:border-black">
                   send
-                  <FiArrowUpRight className="  text-2xl font-semibold transition-all ease-in duration-300" />
+                  <FiArrowUpRight className="text-2xl font-semibold transition-all ease-in duration-300" />
                 </button>
               </form>
             </div>

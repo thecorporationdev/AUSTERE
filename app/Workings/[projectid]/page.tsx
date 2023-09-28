@@ -54,7 +54,7 @@ const page = (props: Props) => {
             <div className=" w-full flex flex-col  items-center justify-center ">
               {projectdata?.images.slice(0, 4).map((image, idx) => (
                 <div
-                  className=" h-[300px] md:h-[400px] w-full relative overflow-hidden border-gray-400  border-2   bg-gray-100 mt-5"
+                  className=" h-[250px] md:h-[400px] w-full relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -79,7 +79,7 @@ const page = (props: Props) => {
               </h1>
             </div>
             <Reveal>
-              <p className="text-base md:text-[17px]">
+              <p className="text-[15px] md:text-[17px] leading-[20px] lg:leading-[40px] tracking-wide">
                 {projectdata?.description}
               </p>
             </Reveal>
@@ -87,7 +87,7 @@ const page = (props: Props) => {
             <div className="">
               {projectdata?.images.slice(4, 7).map((image, idx) => (
                 <div
-                  className="  h-[300px] md:h-[400px] w-full relative overflow-hidden border-gray-400  border-2 bg-gray-100 mt-5"
+                  className="  h-[250px] md:h-[400px] w-full relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
