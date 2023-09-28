@@ -9,7 +9,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <section className="max-w-[90%] mx-auto text-black py-32 md:py-24">
+      <section className=" max-sm:max-w-[94%] md:max-w-[90%] mx-auto text-black py-32 md:py-24">
         <Reveal>
           <div className=" w-full max-md:flex-col mx-auto flex items-center justify-center">
             <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">

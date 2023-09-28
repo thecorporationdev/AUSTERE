@@ -39,7 +39,7 @@ const page = (props: Props) => {
 
   return (
     <>
-      <section className="max-w-[90%] mx-auto pt-32 md:pt-24">
+      <section className="max-sm:max-w-[94%] md:max-w-[90%] mx-auto pt-32 md:pt-24">
         <div className="flex w-full">
           <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
             the
