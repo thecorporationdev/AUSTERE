@@ -127,7 +127,7 @@ const page = (props: Props) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 ">
             {randomObjects.map((projectrelated: any, idx: number) => (
               <Project
-                className=" md:h-[300px]"
+                className="h-[200px] sm:h-[250px] md:h-[300px] lg:h-[300px]"
                 key={idx}
                 image={projectrelated.images?.[0]}
                 projectname={projectrelated?.brandname}
