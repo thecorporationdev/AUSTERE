@@ -76,7 +76,7 @@ export const workings = [
   {
     id: "Meena-Foodie",
     brandname: "Meena foodie",
-    images: [meena, meena1, meena2, meena3, meena4],
+    images: [meena4, meena1, meena2, meena3, meena],
     description:
       "We held a meeting at a bar where she expressed her desire to establish an online restaurant. With an existing name in mind, we brainstormed and refined it further. Once back at the studios, we embarked on creating an identity that was both unconventional and minimalist, while retaining its functionality.",
   },

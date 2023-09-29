@@ -9,7 +9,7 @@ const page = (props: Props) => {
     <>
       <section className="pt-32 md:pt-24">
         <Reveal>
-          <div className="flex w-full max-w-[90%] mx-auto ">
+          <div className="flex w-full max-sm:px-3 md:max-w-[90%] mx-auto ">
             <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[400] text-left uppercase md:py-10">
               the <br className="md:hidden" /> legal statement
             </h1>
