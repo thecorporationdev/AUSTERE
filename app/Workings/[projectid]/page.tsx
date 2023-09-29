@@ -79,7 +79,7 @@ const page = (props: Props) => {
               </h1>
             </div>
             <Reveal>
-              <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] tracking-wide">
+              <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
                 {projectdata?.description}
               </p>
             </Reveal>
