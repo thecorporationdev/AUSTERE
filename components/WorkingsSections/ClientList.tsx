@@ -1,22 +1,25 @@
 import React from "react";
-import { Trustbank, Sec } from "../icons/treustandsec";
-import Psn from "../icons/psnIcon";
+import { Trustbank } from "../icons/treustandsec";
 import Nfvb from "../icons/nfvbicon";
 import { Eye } from "../icons/eye";
-import Nama from "../icons/Nama";
 import { Boxes } from "../icons/Boxes";
 import { Cbn } from "../icons/cbn";
-import { Secs } from "../icons/Secs";
-import { Mango } from "../icons/Mango";
 import Reveal from "../Reveal";
+import Enaira from "../icons/Eniara";
+import Mango2 from "../icons/Mango2";
+import Nisal from "../icons/Nisal";
+import Cbn2 from "../icons/Cbn2";
+import NDic from "../icons/Ndic";
+import Zam from "../icons/Zam";
+import Nnf from "../icons/Nnf";
 
 const clients = [
   { id: 1, logo: <Trustbank /> },
   { id: 2, logo: <Eye /> },
-  { id: 30, logo: <Mango /> },
+  { id: 30, logo: <Enaira /> },
   {
     id: 3,
-    logo: <Psn />,
+    logo: <Mango2 />,
   },
   {
     id: 4,
@@ -24,19 +27,23 @@ const clients = [
   },
   {
     id: 89,
-    logo: <Eye />,
+    logo: <Nisal />,
   },
   {
     id: 5,
-    logo: <Cbn />,
+    logo: <Cbn2 />,
   },
   {
     id: 6,
-    logo: <Nfvb />,
+    logo: <NDic />,
   },
   {
     id: 9,
-    logo: <Cbn />,
+    logo: <Nnf />,
+  },
+  {
+    id: 239,
+    logo: <Zam />,
   },
 ];
 
