@@ -39,7 +39,7 @@ const page = (props: Props) => {
 
   return (
     <>
-      <section className="max-sm:max-w-[94%] md:max-w-[90%] mx-auto pt-32 md:pt-24">
+      <section className="max-sm:max-w-[94%] max-lg:w-[90%] md:max-w-[90%] mx-auto pt-32 md:pt-24">
         <div className="flex w-full">
           <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
             the
@@ -64,7 +64,7 @@ const page = (props: Props) => {
               </Reveal>
               {projectdata?.images.slice(0, 7).map((image, idx) => (
                 <div
-                  className=" h-[230px] md:h-[400px] w-full relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
+                  className=" h-[200px] sm:h-[300px] lg:h-[400px] w-full relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -83,14 +83,14 @@ const page = (props: Props) => {
             </div>
           </div>
           <div className="w-full  max-md:mt-4">
-            <div className="w-full h-[200px] lg:h-[400px] pb-2 hidden md:block mt-4">
+            <div className="w-full h-[200px] sm:h-[300px] lg:h-[400px] pb-2 hidden md:block mt-4">
               <h1
-                className={cn(`font-[500] mt-4 text-2xl md:text-3xl uppercase`)}
+                className={cn(`font-[500] mt-4 text-2xl lg:text-3xl uppercase`)}
               >
                 {projectdata?.brandname}
               </h1>
               <Reveal>
-                <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] hidden md:block mt-6">
+                <p className="text-base lg:text-[17px] leading-[24px] lg:leading-[30px] hidden md:block mt-6">
                   {projectdata?.description}
                 </p>
               </Reveal>
@@ -99,7 +99,7 @@ const page = (props: Props) => {
             <div className="">
               {projectdata?.images.slice(7, 12).map((image, idx) => (
                 <div
-                  className="  h-[230px] md:h-[400px] w-full relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
+                  className=" h-[200px] sm:h-[300px] lg:h-[400px] w-full relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
