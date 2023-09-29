@@ -49,16 +49,16 @@ const page = (props: Props) => {
 
         <div className="h-[3px] w-full bg-black mt-10" />
 
-        <div className="w-full flex gap-x-20 mt-10 flex-col md:flex-row">
+        <div className="w-full flex gap-x-5 mt-10 flex-col md:flex-row">
           <div className="w-full">
             <div className=" w-full flex flex-col  items-center justify-center ">
-              <div className="w-full pb-2 md:hidden">
+              <div className="w-full  pb-2 md:hidden">
                 <h1 className={cn(`font-[500] text-2xl md:text-3xl uppercase`)}>
                   {projectdata?.brandname}
                 </h1>
               </div>
               <Reveal>
-                <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] md:hidden">
+                <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] md:hidden ">
                   {projectdata?.description}
                 </p>
               </Reveal>
@@ -82,17 +82,19 @@ const page = (props: Props) => {
               ))}
             </div>
           </div>
-          <div className="w-full max-md:mt-4">
-            <div className="w-full pb-2 hidden md:block">
-              <h1 className={cn(`font-[500] text-2xl md:text-3xl uppercase`)}>
+          <div className="w-full  max-md:mt-4">
+            <div className="w-full h-[200px] lg:h-[400px] pb-2 hidden md:block mt-4">
+              <h1
+                className={cn(`font-[500] mt-4 text-2xl md:text-3xl uppercase`)}
+              >
                 {projectdata?.brandname}
               </h1>
+              <Reveal>
+                <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] hidden md:block mt-6">
+                  {projectdata?.description}
+                </p>
+              </Reveal>
             </div>
-            <Reveal>
-              <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] hidden md:block">
-                {projectdata?.description}
-              </p>
-            </Reveal>
 
             <div className="">
               {projectdata?.images.slice(6, 12).map((image, idx) => (
