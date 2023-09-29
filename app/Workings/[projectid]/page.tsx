@@ -62,7 +62,7 @@ const page = (props: Props) => {
                   {projectdata?.description}
                 </p>
               </Reveal>
-              {projectdata?.images.slice(0, 6).map((image, idx) => (
+              {projectdata?.images.slice(0, 7).map((image, idx) => (
                 <div
                   className=" h-[230px] md:h-[400px] w-full relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
                   key={idx}
@@ -97,7 +97,7 @@ const page = (props: Props) => {
             </div>
 
             <div className="">
-              {projectdata?.images.slice(6, 12).map((image, idx) => (
+              {projectdata?.images.slice(7, 12).map((image, idx) => (
                 <div
                   className="  h-[230px] md:h-[400px] w-full relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
                   key={idx}
