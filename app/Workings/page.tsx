@@ -39,7 +39,7 @@ const page = (props: Props) => {
         <div className="w-full mt-10 md:mt-20">
           <div className="w-full">
             <h3 className="text-2xl md:text-3xl uppercase tracking-tighter font-[500]">
-              clients
+              the clientele
             </h3>
           </div>
           <ClientList />

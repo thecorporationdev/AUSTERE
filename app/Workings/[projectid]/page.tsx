@@ -64,7 +64,7 @@ const page = (props: Props) => {
               </Reveal>
               {projectdata?.images.slice(0, 7).map((image, idx) => (
                 <div
-                  className=" h-[200px] sm:h-[300px] lg:h-[400px] w-full relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
+                  className=" h-[230px] sm:h-[300px] lg:h-[400px] w-full relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -83,7 +83,7 @@ const page = (props: Props) => {
             </div>
           </div>
           <div className="w-full  max-md:mt-4">
-            <div className="w-full h-[200px] sm:h-[300px] lg:h-[400px] pb-2 hidden md:block mt-4">
+            <div className="w-full h-[230px] sm:h-[300px] lg:h-[400px] pb-2 hidden md:block mt-4">
               <h1
                 className={cn(`font-[500] mt-4 text-2xl lg:text-3xl uppercase`)}
               >
@@ -99,7 +99,7 @@ const page = (props: Props) => {
             <div className="">
               {projectdata?.images.slice(7, 12).map((image, idx) => (
                 <div
-                  className=" h-[200px] sm:h-[300px] lg:h-[400px] w-full relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
+                  className=" h-[230px] sm:h-[300px] lg:h-[400px] w-full relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -127,7 +127,7 @@ const page = (props: Props) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 ">
             {randomObjects.map((projectrelated: any, idx: number) => (
               <Project
-                className="h-[200px] sm:h-[250px] md:h-[300px] lg:h-[300px]"
+                className="h-[230px] sm:h-[250px] md:h-[300px] lg:h-[300px]"
                 key={idx}
                 image={projectrelated.images?.[0]}
                 projectname={projectrelated?.brandname}
