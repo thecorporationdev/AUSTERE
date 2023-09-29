@@ -1,8 +1,8 @@
 import * as React from "react";
-type icontype = {
+interface titansProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
-};
-const Nnf = ({ className, ...props }: icontype) => (
+}
+export const Nnf: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"

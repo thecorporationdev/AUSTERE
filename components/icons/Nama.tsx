@@ -6,11 +6,11 @@ export const Nama: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-className = {className}
+    className={className}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",
- 
+
       fillRule: "evenodd",
       clipRule: "evenodd",
     }}

@@ -1,13 +1,12 @@
 import * as React from "react";
-type icontype = {
+interface titansProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
-};
-const Mango2 = ({ className, ...props }: icontype) => (
+}
+export const Mango2: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={115.368}
-    height={114.924}
+    className={className}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",

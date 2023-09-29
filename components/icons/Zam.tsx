@@ -1,13 +1,12 @@
 import * as React from "react";
-type icontype = {
+interface titansProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
-};
-const Zam = ({ className, ...props }: icontype) => (
+}
+export const Zam: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={124.098}
-    height={124.098}
+  className={className}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",

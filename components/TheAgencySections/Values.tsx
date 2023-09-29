@@ -43,7 +43,7 @@ const Values = (props: Props) => {
 
       {/* <ValueCarousel /> */}
 
-      <div className=" hidden xl:grid xl:grid-cols-5 mt-10 md:mt-24 gap-y-6 max-sm:mt-16 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 mt-10 md:mt-24 gap-y-6 max-sm:mt-16 ">
         <Value />
         <Value />
         <Value />

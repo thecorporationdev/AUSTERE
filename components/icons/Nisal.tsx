@@ -1,14 +1,13 @@
 import * as React from "react";
 
-type icontype = {
+interface titansProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
-};
-const Nisal = ({ className, ...props }: icontype) => (
+}
+export const Nisal: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={117.11}
-    height={117.11}
+     className={className}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",

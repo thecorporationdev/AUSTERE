@@ -12,7 +12,7 @@ const Locationsdets = (props: Props) => {
             <div className="flex  justify-between md:justify-start">
               <div className="md:w-3/4 flex  flex-col md:flex-row justify-between mt-2">
                 <h1 className="font-[500] text-4xl">LA</h1>
-                <p className="md:w-4/12 text-[12px] font-[400] leading-none mt-3">
+                <p className="md:w-4/12 text-[12px] font-[400] leading-none mt-3 tracking-wide">
                   515 maitama haruna street jabi park abuja nigeria
                 </p>
               </div>
@@ -23,7 +23,7 @@ const Locationsdets = (props: Props) => {
           <div className="border-black border-t-2 md:w-[85%] max-md:mt-4">
             <div className="flex md:justify-end">
               <div className="md:w-3/4 flex-col-reverse  md:flex-row  justify-between mt-2 flex">
-                <p className="md:w-4/12 text-[12px]  font-[400] leading-none mt-3 ">
+                <p className="md:w-4/12 text-[12px]  font-[400] leading-none mt-3 tracking-wide">
                   515 maitama haruna street jabi park abuja nigeria
                 </p>
                 <h1 className="font-[500] text-4xl">LA</h1>

@@ -6,8 +6,7 @@ const NDic = ({ className, ...props }: icontype) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={180.526}
-    height={56.327}
+    className={className}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",

@@ -1,13 +1,12 @@
 import * as React from "react";
-type icontype = {
+interface titansProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
-};
-const Cbn2 = ({ className, ...props }: icontype) => (
+}
+export const Cbn2: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={127.684}
-    height={166.366}
+    className={className}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",

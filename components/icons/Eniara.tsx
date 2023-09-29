@@ -1,15 +1,13 @@
 import * as React from "react";
 
-type icontype = {
+interface titansProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
-};
-
-const Enaira = ({ className, ...props }: icontype) => (
+}
+export const Enaira: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={136.619}
-    height={109.159}
+    className={className}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",
@@ -18,7 +16,6 @@ const Enaira = ({ className, ...props }: icontype) => (
       clipRule: "evenodd",
     }}
     viewBox="0 0 2214.6 1769.48"
-    className={className}
     {...props}
   >
     <path
