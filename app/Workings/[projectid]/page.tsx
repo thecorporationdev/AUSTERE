@@ -64,7 +64,7 @@ const page = (props: Props) => {
               </Reveal>
               {projectdata?.images.slice(0, 7).map((image, idx) => (
                 <div
-                  className=" w-full aspect-[2/1] lg:aspect-[2/1.1] relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
+                  className=" w-full aspect-[2/1.1] relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image

@@ -25,7 +25,7 @@ const ProjectItem = (props: Props) => {
         <div className="w-full flex flex-col lg:flex-row justify-between gap-y-4">
           <div className="lg:w-5/12">
             <Reveal>
-              <div className="w-full aspect-[2/1] lg:aspect-[2/1.1] relative overflow-hidden  bg-gray-100">
+              <div className="w-full aspect-[2/1.1] relative overflow-hidden  bg-gray-100">
                 <Image
                   placeholder="blur"
                   blurDataURL={`data:image/svg+xml;base64, ${toBase64(

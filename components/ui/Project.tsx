@@ -20,7 +20,7 @@ const Project = (props: Props) => {
       <Reveal>
         <div
           className={cn(
-            `w-full aspect-[2/1] lg:aspect-[2/1.1] relative overflow-hidden max-md:mt-5 bg-gray-100 ${className}`
+            `w-full aspect-[2/1.1] relative overflow-hidden max-md:mt-5 bg-gray-100 ${className}`
           )}
         >
           <Image
