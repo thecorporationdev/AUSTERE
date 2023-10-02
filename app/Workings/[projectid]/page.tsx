@@ -53,7 +53,7 @@ const page = (props: Props) => {
           <div className="w-full">
             <div className=" w-full flex flex-col  items-center justify-center ">
               <div className="w-full  pb-2 md:hidden">
-                <h1 className={cn(`font-[500] text-2xl md:text-3xl uppercase`)}>
+                <h1 className={cn(`font-[500] text-xl md:text-2xl uppercase`)}>
                   {projectdata?.brandname}
                 </h1>
               </div>
@@ -85,7 +85,7 @@ const page = (props: Props) => {
           <div className="w-full  max-md:mt-4">
             <div className="w-full h-[230px] sm:h-[300px] lg:h-[400px] pb-2 hidden md:block mt-4">
               <h1
-                className={cn(`font-[500] mt-4 text-2xl lg:text-3xl uppercase`)}
+                className={cn(`font-[500] mt-4 text-xl lg:text-3xl uppercase`)}
               >
                 {projectdata?.brandname}
               </h1>
@@ -99,7 +99,7 @@ const page = (props: Props) => {
             <div className="">
               {projectdata?.images.slice(7, 12).map((image, idx) => (
                 <div
-                  className="  w-full aspect-[2/1] lg:aspect-[2/1.1]  relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
+                  className="  w-full aspect-[2/1.1] relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -127,7 +127,7 @@ const page = (props: Props) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 ">
             {randomObjects.map((projectrelated: any, idx: number) => (
               <Project
-                className=" w-full aspect-[2/1] lg:aspect-[2/1.1] "
+                className=" w-full aspect-[2/1.1] "
                 key={idx}
                 image={projectrelated.images?.[0]}
                 projectname={projectrelated?.brandname}
