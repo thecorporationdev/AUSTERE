@@ -20,7 +20,7 @@ const Project = (props: Props) => {
       <Reveal>
         <div
           className={cn(
-            `h-[230px] sm:h-[350px] lg:h-[400px] relative overflow-hidden max-md:mt-8 bg-gray-100 ${className}`
+            `w-full aspect-[2/1] lg:aspect-[2/1.1] relative overflow-hidden max-md:mt-5 bg-gray-100 ${className}`
           )}
         >
           <Image
@@ -38,7 +38,7 @@ const Project = (props: Props) => {
       </Reveal>
 
       <Reveal>
-        <p className="mt-4 text-[14px] md:text-base tracking-tighter text-gray-900 font-[500] uppercase ">
+        <p className="mt-4 text-[14px] lg:text-base tracking-tighter text-gray-900 font-[500] uppercase ">
           {projectname}
         </p>
       </Reveal>

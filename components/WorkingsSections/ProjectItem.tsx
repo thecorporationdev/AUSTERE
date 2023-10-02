@@ -25,7 +25,7 @@ const ProjectItem = (props: Props) => {
         <div className="w-full flex flex-col lg:flex-row justify-between gap-y-4">
           <div className="lg:w-5/12">
             <Reveal>
-              <div className="h-[230px] md:h-[350px] relative overflow-hidden  bg-gray-100">
+              <div className="w-full aspect-[2/1] lg:aspect-[2/1.1] relative overflow-hidden  bg-gray-100">
                 <Image
                   placeholder="blur"
                   blurDataURL={`data:image/svg+xml;base64, ${toBase64(
@@ -55,7 +55,7 @@ const ProjectItem = (props: Props) => {
                     {truncatedDescription}
                     {description.length > 400 && (
                       <Link href={`Workings/${slug}`}>
-                        <p className="text-blue-500 inline-block text-xs">
+                        <p className="text-blue-500 inline-block text-base">
                           Read more
                         </p>
                       </Link>

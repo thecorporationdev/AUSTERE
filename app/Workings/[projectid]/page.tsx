@@ -64,7 +64,7 @@ const page = (props: Props) => {
               </Reveal>
               {projectdata?.images.slice(0, 7).map((image, idx) => (
                 <div
-                  className=" h-[230px] sm:h-[300px] lg:h-[400px] w-full relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
+                  className=" w-full aspect-[2/1] lg:aspect-[2/1.1] relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -99,7 +99,7 @@ const page = (props: Props) => {
             <div className="">
               {projectdata?.images.slice(7, 12).map((image, idx) => (
                 <div
-                  className=" h-[230px] sm:h-[300px] lg:h-[400px] w-full relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
+                  className="  w-full aspect-[2/1] lg:aspect-[2/1.1]  relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
                   key={idx}
                 >
                   <Image
@@ -127,7 +127,7 @@ const page = (props: Props) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 ">
             {randomObjects.map((projectrelated: any, idx: number) => (
               <Project
-                className="h-[230px] sm:h-[250px] md:h-[300px] lg:h-[300px]"
+                className=" w-full aspect-[2/1] lg:aspect-[2/1.1] "
                 key={idx}
                 image={projectrelated.images?.[0]}
                 projectname={projectrelated?.brandname}
