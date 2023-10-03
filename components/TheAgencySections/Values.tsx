@@ -24,24 +24,13 @@ const Values = (props: Props) => {
             </h3>
 
             <div className="w-full md:border-t-2 md:border-black flex flex-col">
-              <h3 className="hidden text-base mt-4 md:mt-2  capitalize tracking-tighter font-[500]">
-                Accountability <br /> breeds success
-              </h3>
-              <h3 className="text-xl mt-14 md:mt-2 font-b capitalize tracking-tighter font-[500]">
-                Accountability breeds success
-              </h3>
               <Reveal>
                 <p className="mt-2 text-base md:text-[17px]  text-left leading-[24px] md:leading-[28px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Necessitatibus sapiente est temporibus, sequi ipsa provident,
-                  eligendi omnis consequatur expedita maxime ipsam, quidem
-                  pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
-                  Necessitatibus sapiente est temporibus, sequi ipsa provident,
-                  eligendi omnis consequatur expedita maxime ipsam, quidem
-                  pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
-                  Necessitatibus sapiente est temporibus, sequi ipsa provident,
-                  eligendi omnis consequatur expedita maxime ipsam, quidem
-                  pariatur molestias dolorem tenetur. Soluta quam adipisci esse.
+                  AUSTERE&pos;s values play a vital role in shaping our identity
+                  and reputation. These values serve as guiding principles that
+                  define our perspectives and impact our interactions with
+                  stakeholders and audiences, allowing us to establish a strong
+                  and authentic presence in the market.
                 </p>
               </Reveal>
             </div>

@@ -37,6 +37,7 @@ const page = (props: Props) => {
     (project) => project.id === params.projectid
   );
 
+  console.log(projectdata?.description[0]);
   return (
     <>
       <section className="max-sm:max-w-[94%] max-lg:w-[90%] md:max-w-[90%] mx-auto pt-32 md:pt-24">
@@ -58,8 +59,8 @@ const page = (props: Props) => {
                 </h1>
               </div>
               <Reveal>
-                <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] md:hidden ">
-                  {projectdata?.description}
+                <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] md:hidden flex flex-col">
+                  {projectdata?.description[0]}
                 </p>
               </Reveal>
               {projectdata?.images.slice(0, 7).map((image, idx) => (
@@ -96,7 +97,7 @@ const page = (props: Props) => {
               </Reveal>
             </div>
 
-            <div className="mt-4">
+            <div className="mt-10 ">
               {projectdata?.images.slice(7, 12).map((image, idx) => (
                 <div
                   className="  w-full aspect-[2/1.1] relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"

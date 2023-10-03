@@ -18,11 +18,15 @@ const HeroAgency = (props: Props) => {
         <div className="lg:w-1/2 flex justify-end ">
           <Reveal>
             <p className=" text-base md:text-[17px] font-[400] leading-[24px] lg:leading-[35px] tracking-wide text-black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-              laboriosam dolore ipsum tempore voluptate illo fugit, facere
-              aliquid facilis, laudantium aperiam suscipit eaque minima mlor sit
-              amet illo?axime. Minus consectetur tenetur officia illo? Lorem
-              ipsum do
+              What does it take to establish an agency that prioritizes more
+              than just profit, but also strives &#34;to create a Simple, Clean,
+              Beautiful yet Purposeful Africa, One Design at a time…&#34;? I
+              believe it lies within our brand essence, our principles, and the
+              talented individuals who contribute their dedication and hard work
+              to ensure we live up to our words. Please continue reading to gain
+              an insight into what sets us apart, what fuels our creativity,
+              what defines us as AUSTERE, and what makes us SIMPLE, YET
+              FUNCTIONAL.
             </p>
           </Reveal>
         </div>
