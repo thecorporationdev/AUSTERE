@@ -2,6 +2,8 @@ import Arrow from "@/components/icons/Arrow";
 import InsightLink from "@/components/ui/InsightLink";
 import Link from "next/link";
 import React from "react";
+import { InsightsData } from "@/app/Data/data";
+import insights from "@/app/Insights/page";
 
 type Props = {};
 
@@ -11,26 +13,16 @@ const Insights = (props: Props) => {
       <div className="w-full">
         <div className="lg:w-[53%] flex justify-between capitalize items-center text-center ">
           <h3 className="text-2xl md:text-3xl uppercase tracking-tighter font-[500]">
-           the insights
+            the insights
           </h3>
         </div>
         <div className="w-full mt-10 md:mt-20 flex justify-end">
           <div className="w-full ">
-            <Link href="/Insights/20">
-              <InsightLink />
-            </Link>
-            <Link href="/Insights/20">
-              <InsightLink />
-            </Link>
-            <Link href="/Insights/20">
-              <InsightLink />
-            </Link>
-            <Link href="/Insights/20">
-              <InsightLink />
-            </Link>
-            <Link href="/Insights/20">
-              <InsightLink />
-            </Link>
+            {InsightsData.map((insights) => (
+              <Link href={`/Insights/${insights.id}`} key={insights.id}>
+                <InsightLink title={insights.title} />
+              </Link>
+            ))}
           </div>
         </div>
         <div className="w-full mt-3 md:mt-16 flex justify-end">

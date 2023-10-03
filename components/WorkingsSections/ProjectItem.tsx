@@ -8,16 +8,12 @@ import Reveal from "../Reveal";
 type Props = {
   image: StaticImageData;
   projectname: string;
-  description: string;
+  description: { id: number; text: string }[];
   slug: string;
 };
 
 const ProjectItem = (props: Props) => {
   const { image, projectname, slug, description } = props;
-  const truncatedDescription =
-    description.length > 400
-      ? description.slice(0, 400 - 3) + "..." // Subtract 3 characters for "..."
-      : description;
 
   return (
     <div className=" w-full  border-b-2 border-gray-400 py-4 ">
@@ -51,16 +47,11 @@ const ProjectItem = (props: Props) => {
                   <FiArrowUpRight className="text-5xl font-semibold mb-4 " />
                 </div>
                 <Reveal>
-                  <p className="text-base md:text-[17px] leading-[24px] md:leading-[30px]">
-                    {truncatedDescription}
-                    {description.length > 400 && (
-                      <Link href={`Workings/${slug}`}>
-                        <p className="text-blue-500 inline-block text-base">
-                          Read more
-                        </p>
-                      </Link>
-                    )}
-                  </p>
+                  <div className="text-base md:text-[17px] leading-[24px] md:leading-[30px] flex flex-col gap-y-4">
+                    {description.map((data) => (
+                      <p key={data.id}>{data.text}</p>
+                    ))}
+                  </div>
                 </Reveal>
               </div>
             </div>

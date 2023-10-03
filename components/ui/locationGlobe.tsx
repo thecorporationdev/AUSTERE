@@ -12,9 +12,9 @@ const LocationsGlobe = (props: Props) => {
           <div className="border-black border-t-2 max-md:mt-2">
             <div className="flex md:justify-start">
               <div className="md:w-3/4 flex flex-col md:flex-row justify-between mt-4">
-                <h1 className="font-[500]  text-4xl">DTX</h1>
-                <p className="md:w-4/12 text-[12px]  font-[400] leading-none mt-2 tracking-wide">
-                  515 maitama haruna street jabi park abuja nigeria
+                <h1 className="font-[500]  text-4xl">SNA</h1>
+                <p className="md:w-6/12 text-[12px]  font-[400] leading-none mt-2 tracking-wide">
+                  9903 Carswell Peak, San Antonio, TX 78245
                 </p>
               </div>
             </div>
@@ -27,10 +27,10 @@ const LocationsGlobe = (props: Props) => {
           <div className="border-black border-t-2 max-md:mt-4">
             <div className="flex md:justify-end">
               <div className="md:w-3/4 flex flex-col-reverse md:flex-row justify-between mt-2 ">
-                <p className="md:w-4/12 text-[12px]  font-[400] leading-none mt-2 tracking-wide">
-                  515 maitama haruna street jabi park abuja nigeria
+                <p className="md:w-6/12 text-[12px]  font-[400] leading-none mt-2 tracking-wide">
+                  4 St. Katherines Court Bradford-on-Avon BA15 1LE
                 </p>
-                <h1 className="font-[500] text-4xl">MPLS</h1>
+                <h1 className="font-[500] text-4xl">LBA</h1>
               </div>
             </div>
           </div>

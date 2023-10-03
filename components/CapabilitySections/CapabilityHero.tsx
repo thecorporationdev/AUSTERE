@@ -22,10 +22,11 @@ const CapabilityHero = (props: Props) => {
         <div className=" max-sm:max-w-[90%] max-sm:mx-auto lg:w-1/2 flex justify-end ">
           <Reveal>
             <p className="text-base md:text-[17px] font-[400] text-black leading-[24px] lg:leading-[30px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              assumenda nostrum distinctio. Fuga nemo accusamus libero molestiae
-              quod maxime dolore aspernatur non! Dicta quibusdam asperiores
-              quaerat labore cupiditate obcaecati eaque?
+              Our capabilities span across a wide range of the design industry.
+              With our big picture thinking, we go beyond just the still and
+              motion design phase to also create stunning interior and exterior
+              spaces. Our expertise extends to architectural design, where our
+              focus on minimalism and functionality shines through.
             </p>
           </Reveal>
         </div>

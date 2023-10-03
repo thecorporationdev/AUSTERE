@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="lg:w-1/2 flex justify-end ">
           <Reveal>
             <div className=" text-base flex flex-col gap-y-6 md:text-[17px] font-[400] text-black leading-[24px] lg:leading-[30px] tracking-wide">
-              <p>Welcome and it &apos; s great to have you here!</p>
+              <p>Welcome and it&apos;s great to have you here!</p>
               <p>
                 You could have chosen any other place in the world, but you
                 decided to come here, and I appreciate it.{" "}

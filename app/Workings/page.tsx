@@ -23,12 +23,15 @@ const page = (props: Props) => {
           <div className="lg:w-1/2 flex justify-end ">
             <Reveal>
               <p className=" text-base md:text-[17px] font-[400] leading-[24px] lg:leading-[30px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                laboriosam dolore ipsum tempore voluptate illo fugit, facere
-                aliquid facilis, laudantium aperiam suscipit eaque minima
-                maxime. Minus consectetur tenetur officia illo? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Magnam laboriosam
-                dolore ipsum
+                We have had the privilege of working on numerous briefs,
+                showcasing our expertise and creativity. While some of our
+                clients have chosen not to have their content featured as case
+                studies for strategic reasons, others have gladly agreed. The
+                following projects highlight our recent work, including those
+                that were not commissioned but still possess strong design
+                appeal. Our intention is not only to showcase our past
+                accomplishments but also to demonstrate what we are capable of
+                achieving.
               </p>
             </Reveal>
           </div>

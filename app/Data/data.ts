@@ -57,6 +57,88 @@ import debranding from "../../public/DEBRANDING.jpg";
 import brandenv from "../../public/BRANDENVIROMENT.jpg";
 import busdeath from "../../public/BUSINESSDEATH.jpg";
 
+export const workings2 = [
+  {
+    id: "Enaira",
+    brandname: "Enaira",
+    images: [
+      enaira,
+      enaira1,
+      enaira2,
+      enaira3,
+      enaira4,
+      enaira5,
+      enaira6,
+
+      enaira8,
+      enaira9,
+    ],
+    description:
+      "This brief was one of our longest, lasting for over a year. Our task was to develop the brand identity for the digital currency of the central bank of Nigeria. Throughout this project, we took a considerate approach, ensuring our designs expressed the old meeting the new. From the logo to the extensions and collaterals, we prioritized relatability.",
+  },
+  {
+    id: "Meena-Foodie",
+    brandname: "Meena foodie",
+    images: [meena, meena1, meena2, meena3, meena4],
+    description:
+      "We held a meeting at a bar where she expressed her desire to establish an online restaurant. With an existing name in mind, we brainstormed and refined it further. Once back at the studios, we embarked on creating an identity that was both unconventional and minimalist, while retaining its functionality.",
+  },
+  {
+    id: "The-Nigerian-Netball-federation",
+    brandname: "THE NIGERIAN NETBALL FEDERATION",
+    images: [
+      nnf,
+      nnf1,
+      nnf2,
+      nnf4,
+      nnf5,
+      nnf3,
+      nnf5,
+      nnf6,
+      nnf7,
+      nnf8,
+
+      nnf10,
+      nnf11,
+      nnf12,
+    ],
+    description:
+      "We received this brief from the President of the Nigerian Netball Federation, who approached us to provide a critique of an existing logo. Our feedback was detailed and honest, which led to us being asked to design a new logo from scratch. Throughout the design process, we set boundaries in our minds to ensure that the logo wouldn't resemble the typical Nigerian agency logos.",
+  },
+  {
+    id: "Zam-beverages",
+    brandname: "ZAM BEVERAGES",
+    images: [zam, zam1, zam2, zam3, zam4],
+    description:
+      "We were given a commission to develop a brand for a beverage company. Their requirement was to have designs that could effectively promote their products on store shelves and also stand out from their competitors. We immediately started working on it, while enjoying some tea and coffee, and came up with ZAM along with its various versions and expansions. When you purchase ZAM next time, please give us some flowers.",
+  },
+  {
+    id: "Mango-Asset-Management-Company",
+    brandname: "MANGO ASSET MANAGEMENT COMPANY",
+    images: [
+      mango,
+      mango1,
+      mango2,
+      mango3,
+      mango4,
+      mango5,
+      mango6,
+      mango7,
+      mango8,
+      mango9,
+    ],
+    description:
+      "The MangoAM logo is a monogram that codifies the initials of the company—MAM. It is not just a letter mark but also depicts the ancient Chinese Feng Shui Sign representing happiness, fortune, prosperity, and longevity.ORANGE calls to mind feelings of excitement, enthusiasm, and warmth. The colour is a mixture of the energy associated with red and the happiness associated with yellow. Orange is associated with meanings of joy, warmth, heat, sunshine, enthusiasm, creativity, success, encouragement, change, determination, health, stimulation, happiness, fun, enjoyment, balance, sexuality, freedom, expression, and fascination.The secondary colour is a COD GRAY. Being both motionless and emotionless, gray is solid and stable, creating a sense of calm and composure, relief from a chaotic world.",
+  },
+  {
+    id: "central-bank-center-for-economics-and-finance-(cbn-cenef)",
+    brandname: "CENTRAL BANK CENTER FOR ECONOMICS AND FINANCE (CBN—CENEF)",
+    images: [cbn, cbn1, cbn2, cbn3, cbn4, cbn5, cbn6, cbn7, cbn8, cbn9],
+    description:
+      "The logo was inspired by the transformation of key buildings into iconic logos for institutions. However, despite our efforts, the client rejected this particular design. On a positive note, we have successfully created other brands for the same client, which we will be uploading soon.",
+  },
+];
+
 export const workings = [
   {
     id: "Enaira",
@@ -74,10 +156,18 @@ export const workings = [
       enaira9,
     ],
     description: [
-      "This brief was one of our longest, lasting for over a year. Our task was to develop the brand identity for the digital currency of the central bank of Nigeria.",
-
-      "Throughout this project, we took a considerate approach, ensuring our designs expressed the old meeting the new.",
-      "From the logo to the extensions and collaterals, we prioritized relatability.",
+      {
+        id: 1,
+        text: "This brief was one of our longest, lasting for over a year. Our task was to develop the brand identity for the digital currency of the central bank of Nigeria.",
+      },
+      {
+        id: 2,
+        text: "Throughout this project, we took a considerate approach, ensuring our designs expressed the old meeting the new.",
+      },
+      {
+        id: 1,
+        text: "From the logo to the extensions and collaterals, we prioritized relatability.",
+      },
     ],
   },
   {
@@ -85,8 +175,14 @@ export const workings = [
     brandname: "Meena foodie",
     images: [meena4, meena1, meena2, meena3, meena],
     description: [
-      "We held a meeting at a bar where she expressed her desire to establish an online restaurant. With an existing name in mind, we brainstormed and refined it further.",
-      " Once back at the studios, we embarked on creating an identity that was both unconventional and minimalist, while retaining its functionality.",
+      {
+        id: 1,
+        text: "We held a meeting at a bar where she expressed her desire to establish an online restaurant. With an existing name in mind, we brainstormed and refined it further.",
+      },
+      {
+        id: 2,
+        text: "Once back at the studios, we embarked on creating an identity that was both unconventional and minimalist, while retaining its functionality.",
+      },
     ],
   },
   {
@@ -109,7 +205,10 @@ export const workings = [
       nnf12,
     ],
     description: [
-      "We received this brief from the President of the Nigerian Netball Federation, who approached us to provide a critique of an existing logo. Our feedback was detailed and honest, which led to us being asked to design a new logo from scratch. Throughout the design process, we set boundaries in our minds to ensure that the logo wouldn't resemble the typical Nigerian agency logos.",
+      {
+        id: 1,
+        text: "We received this brief from the President of the Nigerian Netball Federation, who approached us to provide a critique of an existing logo. Our feedback was detailed and honest, which led to us being asked to design a new logo from scratch. Throughout the design process, we set boundaries in our minds to ensure that the logo wouldn't resemble the typical Nigerian agency logos.",
+      },
     ],
   },
   {
@@ -117,8 +216,14 @@ export const workings = [
     brandname: "ZAM BEVERAGES",
     images: [zam, zam1, zam2, zam3, zam4],
     description: [
-      "We were given a commission to develop a brand for a beverage company. Their requirement was to have designs that could effectively promote their products on store shelves and also stand out from their competitors.",
-      "We immediately started working on it, while enjoying some tea and coffee, and came up with ZAM along with its various versions and expansions. When you purchase ZAM next time, please give us some flowers.",
+      {
+        id: 1,
+        text: "We were given a commission to develop a brand for a beverage company. Their requirement was to have designs that could effectively promote their products on store shelves and also stand out from their competitors.",
+      },
+      {
+        id: 2,
+        text: "We immediately started working on it, while enjoying some tea and coffee, and came up with ZAM along with its various versions and expansions. When you purchase ZAM next time, please give us some flowers.",
+      },
     ],
   },
   {
@@ -137,18 +242,34 @@ export const workings = [
       mango9,
     ],
     description: [
-      "The MangoAM logo is a monogram that codifies the initials of the company—MAM. It is not just a letter mark but also depicts the ancient Chinese Feng Shui Sign representing happiness, fortune, prosperity, and longevity.",
-      "ORANGE calls to mind feelings of excitement, enthusiasm, and warmth.",
-      " The colour is a mixture of the energy associated with red and the happiness associated with yellow. Orange is associated with meanings of joy, warmth, heat, sunshine, enthusiasm, creativity, success, encouragement, change, determination, health, stimulation, happiness, fun, enjoyment, balance, sexuality, freedom, expression, and fascination",
-      "The secondary colour is a COD GRAY. Being both motionless and emotionless, gray is solid and stable, creating a sense of calm and composure, relief from a chaotic world.",
+      {
+        id: 1,
+        text: "The MangoAM logo is a monogram that codifies the initials of the company—MAM. It is not just a letter mark but also depicts the ancient Chinese Feng Shui Sign representing happiness, fortune, prosperity, and longevity.",
+      },
+      {
+        id: 2,
+        text: "ORANGE calls to mind feelings of excitement, enthusiasm, and warmth.",
+      },
+      {
+        id: 3,
+        text: " The colour is a mixture of the energy associated with red and the happiness associated with yellow. Orange is associated with meanings of joy, warmth, heat, sunshine, enthusiasm, creativity, success, encouragement, change, determination, health, stimulation, happiness, fun, enjoyment, balance, sexuality, freedom, expression, and fascination",
+      },
+      {
+        id: 4,
+        text: "The secondary colour is a COD GRAY. Being both motionless and emotionless, gray is solid and stable, creating a sense of calm and composure, relief from a chaotic world.",
+      },
     ],
   },
   {
     id: "central-bank-center-for-economics-and-finance-(cbn-cenef)",
     brandname: "CENTRAL BANK CENTER FOR ECONOMICS AND FINANCE (CBN—CENEF)",
     images: [cbn, cbn1, cbn2, cbn3, cbn4, cbn5, cbn6, cbn7, cbn8, cbn9],
-    description:
-      "The logo was inspired by the transformation of key buildings into iconic logos for institutions. However, despite our efforts, the client rejected this particular design. On a positive note, we have successfully created other brands for the same client, which we will be uploading soon.",
+    description: [
+      {
+        id: 1,
+        text: "The logo was inspired by the transformation of key buildings into iconic logos for institutions. However, despite our efforts, the client rejected this particular design. On a positive note, we have successfully created other brands for the same client, which we will be uploading soon.",
+      },
+    ],
   },
 ];
 

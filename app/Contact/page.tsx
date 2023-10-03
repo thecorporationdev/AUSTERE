@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import Locations from "@/components/TheAgencySections/Locations";
 import Footer from "@/components/ui/Footer";
 import SmallBtn from "@/components/ui/SmallBtn";
 import { Button } from "@/components/ui/button";
@@ -25,12 +26,15 @@ const page = (props: Props) => {
           <div className="lg:w-1/2 flex justify-end ">
             <Reveal>
               <p className=" text-[15px] md:text-[17px] font-[400] leading-[20px] lg:leading-[40px] tracking-wide">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                laboriosam dolore ipsum tempore voluptate illo fugit, facere
-                aliquid facilis, laudantium aperiam suscipit eaque minima
-                maxime. Minus consectetur tenetur officia illo? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Magnam laboriosam
-                dolore ipsum tempore vo illo?
+                As you type on your keypad, expressing your interest for us to
+                work together, rest assured that you are making the right
+                choice. With a decade of experience in this industry and a
+                flawless record of positive reviews, our integrity and
+                commitment to professionalism and excellence are undeniable. We
+                have consistently exceeded our clients&apos; expectations and we
+                will do the same for you. Please proceed to the next steps by
+                filling out all the required fields, and we will promptly get in
+                touch with you.
               </p>
             </Reveal>
           </div>
@@ -85,6 +89,8 @@ const page = (props: Props) => {
             </div>
           </div>
         </div>
+
+        <Locations />
       </section>
       <Footer />
     </>

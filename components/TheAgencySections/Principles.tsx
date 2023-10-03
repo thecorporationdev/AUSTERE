@@ -18,7 +18,7 @@ const Principles = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="w-full flex mt-4 md:mt-8">
+      <div className="w-full flex mt-4 md:mt-10">
         <div className="mt-10 md:mt-0 space-y-4  min-[400px]:space-y-10 w-full">
           <Principle
             title="purpose"
@@ -42,14 +42,14 @@ export default Principles;
 
 function Principle({ title, p }: { title: string; p: string }) {
   return (
-    <div className=" border-t-2 border-black flex flex-col-reverse md:flex-row  md:justify-between mb-2 max-sm:mt-2  md:items-center">
+    <div className=" border-t-2 border-black flex flex-col md:flex-row  md:justify-between mb-2 max-sm:mt-2  md:items-center">
       <Reveal>
-        <h3 className="w-full text-5xl md:text-4xl mt-7 md:mt-4 font-[500] capitalize tracking-tight max-md:text-left py-1 leading-[20px] lg:leading-[30px]">
+        <h3 className="w-full text-5xl md:text-4xl mt-7 md:mt-4 font-[500] capitalize tracking-tight max-md:text-left py-1 leading-[20px] lg:leading-[30px] mb-2">
           {title}
         </h3>
       </Reveal>
 
-      <p className=" w-full  flex md:items-center md:justify-center text-base min-[400px]:mt-4  md:text-[17px] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-right">
+      <p className=" w-full  flex md:items-center md:justify-center text-base min-[400px]:mt-4  md:text-[17px] sm:mt-3 sm:w-1/2 lg:w-4/12 md:text-left">
         {p}
       </p>
     </div>

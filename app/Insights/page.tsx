@@ -5,6 +5,7 @@ import React from "react";
 import Link from "next/link";
 import InsightLink from "@/components/ui/InsightLink";
 import Reveal from "@/components/Reveal";
+import { InsightsData } from "../Data/data";
 
 type Props = {};
 
@@ -25,12 +26,12 @@ const insights = (props: Props) => {
           <div className="lg:w-1/2 flex justify-end ">
             <Reveal>
               <p className=" text-base md:text-[17px] font-[400] leading-[24px] lg:leading-[30px] tracking-wide">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                laboriosam dolore ipsum tempore voluptate illo fugit, facere
-                aliquid facilis, laudantium aperiam suscipit eaque minima
-                maxime. Minus consectetur tenetur officia illo? Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Magnam laboriosam
-                dolore ipsum tempore vo illo?
+                One of AUSTERE&apos;s defining cultures is our REFRESHING
+                approach to ideation, as we constantly push the boundaries and
+                think outside the box. We believe that sharing our unique
+                thoughts with the world is essential, and we take the time to
+                document and present them here. Below, you&apos;ll find some of
+                our recent insights on the latest trends in the design industry.
               </p>
             </Reveal>
           </div>
@@ -40,19 +41,11 @@ const insights = (props: Props) => {
           <div className=" w-full mt-10 md:mt-20 flex justify-end">
             <div className="w-full ">
               <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
-              <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
-              <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
-              <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
-              <Link href="/Insights/20">
-                <InsightLink />
+                {InsightsData.map((insights) => (
+                  <Link href={`/Insights/${insights.id}`} key={insights.id}>
+                    <InsightLink title={insights.title} />
+                  </Link>
+                ))}
               </Link>
             </div>
           </div>

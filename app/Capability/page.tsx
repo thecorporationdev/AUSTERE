@@ -10,7 +10,17 @@ const page = (props: Props) => {
     <>
       <section className="flex flex-col ">
         <CapabilityHero />
-        <ClientList />
+
+        <section className="w-full">
+          <div className="max-w-[90%] mx-auto">
+            <div className="w-full">
+              <h3 className="text-2xl md:text-3xl uppercase tracking-tighter font-[500]">
+                the clientele
+              </h3>
+            </div>
+            <ClientList />
+          </div>
+        </section>
       </section>
       <Footer />
     </>

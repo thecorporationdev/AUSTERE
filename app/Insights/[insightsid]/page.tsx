@@ -4,15 +4,23 @@ import React from "react";
 import image from "../../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import Link from "next/link";
 import Footer from "@/components/ui/Footer";
-
 import SmallBtn from "@/components/ui/SmallBtn";
 import { FiArrowUpRight } from "react-icons/fi";
 import InsightLink from "@/components/ui/InsightLink";
 import Reveal from "@/components/Reveal";
+import { InsightsData } from "@/app/Data/data";
+import { pickRandomObjects } from "@/lib/utils";
 
-type Props = {};
+type Props = {
+  params: { insightid: number };
+};
 
 const page = (props: Props) => {
+  const { params } = props;
+  const randomObjects = pickRandomObjects(InsightsData, 3);
+  const insightdataz = InsightsData.find(
+    (insight) => insight.id === params.insightid
+  );
   return (
     <>
       <section className="py-32 md:py-24">
@@ -27,7 +35,9 @@ const page = (props: Props) => {
 
         <div className="w-full mb-10 max-w-[90%] mx-auto ">
           <div className="lg:w-[55%] flex justify-between h-[10vh] items-end py-4 mt-4">
-            <h2 className="text-xl md:text-4xl font-[400]"> INSIGHT TOPIC</h2>
+            <h2 className="text-xl md:text-4xl font-[400]">
+              {insightdataz?.title}
+            </h2>
           </div>
         </div>
         <div className="w-full">
@@ -38,7 +48,7 @@ const page = (props: Props) => {
                 shimmer(400, 400)
               )}`}
               src={image}
-              alt="boatimage"
+              alt="insightimage"
               fill
               // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
@@ -115,21 +125,11 @@ const page = (props: Props) => {
           </h3>
           <div className="flex flex-col items-end justify-center">
             <div className="w-full ">
-              <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
-              <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
-              <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
-              <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
-              <Link href="/Insights/20">
-                <InsightLink />
-              </Link>
+              {randomObjects.map((insights: any) => (
+                <Link href={`/Insights/${insights.id}`} key={insights.id}>
+                  <InsightLink title={insights.title} />
+                </Link>
+              ))}
             </div>
           </div>
         </div>

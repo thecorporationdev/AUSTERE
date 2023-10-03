@@ -6,7 +6,7 @@ import Footer from "@/components/ui/Footer";
 import Reveal from "@/components/Reveal";
 import { workings } from "@/app/Data/data";
 import Project from "@/components/ui/Project";
-import { cn } from "@/lib/utils";
+import { cn, pickRandomObjects } from "@/lib/utils";
 
 type Props = {
   params: { projectid: string };
@@ -14,30 +14,12 @@ type Props = {
 
 const page = (props: Props) => {
   const { params } = props;
-  function pickRandomObjects(arr: any, numObjectsToPick: number) {
-    if (numObjectsToPick >= arr.length) {
-      return [...arr];
-    }
 
-    const shuffledArray = arr.slice();
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      // Shuffle the array using Fisher-Yates shuffle algorithm
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [
-        shuffledArray[j],
-        shuffledArray[i],
-      ];
-    }
-
-    // Pick the first numObjectsToPick elements from the shuffled array
-    return shuffledArray.slice(0, numObjectsToPick);
-  }
   const randomObjects = pickRandomObjects(workings, 3);
   const projectdata = workings.find(
     (project) => project.id === params.projectid
   );
 
-  console.log(projectdata?.description[0]);
   return (
     <>
       <section className="max-sm:max-w-[94%] max-lg:w-[90%] md:max-w-[90%] mx-auto pt-32 md:pt-24">
@@ -59,9 +41,11 @@ const page = (props: Props) => {
                 </h1>
               </div>
               <Reveal>
-                <p className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] md:hidden flex flex-col">
-                  {projectdata?.description[0]}
-                </p>
+                <div className="text-base md:text-[17px] leading-[24px] lg:leading-[30px] md:hidden flex flex-col gap-y-3.5">
+                  {projectdata?.description.map((data) => (
+                    <p key={data.id}>{data.text}</p>
+                  ))}
+                </div>
               </Reveal>
               {projectdata?.images.slice(0, 7).map((image, idx) => (
                 <div
@@ -91,9 +75,11 @@ const page = (props: Props) => {
                 {projectdata?.brandname}
               </h1>
               <Reveal>
-                <p className="text-base lg:text-[17px] leading-[24px] lg:leading-[30px] hidden md:block mt-6">
-                  {projectdata?.description}
-                </p>
+                <div className="text-base lg:text-[17px] leading-[24px] lg:leading-[30px] hidden md:flex flex-col mt-6 gap-y-3.5">
+                  {projectdata?.description.map((data) => (
+                    <p key={data.id}>{data.text}</p>
+                  ))}
+                </div>
               </Reveal>
             </div>
 
