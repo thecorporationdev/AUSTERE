@@ -1,4 +1,5 @@
 import CapabilityHero from "@/components/CapabilitySections/CapabilityHero";
+import ClientList from "@/components/WorkingsSections/ClientList";
 import Footer from "@/components/ui/Footer";
 import React from "react";
 
@@ -9,6 +10,7 @@ const page = (props: Props) => {
     <>
       <section className="flex flex-col ">
         <CapabilityHero />
+        <ClientList />
       </section>
       <Footer />
     </>
