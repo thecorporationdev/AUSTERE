@@ -12,25 +12,25 @@ const Principles = (props: Props) => {
           <div className="w-full flex justify-between items-center md:w-8/12">
             <Reveal>
               <h3 className=" w-full tracking-wide max-md:text-4xl  font-[500]  md:text-4xl uppercase">
-                our core <br /> principles
+                brand <br /> core
               </h3>
             </Reveal>
           </div>
         </div>
       </div>
-      <div className="w-full flex mt-10 md:mt-16">
+      <div className="w-full flex mt-4 md:mt-8">
         <div className="mt-10 md:mt-0 space-y-4  min-[400px]:space-y-10 w-full">
           <Principle
-            title="people"
-            p="we employ and empower creative thinkers"
+            title="purpose"
+            p="To Create A simple, clean , beautiful, yet purposeful Africa, one design at a time  "
           />
           <Principle
-            title="process"
-            p="we employ and empower creative thinkers"
+            title="vision"
+            p="To be Africa's foremost, human-centered minimalist design  agency"
           />
           <Principle
-            title="tools"
-            p="we employ and empower creative thinkers"
+            title="mission"
+            p="To provide a spectrum of highly functional human-centered minimalist design services backed by the blend of artistry with practicality to individuals, businesses, and governments in Africa."
           />
         </div>
       </div>
@@ -44,7 +44,7 @@ function Principle({ title, p }: { title: string; p: string }) {
   return (
     <div className=" border-t-2 border-black flex flex-col-reverse md:flex-row  md:justify-between mb-2 max-sm:mt-2  md:items-center">
       <Reveal>
-        <h3 className="w-full text-5xl mt-7 md:mt-4 font-[500] capitalize tracking-tight max-md:text-left py-1 leading-[20px] lg:leading-[30px]">
+        <h3 className="w-full text-5xl md:text-4xl mt-7 md:mt-4 font-[500] capitalize tracking-tight max-md:text-left py-1 leading-[20px] lg:leading-[30px]">
           {title}
         </h3>
       </Reveal>

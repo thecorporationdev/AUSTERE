@@ -17,7 +17,7 @@ const Projects = (props: Props) => {
       </h1>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-10 mt-3 md:mt-4 w-full">
-        {workings.slice(0, 4).map((project, idx) => (
+        {workings.slice(0, 6).map((project, idx) => (
           <Project
             slug={project?.id}
             key={idx}

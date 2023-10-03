@@ -96,7 +96,7 @@ const page = (props: Props) => {
               </Reveal>
             </div>
 
-            <div className="">
+            <div className="mt-4">
               {projectdata?.images.slice(7, 12).map((image, idx) => (
                 <div
                   className="  w-full aspect-[2/1.1] relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"

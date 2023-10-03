@@ -3,6 +3,14 @@ import Value from "../ui/Value";
 import ValueCarousel from "../ui/Valuecarousel";
 import Reveal from "../Reveal";
 
+const values = [
+  { id: 1, values: "tactical" },
+  { id: 2, values: "refreshing" },
+  { id: 3, values: "affirmative" },
+  { id: 4, values: "dependable" },
+  { id: 5, values: "energetic" },
+];
+
 type Props = {};
 
 const Values = (props: Props) => {
@@ -12,7 +20,7 @@ const Values = (props: Props) => {
         <Reveal>
           <div className="flex justify-between items-start flex-col md:flex-row">
             <h3 className="tracking-tighter  text-3xl md:text-4xl w-full uppercase  md:py-0 font-[500]">
-              our values
+              brand values
             </h3>
 
             <div className="w-full md:border-t-2 md:border-black flex flex-col">
@@ -44,11 +52,9 @@ const Values = (props: Props) => {
       {/* <ValueCarousel /> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 mt-10 md:mt-24 gap-y-6 max-sm:mt-16 ">
-        <Value />
-        <Value />
-        <Value />
-        <Value />
-        <Value />
+        {values.map((data) => (
+          <Value key={data.id} value={data?.values} />
+        ))}
       </div>
     </div>
   );
