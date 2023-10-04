@@ -12,7 +12,7 @@ type Props = {};
 const insights = (props: Props) => {
   return (
     <>
-      <section className="w-full flex-col  flex md:mt-10 max-w-[90%] mx-auto py-32 md:py-24">
+      <section className="w-full flex-col  flex md:mt-10 max-w-[90%] mx-auto pt-32 md:pt-24">
         <Reveal>
           <div className=" w-full max-md:flex-col mx-auto flex items-left justify-center">
             <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[500] text-left uppercase md:py-10">
@@ -40,13 +40,11 @@ const insights = (props: Props) => {
         <div className="w-full flex lg:justify-end mt-4">
           <div className=" w-full mt-10 md:mt-20 flex justify-end">
             <div className="w-full ">
-              <Link href="/Insights/20">
-                {InsightsData.map((insights) => (
-                  <Link href={`/Insights/${insights.id}`} key={insights.id}>
-                    <InsightLink title={insights.title} />
-                  </Link>
-                ))}
-              </Link>
+              {InsightsData.map((insights) => (
+                <Link href={`/Insights/${insights.id}`} key={insights.id}>
+                  <InsightLink title={insights.title} />
+                </Link>
+              ))}
             </div>
           </div>
         </div>

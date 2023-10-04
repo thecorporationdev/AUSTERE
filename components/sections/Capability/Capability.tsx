@@ -3,7 +3,6 @@ import { designCategories } from "@/app/Data/data";
 import Reveal from "@/components/Reveal";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import CapabilityLink from "@/components/ui/Capacitylink";
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 

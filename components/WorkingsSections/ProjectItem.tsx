@@ -31,7 +31,7 @@ const ProjectItem = (props: Props) => {
                   alt="BOAT IMAGE"
                   fill={true}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="bg-cover group-hover:scale-105 transition-all duration-150 "
+                  className="bg-cover group-hover:scale-105 transition-all"
                 />
               </div>
             </Reveal>

@@ -10,20 +10,23 @@ import InsightLink from "@/components/ui/InsightLink";
 import Reveal from "@/components/Reveal";
 import { InsightsData } from "@/app/Data/data";
 import { pickRandomObjects } from "@/lib/utils";
+import insights from "../page";
 
 type Props = {
-  params: { insightid: number };
+  params: { insightsid: number };
 };
 
 const page = (props: Props) => {
   const { params } = props;
   const randomObjects = pickRandomObjects(InsightsData, 3);
-  const insightdataz = InsightsData.find(
-    (insight) => insight.id === params.insightid
+
+  const insight = InsightsData.find(
+    (insight) => +insight.id === +params.insightsid
   );
+
   return (
     <>
-      <section className="py-32 md:py-24">
+      <section className="pt-32 md:pt-24">
         <Reveal>
           <div className="flex w-full max-w-[90%] mx-auto ">
             <h1 className="w-full text-4xl md:text-6xl mx-auto xl:text-8xl font-[400] text-left uppercase md:py-10">
@@ -33,91 +36,55 @@ const page = (props: Props) => {
         </Reveal>
         <div className="h-[3px] w-full bg-black mt-10 max-w-[90%] mx-auto " />
 
-        <div className="w-full mb-10 max-w-[90%] mx-auto ">
-          <div className="lg:w-[55%] flex justify-between h-[10vh] items-end py-4 mt-4">
-            <h2 className="text-xl md:text-4xl font-[400]">
-              {insightdataz?.title}
-            </h2>
-          </div>
-        </div>
-        <div className="w-full">
-          <div className=" h-[450px] relative overflow-hidden  bg-gray-100">
-            <Image
-              placeholder="blur"
-              blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-                shimmer(400, 400)
-              )}`}
-              src={image}
-              alt="insightimage"
-              fill
-              // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover group-hover:scale-105 transition-all duration-150 bg-center h-full"
-            />
-          </div>
+        <div className="w-full flex justify-end mt-10 md:my-20 ">
+          <div className=" max-sm:max-w-[90%] max-sm:mx-auto lg:w-1/2 flex justify-end h-[20vh]"></div>
         </div>
 
-        <div className="w-full mt-6 max-md:px-3  md:max-w-[90%] mx-auto ">
-          <h3 className="text-xl lg:text-3xl font-bold ">
-            CORPORATE CULTURE DEPENDS ON WHAT YOUR CEO SAYS
-          </h3>
-          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus doloremque consequatur pariatur quo consequuntur
-            sequi expedita dignissimos culpa! Ratione corporis minus fugit
-            voluptas laborum? Dolor cupiditate dolores voluptates et placeat?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-            itaque tempora accusamus suscipit sapiente atque, magni doloremque
-            eos repudiandae, quas rem nesciunt recusandae veritatis ullam
-            laudantium, accusantium asperiores eius ipsam. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Itaque omnis quo accusantium
-            perspiciatis? Et doloribus quas provident explicabo quis consequatur
-            numquam, est laboriosam, nesciunt, adipisci soluta. Provident cum
-            incidunt ipsa.
+        <div className="w-full mt-4">
+          <div className="flex max-w-[90%] mx-auto border-b-2 border-black justify-between  py-2">
+            <div className="tracking-[-0.02] text-base md:text-3xl capitalize font-semibold">
+              {insight?.title}
+            </div>
+          </div>
+          <div className="w-full mt-6">
+            <div className=" aspect-[2/1.2] lg:aspect-[2/1]  w-full relative overflow-hidden  bg-gray-100">
+              <Image
+                placeholder="blur"
+                blurDataURL={`data:image/svg+xml;base64, ${toBase64(
+                  shimmer(400, 400)
+                )}`}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                src={insight.image}
+                alt="boatimage"
+                fill
+                className="bg-cover  group-hover:scale-105 transition-all duration-150 bg-center h-full w-full"
+              />
+            </div>
+          </div>
+          <p className="text-base max-w-[90%] mx-auto md:text-[17px] mt-10  mb-10 leading-[24px] lg:leading-[30px]">
+            {insight?.description}
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus doloremque consequatur pariatur quo consequuntur
-            sequi expedita dignissimos culpa! Ratione corporis minus fugit
-            voluptas laborum? Dolor cupiditate dolores voluptates et placeat?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-            itaque tempora accusamus suscipit sapiente atque, magni doloremque
-            eos repudiandae, quas rem nesciunt recusandae veritatis ullam
-            laudantium, accusantium asperiores eius ipsam. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Itaque omnis quo accusantium
-            perspiciatis? Et doloribus quas provident explicabo quis consequatur
-            numquam, est laboriosam, nesciunt, adipisci soluta. Provident cum
-            incidunt ipsa.
-          </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus doloremque consequatur pariatur quo consequuntur
-            sequi expedita dignissimos culpa! Ratione corporis minus fugit
-            voluptas laborum? Dolor cupiditate dolores voluptates et placeat?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-            itaque tempora accusamus suscipit sapiente atque, magni doloremque
-            eos repudiandae, quas rem nesciunt recusandae veritatis ullam
-            laudantium, accusantium asperiores eius ipsam. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Itaque omnis quo accusantium
-            perspiciatis? Et doloribus quas provident explicabo quis consequatur
-            numquam, est laboriosam, nesciunt, adipisci soluta. Provident cum
-            incidunt ipsa.
-          </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px] ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Necessitatibus doloremque consequatur pariatur quo consequuntur
-            sequi expedita dignissimos culpa! Ratione corporis minus fugit
-            voluptas laborum? Dolor cupiditate dolores voluptates et placeat?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-            itaque tempora accusamus suscipit sapiente atque, magni doloremque
-            eos repudiandae, quas rem nesciunt recusandae veritatis ullam
-            laudantium, accusantium asperiores eius ipsam. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Itaque omnis quo accusantium
-            perspiciatis? Et doloribus quas provident explicabo quis consequatur
-            numquam, est laboriosam, nesciunt, adipisci soluta. Provident cum
-            incidunt ipsa.
-          </p>
-        </div>
+          <div className="max-w-[90%] mx-auto md:text-[17px] mt-1">
+            {insight?.points.map((points) => (
+              <div key={points.id} className="">
+                <p className="text-base mb-6">
+                  <span className="mr-1 font-semibold ">{points.id}.</span>
+                  <span className="uppercase font-semibold text-base mr-2">
+                    {points.point}
+                  </span>
+                  {points.pointdesc}
+                </p>
+              </div>
+            ))}
+          </div>
 
+          <div className="">
+            <p className="text-base max-w-[90%] mx-auto md:text-[16px] mt-10  mb-10 leading-[24px] lg:leading-[30px] ">
+              <span className="font-bold uppercase mr-1">conclusion :</span>
+              {insight?.conclusion}
+            </p>
+          </div>
+        </div>
         <div className="h-[3px] max-w-[90%] mx-auto  bg-black mt-10"></div>
         <div className="max-lg:px-3  mt-10 md:mt-20 max-w-[90%] mx-auto ">
           <h3 className="uppercase font-bold text-base md:text-xl mb-4">

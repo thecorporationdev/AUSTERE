@@ -71,7 +71,7 @@ function Clientbox(props: Propsclient) {
   return (
     <Reveal>
       <div className="border-2 border-black  flex  items-center justify-center py-14 px-14 md:px-1">
-        <div className=" h-[6rem] w-[6rem]  md:h-[5.5rem] md:w-[5.5rem] flex items-center justify-center">
+        <div className=" h-[4.5rem] w-[4.5rem] flex items-center justify-center">
           {logo}
         </div>
       </div>
