@@ -6,8 +6,16 @@ import Link from "next/link";
 import InsightLink from "@/components/ui/InsightLink";
 import Reveal from "@/components/Reveal";
 import { InsightsData } from "../Data/data";
+import { Metadata } from "next";
 
 type Props = {};
+export const metadata: Metadata = {
+  title: "Insights",
+  description: "insights which makes austere standout",
+  icons: {
+    icon: "./AUSTEREICO.png",
+  },
+};
 
 const insights = (props: Props) => {
   return (

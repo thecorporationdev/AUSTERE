@@ -7,10 +7,25 @@ import Reveal from "@/components/Reveal";
 import { workings } from "@/app/Data/data";
 import Project from "@/components/ui/Project";
 import { cn, pickRandomObjects } from "@/lib/utils";
+import { Metadata } from "next";
 
 type Props = {
   params: { projectid: string };
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = params.projectid;
+  const projectdata = workings.find(
+    (project) => project.id === params.projectid
+  );
+
+  return {
+    title: projectdata?.brandname || "works",
+    description: `This is austere's workings named ${
+      projectdata?.brandname || "anonymous"
+    }`,
+  };
+}
 
 const page = (props: Props) => {
   const { params } = props;

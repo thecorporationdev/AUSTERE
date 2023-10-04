@@ -425,6 +425,7 @@ export const InsightsData = [
 export const leadershipdata = [
   {
     id: 1,
+    image: "",
     name: "ABUBAKAR ABDULLAHI",
     role: "Principal Partner",
     remark:
@@ -432,6 +433,7 @@ export const leadershipdata = [
   },
   {
     id: 2,
+    image: "",
     name: "GBENRO ODUGBEMI",
     role: "Principal Partner",
     remark:
@@ -439,6 +441,7 @@ export const leadershipdata = [
   },
   {
     id: 3,
+    image: "",
     name: "SYLVIA MADUKA",
     role: "Managing Partner",
     remark:
@@ -446,6 +449,7 @@ export const leadershipdata = [
   },
   {
     id: 4,
+    image: "",
     name: "ESTHER MICHEAL",
     role: "Managing Partner",
     remark:

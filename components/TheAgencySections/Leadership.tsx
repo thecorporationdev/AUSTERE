@@ -6,6 +6,7 @@ import image from "../../public/nathan-cima-2JNNpq4nGls-unsplash.jpg";
 import LeadershipCard from "../ui/LeadershipCard";
 import Arrow from "../icons/Arrow";
 import Reveal from "../Reveal";
+import { leadershipdata } from "@/app/Data/data";
 
 interface ParentProps {
   cardId?: number;
@@ -24,24 +25,6 @@ const Leadership = (props: ParentProps) => {
     }
   };
 
-  const cardsData = [
-    {
-      id: 1,
-      name: "micheal carouso",
-    },
-    {
-      id: 22,
-      name: "micheal carouso",
-    },
-    {
-      id: 2,
-      name: "micheal carouso",
-    },
-    {
-      id: 90,
-      name: "micheal carouso",
-    },
-  ];
   return (
     <section className="w-full mx-auto h-screen md:h-auto mt-28">
       <div className="w-full ">
@@ -54,12 +37,15 @@ const Leadership = (props: ParentProps) => {
 
       <div className="mt-16 w-full h-full">
         <div className="w-full h-auto sm:h-full grid grid-cols-2 xl:flex justify-end gap-x-4 gap-y-5 md:gap-x-10 md:gap-y-14 ">
-          {cardsData.map((data, index) => (
+          {leadershipdata.map((data, index) => (
             <LeadershipCard
               key={index}
               cardId={data.id} // Unique identifier for each card
               isOpen={openCardId === data.id}
               toggleOverlay={toggleOverlay}
+              name={data.name}
+              description={data.remark}
+              position={data.role}
             />
           ))}
         </div>

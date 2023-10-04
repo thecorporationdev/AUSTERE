@@ -11,11 +11,26 @@ import Reveal from "@/components/Reveal";
 import { InsightsData } from "@/app/Data/data";
 import { pickRandomObjects } from "@/lib/utils";
 import insights from "../page";
+import { Metadata } from "next";
 
 type Props = {
   params: { insightsid: number };
-};
 
+  
+};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const slug = params.insightsid;
+  const insights = InsightsData.find(
+    (project) => +project.id === +params.insightsid
+  );
+
+  return {
+    title: insights?.title || "insights",
+    description: `This is austere's workings named ${
+      insights?.title || "anonymous"
+    }`,
+  };
+}
 const page = (props: Props) => {
   const { params } = props;
   const randomObjects = pickRandomObjects(InsightsData, 3);

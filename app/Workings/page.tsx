@@ -2,9 +2,18 @@ import Reveal from "@/components/Reveal";
 import ClientList from "@/components/WorkingsSections/ClientList";
 import ProjectList from "@/components/WorkingsSections/ProjectList";
 import Footer from "@/components/ui/Footer";
+import { Metadata } from "next";
 import React from "react";
 
 type Props = {};
+
+export const metadata: Metadata = {
+  title: "Workings",
+  description: "workings page to show our works and achiements",
+  icons: {
+    icon: "./AUSTEREICO.png",
+  },
+};
 
 const page = (props: Props) => {
   return (

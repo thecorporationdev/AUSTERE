@@ -11,11 +11,21 @@ import Reveal from "../Reveal";
 
 type Props = {
   cardId: number;
+  description: string;
+  name: string;
+  position: string;
   isOpen: boolean;
   toggleOverlay: (cardId: number) => void;
 };
 
-const LeadershipCard = ({ cardId, isOpen, toggleOverlay }: Props) => {
+const LeadershipCard = ({
+  cardId,
+  isOpen,
+  toggleOverlay,
+  description,
+  name,
+  position,
+}: Props) => {
   const [showOverlay, setShowOverlay] = useState(false);
   const controls = useAnimation();
 
@@ -48,11 +58,8 @@ const LeadershipCard = ({ cardId, isOpen, toggleOverlay }: Props) => {
           >
             <RxCross1 className="text-white" />
           </button>
-          <p className="mt-10 md:mt-14 text-xs md:text-sm px-3 text-left text-white">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-            recusandae quo, delectus deleniti architecto dolorum necessitatibus
-            molestiae quas quaerat nostrum natus voluptatibus repellendus ullam
-            eligendi nihil velit fugit sapiente debitis.
+          <p className="mt-10 md:mt-14 text-xs  px-3 text-left text-white">
+            {description}
           </p>
         </motion.div>
         <div className="max-sm:h-[300px] sm:h-[250px] xl:w-[250px] xl:h-[400px] relative overflow-hidden  border-2">
@@ -71,10 +78,10 @@ const LeadershipCard = ({ cardId, isOpen, toggleOverlay }: Props) => {
         <div className="mt-3 flex justify-between">
           <div className="">
             <p className="font-bold text-[10px] md:text-[12px] text-gray-500">
-              Founding partner
+              {position}
             </p>
             <p className="font-bold text-black text-[12px] md:text-base">
-              Micheal carouso
+              {name}
             </p>
           </div>
           <div className="cursor-pointer" onClick={toggle}>
