@@ -54,7 +54,7 @@ const page = (props: Props) => {
                   shimmer(400, 400)
                 )}`}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                src={insight.image}
+                src={insight?.image || image}
                 alt="boatimage"
                 fill
                 className="bg-cover  group-hover:scale-105 transition-all duration-150 bg-center h-full w-full"
