@@ -32,7 +32,7 @@ const page = (props: Props) => {
             terms and conditions governing the use of our website.
           </p>
           <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
-            <span className="uppercase font-[400] ml-1">
+            <span className="uppercase font-[500] ml-1">
               1. Acceptance of Terms
             </span>{" "}
             By accessing and using{" "}
@@ -44,7 +44,7 @@ const page = (props: Props) => {
             these terms, please refrain from using our website.
           </p>
           <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
-            <span className="uppercase font-[400] ml-1">
+            <span className="uppercase font-[500] ml-1">
               {" "}
               2. intellectual Property :{" "}
             </span>
@@ -56,7 +56,7 @@ const page = (props: Props) => {
             without prior written consent.
           </p>
           <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
-            <span className="uppercase font-[400] ml-1">
+            <span className="uppercase font-[500] ml-1">
               3. Limitation of Liability:{" "}
             </span>{" "}
             In no event shall The Austere, its affiliates, or its partners be
@@ -67,7 +67,7 @@ const page = (props: Props) => {
             website.
           </p>
           <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px] ml-1">
-            <span className="uppercase font-[400] ml-1">
+            <span className="uppercase font-[500] ml-1">
               4. Third-Party Links:
             </span>
             www.theaustere.xyz may contain links to external websites or
@@ -78,14 +78,14 @@ const page = (props: Props) => {
             websites.
           </p>
           <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px] ml-1">
-            <span className="uppercase font-[400]"> 5. Privacy Policy: </span>{" "}
+            <span className="uppercase font-[500]"> 5. Privacy Policy: </span>{" "}
             We respect your privacy and are committed to protecting your
             personal information. Please review our Privacy Policy to understand
             how we collect, use, and disclose your data when you visit
             www.theaustere.xyz.
           </p>
           <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
-            <span className="uppercase font-[400] ml-1">
+            <span className="uppercase font-[500] ml-1">
               6. Changes to the Legal Statement:
             </span>{" "}
             The Austere reserves the right to modify or update this legal

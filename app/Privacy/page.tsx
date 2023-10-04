@@ -17,11 +17,11 @@ const page = (props: Props) => {
         </Reveal>
         <div className="h-[3px] w-full bg-black mt-10 max-w-[90%] mx-auto " />
 
-        <div className="w-full mt-6 max-md:px-3 max-w-[90%] mx-auto ">
+        <div className="w-full mt-6 max-md:px-3 lg:max-w-[90%] mx-auto ">
           <h3 className="text-xl uppercase lg:text-3xl font-bold ">
             privacy policy statement
           </h3>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
             We take your privacy seriously at{" "}
             <a href="www.theaustere.xyz." className="text-blue-500">
               www.theaustere.xyz.
@@ -30,8 +30,8 @@ const page = (props: Props) => {
             information on how we collect, use, and protect your personal data
             when you visit our website.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
-            <span className="uppercase font-[400]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
+            <span className="uppercase font-[500]">
               1. Collection of Information:
             </span>{" "}
             We may collect certain information when you visit our website, such
@@ -41,8 +41,8 @@ const page = (props: Props) => {
             collect any personally identifiable information unless you
             voluntarily provide it to us.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
-            <span className="uppercase font-[400]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
+            <span className="uppercase font-[500]">
               {" "}
               2. Use of Information:{" "}
             </span>
@@ -53,8 +53,8 @@ const page = (props: Props) => {
             send you updates and promotional offers, but you have the option to
             unsubscribe from these communications at any time.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
-            <span className="uppercase font-[400]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
+            <span className="uppercase font-[500]">
               3. Protection of Information:{" "}
             </span>{" "}
             We have implemented various security measures to safeguard your
@@ -63,8 +63,8 @@ const page = (props: Props) => {
             over the internet or electronic storage is completely secure, and we
             cannot guarantee absolute security.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
-            <span className="uppercase font-[400]"> 4. Cookies: </span> Our
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
+            <span className="uppercase font-[500]"> 4. Cookies: </span> Our
             website uses cookies to enhance your browsing experience. These
             cookies are small text files that are stored on your device and
             collect certain information, such as your preferences and website
@@ -72,8 +72,8 @@ const page = (props: Props) => {
             settings, but please note that this may affect the functionality of
             our website.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
-            <span className="uppercase font-[400]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
+            <span className="uppercase font-[500]">
               {" "}
               5. Third-Party Websites:{" "}
             </span>{" "}
@@ -82,21 +82,21 @@ const page = (props: Props) => {
             practices or content of these websites. We encourage you to review
             the privacy policies of any third-party websites you visit.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
-            <span className="uppercase font-[400]">6. Childrens Privacy:</span>{" "}
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
+            <span className="uppercase font-[500]">6. Childrens Privacy:</span>{" "}
             Our website is not intended for children under the age of 13. We do
             not knowingly collect or solicit personal information from children.
             If you are a parent or guardian and believe that your child has
             provided us with personal information, please contact us
             immediately.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
-            <span className="uppercase font-[400]"> 7. Consent: </span> By using
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
+            <span className="uppercase font-[500]"> 7. Consent: </span> By using
             our website, you consent to the collection and use of your personal
             information as outlined in this privacy policy statement.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
-            <span className="uppercase font-[400]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
+            <span className="uppercase font-[500]">
               8. Changes to the Policy:
             </span>
             We reserve the right to update or modify this privacy policy
@@ -104,7 +104,7 @@ const page = (props: Props) => {
             upon posting on our website. It is your responsibility to review
             this policy periodically to stay informed about any updates.
           </p>
-          <p className="mt-3 text-base md:text-[17px] leading-[20px] lg:leading-[30px]">
+          <p className="mt-3 text-base md:text-[17px] leading-[24px] lg:leading-[30px]">
             If you have any questions or concerns about our privacy policy
             statement, please contact us.
           </p>
