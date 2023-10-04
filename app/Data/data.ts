@@ -53,7 +53,7 @@ import zam4 from "../../public/Workingsimage/zam/zam4.jpg";
 import interirdes from "../../public/interior.jpg";
 import archi from "../../public/architecturaldesign.jpg";
 import uiux from "../../public/uiux.jpg";
-import debranding from "../../public/DEBRANDING.jpg";
+import debranding from "../../public/DEBRANDING2.jpg";
 import brandenv from "../../public/BRANDENVIROMENT.jpg";
 import busdeath from "../../public/BUSINESSDEATH.jpg";
 
