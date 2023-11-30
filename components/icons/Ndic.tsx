@@ -1,12 +1,13 @@
+import { cn } from "@/lib/utils";
 import * as React from "react";
-type icontype = {
-  className?: string;
-};
-const NDic = ({ className, ...props }: icontype) => (
+type icontype = {};
+const NDic = ({ ...props }: icontype) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    className={className}
+    width="2.88048in"
+    height="0.68674in"
+    className={cn(`w-[5.5rem] h-[5.5rem]`)}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",

@@ -14,7 +14,6 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.projectid;
   const projectdata = workings.find(
     (project) => project.id === params.projectid
   );
@@ -24,6 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: `This is austere's workings named ${
       projectdata?.brandname || "anonymous"
     }`,
+    icons: {
+      icon: "./AUSTEREICO.png",
+    },
   };
 }
 
@@ -62,7 +64,7 @@ const page = (props: Props) => {
                   ))}
                 </div>
               </Reveal>
-              {projectdata?.images.slice(0, 7).map((image, idx) => (
+              {projectdata?.images.slice(0, 14).map((image, idx) => (
                 <div
                   className=" w-full aspect-[2/1.1] relative overflow-hidden border-gray-300  border-2   bg-gray-100 mt-5"
                   key={idx}
@@ -89,34 +91,12 @@ const page = (props: Props) => {
               >
                 {projectdata?.brandname}
               </h1>
-              <Reveal>
-                <div className="text-base lg:text-[17px] leading-[24px] lg:leading-[30px] hidden md:flex flex-col mt-6 gap-y-3.5">
-                  {projectdata?.description.map((data) => (
-                    <p key={data.id}>{data.text}</p>
-                  ))}
-                </div>
-              </Reveal>
-            </div>
 
-            <div className="mt-10 ">
-              {projectdata?.images.slice(7, 12).map((image, idx) => (
-                <div
-                  className="  w-full aspect-[2/1.1] relative overflow-hidden border-gray-300  border-2 bg-gray-100 mt-5"
-                  key={idx}
-                >
-                  <Image
-                    placeholder="blur"
-                    blurDataURL={`data:image/svg+xml;base64, ${toBase64(
-                      shimmer(400, 400)
-                    )}`}
-                    src={image}
-                    alt="boatimage"
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="bg-cover group-hover:scale-105 transition-all duration-150  h-full"
-                  />
-                </div>
-              ))}
+              <div className="text-base lg:text-[17px] leading-[24px] lg:leading-[30px] hidden md:flex flex-col mt-6 gap-y-3.5">
+                {projectdata?.description.map((data) => (
+                  <p key={data.id}> {data.text}</p>
+                ))}
+              </div>
             </div>
           </div>
         </div>

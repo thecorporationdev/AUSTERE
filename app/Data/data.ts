@@ -1,30 +1,36 @@
 import enaira from "../../public/Workingsimage/enaira/enaira.jpg";
 import enaira1 from "../../public/Workingsimage/enaira/enaira1.jpg";
-import enaira2 from "../../public/Workingsimage/enaira/enaira10.jpg";
-import enaira3 from "../../public/Workingsimage/enaira/enaira3.jpg";
-import enaira4 from "../../public/Workingsimage/enaira/enaira4.jpg";
+import enaira2 from "../../public/Workingsimage/enaira/enaira3.jpg";
+import enaira3 from "../../public/Workingsimage/enaira/enaira4.jpg";
+import enaira4 from "../../public/Workingsimage/enaira/enaira10.jpg";
 import enaira5 from "../../public/Workingsimage/enaira/enaira5.jpg";
 import enaira6 from "../../public/Workingsimage/enaira/enaira6.jpg";
-import enaira8 from "../../public/Workingsimage/enaira/eniara8.jpg";
-import enaira9 from "../../public/Workingsimage/enaira/enaira13.jpg";
+import enaira7 from "../../public/Workingsimage/enaira/enaira7.jpg";
+import enaira8 from "../../public/Workingsimage/enaira/enaira8.jpg";
+import enaira9 from "../../public/Workingsimage/enaira/enaira10.jpg";
+import enaira10 from "../../public/Workingsimage/enaira/enaira7.jpg";
+import enaira11 from "../../public/Workingsimage/enaira/enaira11.jpg";
+import enaira12 from "../../public/Workingsimage/enaira/enaira12.jpg";
+import enaira13 from "../../public/Workingsimage/enaira/enaira13.jpg";
+import enaira14 from "../../public/Workingsimage/enaira/enaira14.jpg";
+
 import meena from "../../public/Workingsimage/meena/meena.jpg";
 import meena1 from "../../public/Workingsimage/meena/meena3.jpg";
 import meena2 from "../../public/Workingsimage/meena/meena5.jpg";
 import meena3 from "../../public/Workingsimage/meena/meena7.jpg";
 import meena4 from "../../public/Workingsimage/meena/menna.jpg";
-import nnf from "../../public/Workingsimage/nnf/nnf.jpg";
-import nnf1 from "../../public/Workingsimage/nnf/nnf-5.jpg";
-import nnf2 from "../../public/Workingsimage/nnf/nnf1.jpg";
-import nnf3 from "../../public/Workingsimage/nnf/nnf2.jpg";
-import nnf4 from "../../public/Workingsimage/nnf/nnf3.jpg";
-import nnf5 from "../../public/Workingsimage/nnf/nnf4.jpg";
-import nnf6 from "../../public/Workingsimage/nnf/nnf6.jpg";
-import nnf7 from "../../public/Workingsimage/nnf/nnf7.jpg";
-import nnf8 from "../../public/Workingsimage/nnf/nnf8.jpg";
 
+import nnf from "../../public/Workingsimage/nnf/nnf-5.jpg";
+import nnf1 from "../../public/Workingsimage/nnf/nnf5.jpg";
+import nnf2 from "../../public/Workingsimage/nnf/nnf2.jpg";
+import nnf3 from "../../public/Workingsimage/nnf/nnf1.jpg";
+import nnf4 from "../../public/Workingsimage/nnf/nnf6.jpg";
+import nnf5 from "../../public/Workingsimage/nnf/nnf4.jpg";
+import nnf7 from "../../public/Workingsimage/nnf/nnf7.jpg";
+import nnf8 from "../../public/Workingsimage/nnf/nnf3.jpg";
 import nnf10 from "../../public/Workingsimage/nnf/nnf9.jpg";
 import nnf11 from "../../public/Workingsimage/nnf/nnf10.jpg";
-import nnf12 from "../../public/Workingsimage/nnf/nnf11.jpg";
+
 import cbn from "../../public/Workingsimage/cbn/cbn.jpg";
 import cbn1 from "../../public/Workingsimage/cbn/cbn1.jpg";
 import cbn2 from "../../public/Workingsimage/cbn/cbn2.jpg";
@@ -35,6 +41,7 @@ import cbn6 from "../../public/Workingsimage/cbn/cbn6.jpg";
 import cbn7 from "../../public/Workingsimage/cbn/cbn7.jpg";
 import cbn8 from "../../public/Workingsimage/cbn/cbn8.jpg";
 import cbn9 from "../../public/Workingsimage/cbn/cbn9.jpg";
+
 import mango from "../../public/Workingsimage/Mango/mango.jpg";
 import mango1 from "../../public/Workingsimage/Mango/mango1.jpg";
 import mango2 from "../../public/Workingsimage/Mango/mango2.jpg";
@@ -45,17 +52,44 @@ import mango6 from "../../public/Workingsimage/Mango/mango6.jpg";
 import mango7 from "../../public/Workingsimage/Mango/mango7.jpg";
 import mango8 from "../../public/Workingsimage/Mango/mango8.jpg";
 import mango9 from "../../public/Workingsimage/Mango/mango9.jpg";
+
 import zam from "../../public/Workingsimage/zam/zam.jpg";
 import zam1 from "../../public/Workingsimage/zam/zam1.jpg";
 import zam2 from "../../public/Workingsimage/zam/zam2.jpg";
 import zam3 from "../../public/Workingsimage/zam/zam3.jpg";
 import zam4 from "../../public/Workingsimage/zam/zam4.jpg";
+
+import nbt from "../../public/Workingsimage/NBT/NO1.jpg";
+import nbt2 from "../../public/Workingsimage/NBT/NO2.jpg";
+import nbt3 from "../../public/Workingsimage/NBT/NO3.jpg";
+import nbt4 from "../../public/Workingsimage/NBT/NO4.jpg";
+import nbt5 from "../../public/Workingsimage/NBT/NO5.jpg";
+
+import ncac from "../../public/Workingsimage/NCAC/C.jpg";
+import ncac1 from "../../public/Workingsimage/NCAC/CCC.jpg";
+import ncac2 from "../../public/Workingsimage/NCAC/CC.jpg";
+import ncac3 from "../../public/Workingsimage/NCAC/CCCC.jpg";
+// import ncac4 from "../../public/Workingsimage/NCAC/CCCC.jpg";
+// import ncac5 from "../../public/Workingsimage/NCAC/CCCCC.jpg";
+import ncac6 from "../../public/Workingsimage/NCAC/CCCCCC.jpg";
+import ncac7 from "../../public/Workingsimage/NCAC/CCCCCCC.jpg";
+import ncac8 from "../../public/Workingsimage/NCAC/CCCCCCCC.jpg";
+import ncac9 from "../../public/Workingsimage/NCAC/CCCCCCCCC.jpg";
+import ncac10 from "../../public/Workingsimage/NCAC/CCCCCCCCCC.jpg";
+import ncac11 from "../../public/Workingsimage/NCAC/CCCCCCCCCCC.jpg";
+import ncac12 from "../../public/Workingsimage/NCAC/CCCCCCCCCCCC.jpg";
+
 import interirdes from "../../public/interior.jpg";
 import archi from "../../public/architecturaldesign.jpg";
 import uiux from "../../public/uiux.jpg";
-import debranding from "../../public/DEBRANDING2.jpg";
+import debranding from "../../public/DEBRANDING.jpg";
 import brandenv from "../../public/BRANDENVIROMENT.jpg";
 import busdeath from "../../public/BUSINESSDEATH.jpg";
+
+import mrabubarkar from "../../public/mrabubarkar.jpeg";
+import sylvia from "../../public/silvia.jpeg";
+import somto from "../../public/somto.jpeg";
+import gbenro from "../../public/gbenro.jpeg";
 
 export const workings2 = [
   {
@@ -69,9 +103,12 @@ export const workings2 = [
       enaira4,
       enaira5,
       enaira6,
-
-      enaira8,
       enaira9,
+      enaira10,
+      enaira11,
+      enaira12,
+      enaira13,
+      enaira14,
     ],
     description:
       "This brief was one of our longest, lasting for over a year. Our task was to develop the brand identity for the digital currency of the central bank of Nigeria. Throughout this project, we took a considerate approach, ensuring our designs expressed the old meeting the new. From the logo to the extensions and collaterals, we prioritized relatability.",
@@ -86,22 +123,7 @@ export const workings2 = [
   {
     id: "The-Nigerian-Netball-federation",
     brandname: "THE NIGERIAN NETBALL FEDERATION",
-    images: [
-      nnf,
-      nnf1,
-      nnf2,
-      nnf4,
-      nnf5,
-      nnf3,
-      nnf5,
-      nnf6,
-      nnf7,
-      nnf8,
-
-      nnf10,
-      nnf11,
-      nnf12,
-    ],
+    images: [nnf, nnf1, nnf2, nnf4, nnf5, nnf3, nnf5, nnf7, nnf8, nnf10, nnf11],
     description:
       "We received this brief from the President of the Nigerian Netball Federation, who approached us to provide a critique of an existing logo. Our feedback was detailed and honest, which led to us being asked to design a new logo from scratch. Throughout the design process, we set boundaries in our minds to ensure that the logo wouldn't resemble the typical Nigerian agency logos.",
   },
@@ -171,9 +193,59 @@ export const workings = [
     ],
   },
   {
+    id: "THE-NO-BETTER-TIME-BOOK-PROJECT",
+    brandname: "THE NO BETTER TIME BOOK PROJECT",
+    images: [nbt, nbt2, nbt3, nbt4, nbt5],
+    description: [
+      {
+        id: 1,
+        text: "In 2013, the Office of the Chief Economic Adviser to the President was preparing for Nigeria's hosting of the World Economic Forum on Africa (WEFA) in 2014.",
+      },
+      {
+        id: 2,
+        text: "They sought the expertise of a top-notch design agency, which happened to be us, to create the designs for a publication to be gifted to investors and visitors. The publication details the incentives and opprotunities for investing in Nigeria",
+      },
+      {
+        id: 3,
+        text: "Our task was to give our ideas a global appeal, considering that Nigeria was expecting about 100 top global CEOs. ",
+      },
+      {
+        id: 3,
+        text: "That evening, we discussed and received our tools, and we crafted the design.  We saw this as an opportunity to showcase the effectiveness of minimalist design. And we succeeded.",
+      },
+    ],
+  },
+  {
+    id: "THE-NATIONAL-COUNCIL-FOR-ARTS-AND-CULTURE-(NCAC)",
+    brandname: "THE NATIONAL COUNCIL FOR ARTS AND CULTURE (NCAC)",
+    images: [
+      ncac,
+      ncac1,
+      ncac2,
+      ncac3,
+      ncac6,
+      ncac7,
+      ncac8,
+      ncac9,
+      ncac10,
+      ncac11,
+      ncac12,
+    ],
+    description: [
+      {
+        id: 1,
+        text: "We dedicated time to create this unsolicited logo, and the effort was worthwhile. Being based in Abuja allows us to undertake numerous government projects, with most of our commissions coming through proposals.",
+      },
+      {
+        id: 2,
+        text: "Therefore, our head of design suggested that we redesign the NCAC logo, and we took on the task. Although we are still awaiting a response from the NCAC, we are hopeful that they will appreciate our work.",
+      },
+    ],
+  },
+  {
     id: "Meena-Foodie",
     brandname: "Meena foodie",
-    images: [meena4, meena1, meena2, meena3, meena],
+    images: [meena, meena4, meena1, meena2, meena3],
     description: [
       {
         id: 1,
@@ -188,22 +260,7 @@ export const workings = [
   {
     id: "The-Nigerian-Netball-federation",
     brandname: "THE NIGERIAN NETBALL FEDERATION",
-    images: [
-      nnf,
-      nnf1,
-      nnf2,
-      nnf4,
-      nnf5,
-      nnf3,
-      nnf5,
-      nnf6,
-      nnf7,
-      nnf8,
-
-      nnf10,
-      nnf11,
-      nnf12,
-    ],
+    images: [nnf, nnf1, nnf2, nnf4, nnf5, nnf3, nnf5, nnf7, nnf8, nnf10, nnf11],
     description: [
       {
         id: 1,
@@ -425,7 +482,7 @@ export const InsightsData = [
 export const leadershipdata = [
   {
     id: 1,
-    image: "",
+    image: mrabubarkar,
     name: "ABUBAKAR ABDULLAHI",
     role: "Principal Partner",
     remark:
@@ -433,7 +490,7 @@ export const leadershipdata = [
   },
   {
     id: 2,
-    image: "",
+    image: gbenro,
     name: "GBENRO ODUGBEMI",
     role: "Principal Partner",
     remark:
@@ -441,7 +498,7 @@ export const leadershipdata = [
   },
   {
     id: 3,
-    image: "",
+    image: sylvia,
     name: "SYLVIA MADUKA",
     role: "Managing Partner",
     remark:
@@ -449,7 +506,7 @@ export const leadershipdata = [
   },
   {
     id: 4,
-    image: "",
+    image: somto,
     name: "ESTHER MICHEAL",
     role: "Managing Partner",
     remark:

@@ -132,3 +132,7 @@ html {
   transform-origin: center;
   background: white;
 }
+
+.embla__slide {
+  flex: 0, 0, 100%;
+}

@@ -13,7 +13,7 @@ const LocationsGlobe = (props: Props) => {
             <div className="flex md:justify-start">
               <div className="md:w-3/4 flex flex-col md:flex-row justify-between mt-4">
                 <h1 className="font-[500]  text-4xl">SNA</h1>
-                <p className="md:w-6/12 text-[12px]  font-[400] leading-none mt-2 tracking-wide">
+                <p className="w-8/12 lg:w-9/12 text-base lg:text-[17px] leading-none mt-2 tracking-wide lg:ml-3">
                   9903 Carswell Peak, San Antonio, TX 78245
                 </p>
               </div>
@@ -27,7 +27,7 @@ const LocationsGlobe = (props: Props) => {
           <div className="border-black border-t-2 max-md:mt-4">
             <div className="flex md:justify-end">
               <div className="md:w-3/4 flex flex-col-reverse md:flex-row justify-between mt-2 ">
-                <p className="md:w-6/12 text-[12px]  font-[400] leading-none mt-2 tracking-wide">
+                <p className="w-8/12 lg:w-9/12 text-base lg:text-[17px]   leading-none mt-2 tracking-wide">
                   4 St. Katherines Court Bradford-on-Avon BA15 1LE
                 </p>
                 <h1 className="font-[500] text-4xl">LBA</h1>

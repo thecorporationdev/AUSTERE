@@ -9,8 +9,8 @@ export const Trustbank: React.FC<titansProps> = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
-    width={170.226}
-    height={81.814}
+    width={190.226}
+    height={100.814}
     style={{
       shapeRendering: "geometricPrecision",
       textRendering: "geometricPrecision",

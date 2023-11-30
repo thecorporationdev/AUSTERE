@@ -15,6 +15,9 @@ type Props = {
 const ProjectItem = (props: Props) => {
   const { image, projectname, slug, description } = props;
 
+  const truncatedDescription =
+    description.length > 2 ? description.slice(0, 2) : description;
+
   return (
     <div className=" w-full  border-b-2 border-gray-400 py-4 ">
       <Link href={`Workings/${slug}`} className="hover:scale-105">
@@ -38,8 +41,8 @@ const ProjectItem = (props: Props) => {
           </div>
           <div className="lg:w-6/12 ">
             <div className="w-full">
-              <div className="flex h-full w-full flex-col gap-y-4 lg:gap-y-8">
-                <div className="w-full flex justify-between lg:mt-10 ">
+              <div className="flex h-full w-full flex-col gap-y-4">
+                <div className="w-full flex justify-between lg:mt-3 ">
                   <h2 className="font-[500] text-base lg:text-2xl uppercase">
                     {projectname}
                   </h2>
@@ -48,9 +51,20 @@ const ProjectItem = (props: Props) => {
                 </div>
                 <Reveal>
                   <div className="text-base md:text-[17px] leading-[24px] md:leading-[30px] flex flex-col gap-y-4">
-                    {description.map((data) => (
+                    {truncatedDescription.map((data) => (
                       <p key={data.id}>{data.text}</p>
                     ))}
+
+                    {description.length > 2 && (
+                      <>
+                        <Link
+                          href={`Workings/${slug}`}
+                          className="text-blue-400 text-sm"
+                        >
+                          read more
+                        </Link>
+                      </>
+                    )}
                   </div>
                 </Reveal>
               </div>

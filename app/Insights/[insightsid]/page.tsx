@@ -15,8 +15,6 @@ import { Metadata } from "next";
 
 type Props = {
   params: { insightsid: number };
-
-  
 };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.insightsid;
@@ -62,7 +60,7 @@ const page = (props: Props) => {
             </div>
           </div>
           <div className="w-full mt-6">
-            <div className=" aspect-[2/1.2] lg:aspect-[2/1]  w-full relative overflow-hidden  bg-gray-100">
+            <div className="aspect-[2/1]  w-full relative overflow-hidden  bg-gray-100">
               <Image
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64, ${toBase64(

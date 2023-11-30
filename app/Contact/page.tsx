@@ -22,7 +22,7 @@ const page = (props: Props) => {
           </div>
         </Reveal>
         <div className="h-[3px] w-full bg-black mt-10"></div>
-        <div className="w-full flex justify-end mt-10 md:my-20 ">
+        <div className="w-full flex justify-end my-6  md:my-20 ">
           <div className="lg:w-1/2 flex justify-end ">
             <Reveal>
               <p className=" text-[15px] md:text-[17px] font-[400] leading-[20px] lg:leading-[40px] tracking-wide">
@@ -40,19 +40,12 @@ const page = (props: Props) => {
           </div>
         </div>
 
-        <div className="w-full flex justify-end py-10 ">
-          <div className=" w-full flex gap-y-14 flex-col ">
-            <div className="w-full">
-              <Reveal>
-                <p className="font-bold text-base">
-                  contact AUSTERE on what you need
-                </p>
-              </Reveal>
-            </div>
+        <div className="w-full flex justify-end py-6 ">
+          <div className=" w-full flex flex-col ">
             <div className="w-full flex items-center justify-center flex-col ">
               <form className="w-full py-10  lg:px-8 border-t-2 border-b-2 border-black flex flex-col justify-between">
-                <p className="text-2xl md:text-3xl font-bold capitalize pb-6 ">
-                  more info:
+                <p className="text-2xl md:text-3xl font-bold  pb-4 uppercase ">
+                  let&apos;s get to work:
                 </p>
                 <div className="flex justify-between md:w-1/2 flex-col gap-y-10 mt-10 ">
                   <Reveal>

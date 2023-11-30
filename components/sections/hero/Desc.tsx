@@ -32,15 +32,15 @@ const Desc = (props: Props) => {
               </div> */}
 
               <div className="flex mt-3 md:mt-0 flex-col justify-start font-semibold gap-y-8 md:gap-y-12">
-                <ul className="text-xs font-[500]">
+                <ul className="text-xs font-[500] flex flex-col gap-y-1">
                   <Reveal>
-                    <li className="underline text-xs text-light">
+                    <li className="underline text-xs text-light hover:scale-105">
                       8 IBM Haruna Street
                     </li>
                   </Reveal>
 
                   <Reveal>
-                    <li className="underline text-xs text-light">
+                    <li className="underline text-xs text-light hover:scale-105">
                       Utako District Abuja-FCT 900211
                     </li>
                   </Reveal>
@@ -58,7 +58,7 @@ const Desc = (props: Props) => {
                   </div>
                 </Reveal>
 
-                <ul className="capitalize undeline text-xs  font-[500]">
+                <ul className="capitalize undeline text-xs flex gap-y-1 flex-col  font-[500]">
                   <Reveal>
                     <li className="underline ">
                       <a
@@ -91,15 +91,15 @@ const Desc = (props: Props) => {
                   </li>
                 </ul>
 
-                <ul className=" text-xs uppercase font-[500]">
+                <ul className=" text-xs uppercase font-[500] flex flex-col gap-y-1">
                   <Link href="/Legal">
-                    <li className="capitalize font-medium underline underline-offset-1">
+                    <li className="capitalize font-medium underline underline-offset-1 hover:scale-105">
                       legal
                     </li>
                   </Link>
 
                   <Link href="/Privacy">
-                    <li className="capitalize font-medium underline underline-offset-1">
+                    <li className="capitalize font-medium underline underline-offset-1 hover:scale-105">
                       privacy
                     </li>
                   </Link>
